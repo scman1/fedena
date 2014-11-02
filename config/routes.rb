@@ -4,7 +4,22 @@ Fedena::Application.routes.draw do
   #map.resources :grading_levels
   resources :grading_levels
   # map.resources :ranking_levels, :collection => {:create_ranking_level=>[:get,:post], :edit_ranking_level=>[:get,:post], :update_ranking_level=>[:get,:post], :delete_ranking_level=>[:get,:post], :ranking_level_cancel=>[:get,:post], :change_priority=>[:get,:post]}
-  resources :ranking_levels
+  resources :ranking_levels do
+    collection do
+	  get  :create_ranking_level
+	  post :create_ranking_level
+	  get  :edit_ranking_level
+	  post :edit_ranking_level
+	  get  :update_ranking_level
+	  post :update_ranking_level
+	  get  :delete_ranking_level
+	  post :delete_ranking_level
+	  get  :ranking_level_cancel
+	  post :ranking_level_cancel
+	  get  :change_priority
+	  post :change_priority
+    end
+  end
   # map.resources :class_designations
   resources :class_designations
 

@@ -1,0 +1,75 @@
+1. Obtener el código fuente
+
+  C:\Sites>git clone https://github.com/scman1/fedena.git
+  Cloning into 'fedena'...
+  remote: Counting objects: 21434, done.
+  remote: Total 21434 (delta 0), reused 0 (delta 0)
+  Receiving objects: 100% (21434/21434), 12.01 MiB | 691 KiB/s, done.
+  Resolving deltas: 100% (11896/11896), done.
+
+2. Cambiarse al directorio de fedena
+
+  C:\Sites>cd fedena
+
+3. Verificar el estado del proyecto en rama actual
+
+  C:\Sites\fedena>git status
+  # On branch master
+  nothing to commit (working directory clean)
+
+4. Crear una nueva rama para la actualización a Rails 3.2.14
+
+  C:\Sites\fedena>git checkout -b updateR3
+  Switched to a new branch 'updateR3'
+
+5. Verificar las ramas existentes
+
+  C:\Sites\fedena>git branch
+    master
+  * updateR3
+
+6. Verificar totas las ramas, incluso las remotas
+
+  C:\Sites\fedena>git branch -a
+    master
+  * updateR3
+    remotes/origin/HEAD -> origin/master
+    remotes/origin/master
+
+7. Verificar el estado del proyecto en la nueva rama
+
+  C:\Sites\fedena>git status
+  # On branch updateR3
+  nothing to commit (working directory clean)
+
+8. Crear la nueva aplicación Rails 3 con
+
+  $ rails _3.2.14_ new .
+
+  Permitimos que se sobreescriba todo, el respaldo del código que funciona en Rails 2 esta en el programa de control de código fuente (git).
+
+9. Restaurar los archivos básicos de la aplicación que fueron sobreescritos
+
+  C:\Sites\fedena>git checkout app/views/layouts/application.html.erb
+  C:\Sites\fedena>git checkout app/helpers/application_helper.rb
+  C:\Sites\fedena>git checkout app/controllers/application_controller.rb
+  C:\Sites\fedena>git checkout db/seeds.rb
+  C:\Sites\fedena>git checkout config/locales/en.yml
+
+
+10. Ahora empezamos restaurando las rutas de la aplicación, la sintaxis ha cambiado pero sigue siendo soportada en rails 3
+  
+  C:\Sites\fedena>git checkout config/routes.rb
+
+11. Verificamos si es necesario configurar la zona horaria, fedena esta configurado para usar UTC, que es el valor por omisión en rails 3, por lo que no se necesitan cambios.
+
+12. El almacenamiento del identificador de la sesión es la siguiente parte a verificar. En este caso fedena también usa el estilo de rails 3, tampoco se necesita hacer nada.
+
+13. Ahora debemos agergar las gemas que usa fedena al archivo Gemfile.
+
+  gem 'delayed_job_active_record'
+
+14. Migramos la DB. En este caso tenemos un error, para arrreglarlo removemos rspec.rake  
+
+No good too much work and not guarantee of success
+this sucks
