@@ -845,3 +845,75 @@ Processing UserController#header_link (for 127.0.0.1 at 2011-05-08 10:48:39) [PO
 Rendered layouts/_reminder_count (15.9ms)
 Rendered user/_header_link (113.6ms)
 Completed in 308ms (View: 116, DB: 9) | 200 OK [http://localhost/user/header_link]
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Calling set_table_name is deprecated. Please use `self.table_name = 'the_name'` instead. (called from <class:Job> at C:/Sites/fedena/vendor/plugins/delayed_job/lib/delayed/job.rb:11)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Calling set_table_name is deprecated. Please use `self.table_name = 'the_name'` instead. (called from <class:Job> at C:/Sites/fedena/vendor/plugins/delayed_job/lib/delayed/job.rb:11)
+Connecting to database specified by database.yml
+DEPRECATION WARNING: Calling set_table_name is deprecated. Please use `self.table_name = 'the_name'` instead. (called from <class:Job> at C:/Sites/fedena/vendor/plugins/delayed_job/lib/delayed/job.rb:11)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2014-11-02 06:30:29 +0000
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Processing by Rails::InfoController#properties as */*
+  Rendered inline template (122.0ms)
+Completed 200 OK in 555ms (Views: 555.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2014-11-02 06:30:52 +0000
+Processing by Rails::InfoController#properties as */*
+  Rendered inline template (1.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2014-11-02 06:42:22 +0000
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Processing by Rails::InfoController#properties as */*
+  Rendered inline template (122.0ms)
+Completed 200 OK in 563ms (Views: 563.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2014-11-02 06:42:24 +0000
+Processing by Rails::InfoController#properties as */*
+  Rendered inline template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2014-11-02 06:42:25 +0000
+Processing by Rails::InfoController#properties as */*
+  Rendered inline template (1.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2014-11-02 06:42:27 +0000
+Processing by Rails::InfoController#properties as */*
+  Rendered inline template (1.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/properties" for 127.0.0.1 at 2014-11-02 06:42:29 +0000
+Processing by Rails::InfoController#properties as */*
+  Rendered inline template (1.0ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
