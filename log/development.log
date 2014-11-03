@@ -919,3 +919,6 @@ Processing by Rails::InfoController#properties as */*
 Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (2.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml

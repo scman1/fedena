@@ -83,7 +83,7 @@
 
 16. Agregamos gem 'wicked_pdf' al archivo gemfile
 
-17. Rutas... muchos problemas por la vieja sintaxis de las rutas
+17. Rutas... muchos problemas por la vieja sintaxis de las rutas, arreglarlas todas... long hours
  
 18. con esto quedamos igual que en el http://es.asciicasts.com/episodes/225-actualizacion-a-rails-3, la aplicacion "corre"
 
