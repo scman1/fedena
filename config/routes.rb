@@ -89,13 +89,15 @@ Fedena::Application.routes.draw do
   # end
   
   # map.root :controller => 'user', :action => 'login'
+  root to: 'user#login', as: 'login'
+
 
   # map.fa_scores 'assessment_scores/exam/:exam_id/fa_group/:fa_group_id', :controller=>'assessment_scores',:action=>'fa_scores'
   # map.observation_scores 'assessment_scores/batch/:batch_id/observation_group/:observation_group_id', :controller=>'assessment_scores',:action=>'observation_scores'
   # map.scheduled_task 'scheduled_jobs/:job_object/:job_type',:controller => "scheduled_jobs",:action => "index"
   # map.scheduled_task_object 'scheduled_jobs/:job_object',:controller => "scheduled_jobs",:action => "index"
 
-
+ 
   # #map.connect 'parts/:number', :controller => 'inventory', :action => 'sho
   # map.connect ':controller/:action/:id'
   # map.connect ':controller/:action' 

@@ -17,6 +17,8 @@
 #limitations under the License.
 
 class Privilege < ActiveRecord::Base
+  attr_accessible :name, :description, :school_id
+
   has_and_belongs_to_many :users
   belongs_to :privilege_tag
 end

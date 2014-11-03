@@ -68,24 +68,65 @@
 
   gem 'delayed_job_active_record'
 
-14. Migramos la DB. En este caso tenemos un error, para arrreglarlo removemos rspec.rake  
+
+14. Problemas con delayed_job. initializer, cambiamos job por worker
+
+15. Agregamos gem 'wicked_pdf' al archivo gemfile
+
+16. Migramos la DB. En este caso tenemos un error, para arrreglarlo removemos rspec.rake  
     Migro manualmente en un directorio temporal
     Problemas:
-      1 add_fields_to_privilege.rb requiere mover inicializaciones al archivo de semillas
-      2 20120606050404_remove_grading_type_from_batches.rb. no puede correr en sqlite debemos dejarlo pendiente por el momento
-      3 20120704103545_add_cce_indices.rb este indice: #add_index(:fa_groups_subjects,[:fa_group_id,:subject_id],:name=>:score_index) ya existe, asi que lo marcamos como comentario
-      4 20120706090514_add_privilege_for_student_view.rb tambien agregar a archivo de semillas
-      5 20120816045034_create_time_zones.rb requiere mover inicializaciones al archivo de semillas
-      6 20130110095412_add_index_to_student_data.rb este indice:    #add_index :student_additional_details, [:student_id,:additional_field_id], :name => "student_data_index"
+      1. 20111105052819_add_fields_to_privilege.rb 
+         Fallo por mass assignment de los campos :name y :description.
+         Para arreglarlo agregamos lo siguiente a la clase
+
+         attr_accessible :name, :description, :school_id 
+
+         Pienso que se requiere mover inicializaciones al archivo de semillas
+
+      2. 20120606050404_remove_grading_type_from_batches.rb. 
+
+         No puede correr en sqlite. 
+         Solución eliminamos este campo no deseado desde la creación y tambien esta migración
+        
+         eliminar: 
+           20120421062750_add_grading_type_to_batches.rb
+           20120606050404_remove_grading_type_from_batches.rb.
+
+      3 20120704103545_add_cce_indices.rb el indice :fa_groups_subjects se crea dos veces, una en el hash y otra individualmente
+
+        Este problema solo pasaen SQLite porque no acepta duplicar los nombres de indices en diferentes tablas.
+        Solución:
+        agregamos "1" al nombre del indice y continuamos. debemos movernos a mysql tan pronto como sea posible
+
+      4 20130110095412_add_index_to_student_data.rb este indice:    #add_index :student_additional_details, [:student_id,:additional_field_id], :name => "student_data_index"
  ya existe, marcado como comentario
 
-15. Problemas con delayed_job. initializer, cambiamos job por worker
+        Este problema solo pasaen SQLite porque no acepta duplicar los nombres de indices en diferentes tablas.
+        Solución:
+        agregamos "1" al nombre del indice y continuamos. debemos movernos a mysql tan pronto como sea posible
 
-16. Agregamos gem 'wicked_pdf' al archivo gemfile
+    Hasta aqui todas las migraciones pasan... Pendiente cambiar a MySQL y tratar de nuevo
 
 17. Rutas... muchos problemas por la vieja sintaxis de las rutas, arreglarlas todas... long hours
- 
-18. con esto quedamos igual que en el http://es.asciicasts.com/episodes/225-actualizacion-a-rails-3, la aplicacion "corre"
+    con esto quedamos igual que en el http://es.asciicasts.com/episodes/225-actualizacion-a-rails-3, la aplicacion "corre", las migraciones tambien se pueden hacer. solo se requiere algunas 
+
+    Empezamos con la ruta de raíz y de ahí vamos activando cada ruta como se requira
+
+18. Problema con: 
+    #filter_parameter_logging :password
+    en application_controller, comentado pues al parecer no es requerido
+
+19. Problema al cargar las librerias de fedena, modificar el application.rb para que las cargue al iniciar agregando:
+
+    config.autoload_paths += %W(#{config.root}/lib)
+
+20. Problemas con internacionalización. en lugar de usar solo t se debe cambiar a I18n.t
+
+20. Arreglar rutas y terminar de agregar plugins a Gemfile
+
+21. Arreglar tests
+
 
 
 
