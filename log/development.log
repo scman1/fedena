@@ -12564,3 +12564,3044 @@ Connecting to database specified by database.yml
   [1m[36m (99.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130102064437')[0m
   [1m[35m (75.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20130102064652')
   [1m[36m (92.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20130105063619')[0m
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 08:35:54 -0600
+
+SyntaxError (C:/Sites/fedena/app/models/user.rb:183: syntax error, unexpected $end, expecting keyword_end):
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 08:36:04 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (68.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 08:36:07 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 08:36:09 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (54.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 08:36:17 -0600
+
+ActionController::RoutingError (No route matches [GET] "/en"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 08:51:03 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:05 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:20 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:21 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:22 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:22 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:23 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (19.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:23 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:23 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:24 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:24 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:25 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:25 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:25 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:26 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:26 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:26 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:27 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:27 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (58.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:28 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (41.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:28 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:33 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:34 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:35 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:35 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:36 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:36 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:37 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:37 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (54.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:37 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:38 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:38 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:38 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:04:46 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `find_by_config_key' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:11:02 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:11:06 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `Locale' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:11:11 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `Locale' for ActiveSupport::Configurable::Configuration:Class):
+  app/controllers/application_controller.rb:347:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:11:46 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:11:54 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant ApplicationController::Translator):
+  app/controllers/application_controller.rb:349:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:12:01 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant ApplicationController::Translator):
+  app/controllers/application_controller.rb:349:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:12:04 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant ApplicationController::Translator):
+  app/controllers/application_controller.rb:349:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:44:11 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:45:06 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant ApplicationController::Translator):
+  app/controllers/application_controller.rb:349:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:45:08 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant ApplicationController::Translator):
+  app/controllers/application_controller.rb:349:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:45:09 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant ApplicationController::Translator):
+  app/controllers/application_controller.rb:349:in `set_user_language'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:49:56 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (56.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:50:02 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:52:40 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:52:42 -0600
+Processing by UserController#login as HTML
+  Rendered user/login.html.erb (68.0ms)
+Completed 500 Internal Server Error in 72ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x5241a50>):
+    19: 
+    20: <div id="wrapper">
+    21:   <div id="top_logo">
+    22:     <%= image_tag current_school_detail.logo.url %>
+    23:   </div>
+    24: 
+    25:   <div id="login_strip"></div>
+  app/models/school_detail.rb:19:in `<class:SchoolDetail>'
+  app/models/school_detail.rb:18:in `<top (required)>'
+  app/helpers/application_helper.rb:114:in `current_school_detail'
+  app/views/user/login.html.erb:22:in `_app_views_user_login_html_erb__133704724_43063692'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:52:50 -0600
+Processing by UserController#login as HTML
+  Rendered user/login.html.erb (9.0ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x3b31900>):
+    19: 
+    20: <div id="wrapper">
+    21:   <div id="top_logo">
+    22:     <%= image_tag current_school_detail.logo.url %>
+    23:   </div>
+    24: 
+    25:   <div id="login_strip"></div>
+  app/models/school_detail.rb:19:in `<class:SchoolDetail>'
+  app/models/school_detail.rb:18:in `<top (required)>'
+  app/helpers/application_helper.rb:114:in `current_school_detail'
+  app/views/user/login.html.erb:22:in `_app_views_user_login_html_erb__133704724_43063692'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:52:51 -0600
+Processing by UserController#login as HTML
+  Rendered user/login.html.erb (9.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x5387448>):
+    19: 
+    20: <div id="wrapper">
+    21:   <div id="top_logo">
+    22:     <%= image_tag current_school_detail.logo.url %>
+    23:   </div>
+    24: 
+    25:   <div id="login_strip"></div>
+  app/models/school_detail.rb:19:in `<class:SchoolDetail>'
+  app/models/school_detail.rb:18:in `<top (required)>'
+  app/helpers/application_helper.rb:114:in `current_school_detail'
+  app/views/user/login.html.erb:22:in `_app_views_user_login_html_erb__133704724_43063692'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (36.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 09:52:53 -0600
+Processing by UserController#login as HTML
+  Rendered user/login.html.erb (9.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x523ab80>):
+    19: 
+    20: <div id="wrapper">
+    21:   <div id="top_logo">
+    22:     <%= image_tag current_school_detail.logo.url %>
+    23:   </div>
+    24: 
+    25:   <div id="login_strip"></div>
+  app/models/school_detail.rb:19:in `<class:SchoolDetail>'
+  app/models/school_detail.rb:18:in `<top (required)>'
+  app/helpers/application_helper.rb:114:in `current_school_detail'
+  app/views/user/login.html.erb:22:in `_app_views_user_login_html_erb__133704724_43063692'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:08 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:13 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:15 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 26ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:16 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:17 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:18 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:19 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:19 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:20 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:20 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 10ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:20 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:20 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:21 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:21 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:21 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:21 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:22 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:22 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:22 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:22 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:23 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 09:54:23 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:27 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:36 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 9ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:38 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:39 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (19.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (54.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:40 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:41 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 9ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:41 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:42 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:43 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:43 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:43 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:44 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:44 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 9ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:44 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:45 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:45 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:45 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:46 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:46 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:46 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 11ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:54 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:55 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:55 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:56 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:56 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:02:57 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 10:03:04 -0600
+Processing by UserController#login as HTML
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:03:10 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:03:19 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:03:52 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 6ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Errno::ENOENT: No such file or directory - C:/Sites/fedena/config/locales/ar.yml>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:04:22 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/en.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/en.yml): did not find expected node content while parsing a flow node at line 280 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:04:26 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/en.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/en.yml): did not find expected node content while parsing a flow node at line 280 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:04:29 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/en.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/en.yml): did not find expected node content while parsing a flow node at line 280 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (60.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:04:31 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 8ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/en.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/en.yml): did not find expected node content while parsing a flow node at line 280 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:04:32 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 7ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/en.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/en.yml): did not find expected node content while parsing a flow node at line 280 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:09:47 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/en.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/en.yml): found character that cannot start any token while scanning for the next token at line 281 column 5>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:11:56 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/en.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/en.yml): found a tab character that violate intendation while scanning a plain scalar at line 281 column 9>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:12:50 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/en.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/en.yml): found a tab character that violate intendation while scanning a plain scalar at line 283 column 9>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:13:26 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/en.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/en.yml): found a tab character that violate intendation while scanning a plain scalar at line 283 column 9>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:14:25 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/es.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/es.yml): did not find expected node content while parsing a flow node at line 275 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (51.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:31 -0600
+
+ActionController::RoutingError (undefined method `named_scope' for #<Class:0x5941908>):
+  app/models/user.rb:38:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:33 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 5ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:34 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:36 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 5ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:37 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:37 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:38 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:38 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 5ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:39 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:39 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:40 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:40 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:40 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:41 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:41 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:41 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:42 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:42 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 4ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:43 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:15:43 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 5ms
+
+NameError (uninitialized constant ApplicationController::RTL_LANGUAGES):
+  app/controllers/application_controller.rb:310:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:16:37 -0600
+
+ActionController::RoutingError (undefined method `named_scope' for #<Class:0x594bc10>):
+  app/models/user.rb:38:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:16:40 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  Rendered user/login.html.erb (22.0ms)
+Completed 500 Internal Server Error in 28ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x3ff4ed8>):
+    19: 
+    20: <div id="wrapper">
+    21:   <div id="top_logo">
+    22:     <%= image_tag current_school_detail.logo.url %>
+    23:   </div>
+    24: 
+    25:   <div id="login_strip"></div>
+  app/models/school_detail.rb:19:in `<class:SchoolDetail>'
+  app/models/school_detail.rb:18:in `<top (required)>'
+  app/helpers/application_helper.rb:114:in `current_school_detail'
+  app/views/user/login.html.erb:22:in `_app_views_user_login_html_erb__837829292_33461820'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (38.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:16:42 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  Rendered user/login.html.erb (9.0ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x3a6b840>):
+    19: 
+    20: <div id="wrapper">
+    21:   <div id="top_logo">
+    22:     <%= image_tag current_school_detail.logo.url %>
+    23:   </div>
+    24: 
+    25:   <div id="login_strip"></div>
+  app/models/school_detail.rb:19:in `<class:SchoolDetail>'
+  app/models/school_detail.rb:18:in `<top (required)>'
+  app/helpers/application_helper.rb:114:in `current_school_detail'
+  app/views/user/login.html.erb:22:in `_app_views_user_login_html_erb__837829292_33461820'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:16:43 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  Rendered user/login.html.erb (9.0ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x2b1ed40>):
+    19: 
+    20: <div id="wrapper">
+    21:   <div id="top_logo">
+    22:     <%= image_tag current_school_detail.logo.url %>
+    23:   </div>
+    24: 
+    25:   <div id="login_strip"></div>
+  app/models/school_detail.rb:19:in `<class:SchoolDetail>'
+  app/models/school_detail.rb:18:in `<top (required)>'
+  app/helpers/application_helper.rb:114:in `current_school_detail'
+  app/views/user/login.html.erb:22:in `_app_views_user_login_html_erb__837829292_33461820'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:17:00 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  Rendered user/login.html.erb (11.0ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x3e89bd8>):
+    19: 
+    20: <div id="wrapper">
+    21:   <div id="top_logo">
+    22:     <%= image_tag current_school_detail.logo.url %>
+    23:   </div>
+    24: 
+    25:   <div id="login_strip"></div>
+  app/models/school_detail.rb:19:in `<class:SchoolDetail>'
+  app/models/school_detail.rb:18:in `<top (required)>'
+  app/helpers/application_helper.rb:114:in `current_school_detail'
+  app/views/user/login.html.erb:22:in `_app_views_user_login_html_erb__837829292_33461820'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (52.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:30:26 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ar.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ar.yml): did not find expected node content while parsing a flow node at line 281 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:31:20 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ch.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ch.yml): did not find expected node content while parsing a flow node at line 280 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:34:33 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/de.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/de.yml): did not find expected node content while parsing a flow node at line 280 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:35:26 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/fr.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/fr.yml): did not find expected node content while parsing a flow node at line 280 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:36:24 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/gl.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/gl.yml): did not find expected node content while parsing a flow node at line 280 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:36:27 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+Completed 500 Internal Server Error in 269ms
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/gl.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/gl.yml): did not find expected node content while parsing a flow node at line 280 column 14>):
+  app/controllers/application_controller.rb:349:in `set_i18n_locale_from_params'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:37:27 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/hi.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/hi.yml): did not find expected node content while parsing a flow node at line 252 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:38:08 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ja.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ja.yml): did not find expected node content while parsing a flow node at line 280 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:39:24 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/ku.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/ku.yml): did not find expected node content while parsing a flow node at line 280 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:41:43 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/mr.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/mr.yml): did not find expected node content while parsing a flow node at line 280 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:43:15 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/pt.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/pt.yml): did not find expected node content while parsing a flow node at line 280 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:44:34 -0600
+
+I18n::InvalidLocaleData (can not load translations from C:/Sites/fedena/config/locales/vi.yml: #<Psych::SyntaxError: (C:/Sites/fedena/config/locales/vi.yml): did not find expected node content while parsing a flow node at line 280 column 14>):
+  app/models/user.rb:26:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:45:14 -0600
+
+ActionController::RoutingError (undefined method `named_scope' for #<Class:0x58eba18>):
+  app/models/user.rb:38:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (29.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:45:21 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  Rendered user/login.html.erb (43.0ms)
+Completed 500 Internal Server Error in 50ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x41555d0>):
+    19: 
+    20: <div id="wrapper">
+    21:   <div id="top_logo">
+    22:     <%= image_tag current_school_detail.logo.url %>
+    23:   </div>
+    24: 
+    25:   <div id="login_strip"></div>
+  app/models/school_detail.rb:19:in `<class:SchoolDetail>'
+  app/models/school_detail.rb:18:in `<top (required)>'
+  app/helpers/application_helper.rb:114:in `current_school_detail'
+  app/views/user/login.html.erb:22:in `_app_views_user_login_html_erb__646933212_34121952'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (38.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:45:23 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  Rendered user/login.html.erb (9.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x5525058>):
+    19: 
+    20: <div id="wrapper">
+    21:   <div id="top_logo">
+    22:     <%= image_tag current_school_detail.logo.url %>
+    23:   </div>
+    24: 
+    25:   <div id="login_strip"></div>
+  app/models/school_detail.rb:19:in `<class:SchoolDetail>'
+  app/models/school_detail.rb:18:in `<top (required)>'
+  app/helpers/application_helper.rb:114:in `current_school_detail'
+  app/views/user/login.html.erb:22:in `_app_views_user_login_html_erb__646933212_34121952'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (36.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:45:24 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  Rendered user/login.html.erb (9.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x4142958>):
+    19: 
+    20: <div id="wrapper">
+    21:   <div id="top_logo">
+    22:     <%= image_tag current_school_detail.logo.url %>
+    23:   </div>
+    24: 
+    25:   <div id="login_strip"></div>
+  app/models/school_detail.rb:19:in `<class:SchoolDetail>'
+  app/models/school_detail.rb:18:in `<top (required)>'
+  app/helpers/application_helper.rb:114:in `current_school_detail'
+  app/views/user/login.html.erb:22:in `_app_views_user_login_html_erb__646933212_34121952'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:45:24 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  Rendered user/login.html.erb (9.0ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x3a979d0>):
+    19: 
+    20: <div id="wrapper">
+    21:   <div id="top_logo">
+    22:     <%= image_tag current_school_detail.logo.url %>
+    23:   </div>
+    24: 
+    25:   <div id="login_strip"></div>
+  app/models/school_detail.rb:19:in `<class:SchoolDetail>'
+  app/models/school_detail.rb:18:in `<top (required)>'
+  app/helpers/application_helper.rb:114:in `current_school_detail'
+  app/views/user/login.html.erb:22:in `_app_views_user_login_html_erb__646933212_34121952'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (41.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:45:25 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  Rendered user/login.html.erb (9.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x3f19698>):
+    19: 
+    20: <div id="wrapper">
+    21:   <div id="top_logo">
+    22:     <%= image_tag current_school_detail.logo.url %>
+    23:   </div>
+    24: 
+    25:   <div id="login_strip"></div>
+  app/models/school_detail.rb:19:in `<class:SchoolDetail>'
+  app/models/school_detail.rb:18:in `<top (required)>'
+  app/helpers/application_helper.rb:114:in `current_school_detail'
+  app/views/user/login.html.erb:22:in `_app_views_user_login_html_erb__646933212_34121952'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (38.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:48:12 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  Rendered user/login.html.erb (9.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x4080108>):
+    19: 
+    20: <div id="wrapper">
+    21:   <div id="top_logo">
+    22:     <%= image_tag current_school_detail.logo.url %>
+    23:   </div>
+    24: 
+    25:   <div id="login_strip"></div>
+  app/models/school_detail.rb:19:in `<class:SchoolDetail>'
+  app/models/school_detail.rb:18:in `<top (required)>'
+  app/helpers/application_helper.rb:114:in `current_school_detail'
+  app/views/user/login.html.erb:22:in `_app_views_user_login_html_erb__646933212_34121952'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (37.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:48:14 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  Rendered user/login.html.erb (10.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `has_attached_file' for #<Class:0x3a924c8>):
+    19: 
+    20: <div id="wrapper">
+    21:   <div id="top_logo">
+    22:     <%= image_tag current_school_detail.logo.url %>
+    23:   </div>
+    24: 
+    25:   <div id="login_strip"></div>
+  app/models/school_detail.rb:19:in `<class:SchoolDetail>'
+  app/models/school_detail.rb:18:in `<top (required)>'
+  app/helpers/application_helper.rb:114:in `current_school_detail'
+  app/views/user/login.html.erb:22:in `_app_views_user_login_html_erb__646933212_34121952'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (36.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:59:36 -0600
+
+ActionController::RoutingError (undefined method `named_scope' for #<Class:0x4331268>):
+  app/models/user.rb:38:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:59:39 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mSchoolDetail Load (1.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (37.0ms)
+Completed 500 Internal Server Error in 45ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb___674185929_33362520'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb___674185929_33362520'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 10:59:41 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mSchoolDetail Load (0.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (6.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb___674185929_33362520'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb___674185929_33362520'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 10:59:46 -0600
+Processing by UserController#login as HTML
+  [1m[36mSchoolDetail Load (0.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (6.0ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb___674185929_33362520'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb___674185929_33362520'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 10:59:51 -0600
+Processing by UserController#login as HTML
+  [1m[35mSchoolDetail Load (0.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (6.0ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb___674185929_33362520'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb___674185929_33362520'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 10:59:54 -0600
+Processing by UserController#login as HTML
+  [1m[36mSchoolDetail Load (0.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (6.0ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb___674185929_33362520'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb___674185929_33362520'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 10:59:56 -0600
+Processing by UserController#login as HTML
+  [1m[35mSchoolDetail Load (0.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (6.0ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb___674185929_33362520'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb___674185929_33362520'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:01:55 -0600
+
+ActionController::RoutingError (undefined method `named_scope' for #<Class:0x43da048>):
+  app/models/user.rb:38:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:01:59 -0600
+Processing by UserController#login as HTML
+  [1m[36mSchoolDetail Load (0.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (47.0ms)
+Completed 500 Internal Server Error in 52ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb___674185929_33362520'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb___674185929_33362520'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:04:23 -0600
+
+ActionController::RoutingError (undefined method `named_scope' for #<Class:0x3e781f0>):
+  app/models/user.rb:38:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:04:26 -0600
+Processing by UserController#login as HTML
+  [1m[35mSchoolDetail Load (0.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (48.0ms)
+Completed 500 Internal Server Error in 52ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb___674185929_33362520'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb___674185929_33362520'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:08:28 -0600
+
+ActionController::RoutingError (undefined method `named_scope' for #<Class:0x423fe40>):
+  app/models/user.rb:38:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:08:31 -0600
+Processing by UserController#login as HTML
+  [1m[36mSchoolDetail Load (1.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (42.0ms)
+Completed 500 Internal Server Error in 47ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__741565077_32953632'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__741565077_32953632'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:14:45 -0600
+
+ActionController::RoutingError (undefined method `named_scope' for #<Class:0x4097d18>):
+  app/models/user.rb:38:in `<class:User>'
+  app/models/user.rb:19:in `<top (required)>'
+  app/controllers/user_controller.rb:19:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:14:49 -0600
+Processing by UserController#login as HTML
+  [1m[36mSchoolDetail Load (0.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (37.0ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_30161040'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_30161040'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:14:52 -0600
+Processing by UserController#login as HTML
+  [1m[35mSchoolDetail Load (0.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (6.0ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_30161040'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_30161040'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:14:53 -0600
+Processing by UserController#login as HTML
+  [1m[36mSchoolDetail Load (0.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (7.0ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_30161040'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_30161040'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:14:53 -0600
+Processing by UserController#login as HTML
+  [1m[35mSchoolDetail Load (0.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (5.0ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_30161040'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_30161040'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:14:54 -0600
+Processing by UserController#login as HTML
+  [1m[36mSchoolDetail Load (1.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (31.0ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_30161040'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_30161040'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:14:54 -0600
+Processing by UserController#login as HTML
+  [1m[35mSchoolDetail Load (1.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (5.0ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_30161040'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_30161040'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:14:54 -0600
+Processing by UserController#login as HTML
+  [1m[36mSchoolDetail Load (0.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (6.0ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_30161040'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_30161040'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:14:55 -0600
+Processing by UserController#login as HTML
+  [1m[35mSchoolDetail Load (0.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (5.0ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_30161040'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_30161040'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:14:55 -0600
+Processing by UserController#login as HTML
+  [1m[36mSchoolDetail Load (0.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (7.0ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_30161040'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_30161040'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:14:55 -0600
+Processing by UserController#login as HTML
+  [1m[35mSchoolDetail Load (1.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (6.0ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_30161040'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_30161040'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:14:55 -0600
+Processing by UserController#login as HTML
+  [1m[36mSchoolDetail Load (0.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (6.0ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_30161040'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_30161040'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:14:55 -0600
+Processing by UserController#login as HTML
+  [1m[35mSchoolDetail Load (0.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (7.0ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_30161040'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_30161040'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:14:56 -0600
+Processing by UserController#login as HTML
+  [1m[36mSchoolDetail Load (0.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (6.0ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_30161040'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_30161040'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:14:56 -0600
+Processing by UserController#login as HTML
+  [1m[35mSchoolDetail Load (0.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (8.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_30161040'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_30161040'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 11:15:27 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mSchoolDetail Load (0.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (6.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_30161040'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_30161040'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 11:15:32 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mSchoolDetail Load (0.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (5.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_30161040'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_30161040'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 11:16:40 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mSchoolDetail Load (1.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (4.0ms)
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2014-11-04 11:16:40 -0600
+Served asset /application/app_fedena_logo.png - 404 Not Found (15ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/application/app_fedena_logo.png"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-04 11:17:02 -0600
+Processing by UserController#login as HTML
+  [1m[35mSchoolDetail Load (0.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (3.0ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2014-11-04 11:17:03 -0600
+Served asset /application/app_fedena_logo.png - 404 Not Found (7ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/application/app_fedena_logo.png"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 11:17:10 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mSchoolDetail Load (0.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (3.0ms)
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2014-11-04 11:17:10 -0600
+Served asset /application/app_fedena_logo.png - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/application/app_fedena_logo.png"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 11:17:49 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mSchoolDetail Load (1.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (7.0ms)
+Completed 500 Internal Server Error in 35ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_34857240'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_34857240'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 11:17:50 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mSchoolDetail Load (0.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (5.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionController::RoutingError (No route matches {:controller=>"user", :action=>"forgot_password", :locale=>:en}):
+  app/views/user/login.html.erb:53:in `block in _app_views_user_login_html_erb__315698468_34857240'
+  app/views/user/login.html.erb:28:in `_app_views_user_login_html_erb__315698468_34857240'
+  app/controllers/application_controller.rb:320:in `render'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-11-04 11:18:07 -0600
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mSchoolDetail Load (0.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (4.0ms)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2014-11-04 11:18:07 -0600
+Served asset /application/app_fedena_logo.png - 404 Not Found (9ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/application/app_fedena_logo.png"):
+  actionpack (3.2.14) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.14) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.14) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.14) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.14) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.14) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.14) lib/rails/engine.rb:484:in `call'
+  railties (3.2.14) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.14) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)

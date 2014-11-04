@@ -277,8 +277,10 @@ de: # locale
     abbr_day_names: [Son, Mon, Die, Mit, Don, Fre, Sam]
     month_names: [~, Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember]
     abbr_month_names: [~, Jan, Feb, Mär, Apr, Mai, Jun, Jul, Aug, Sep, Okt, Nov, Dez]
-    order: [ :day, :month, :year ]
-
+    order:
+      - :day
+      - :month
+      - :year
   time:
     formats:
       default: "%A, %d. %B %Y, %H:%M Uhr"
@@ -348,15 +350,7 @@ de: # locale
     batch_transfers:
       errors_found: "Folgende Fehler wurden gefunden"
 
-  minmarks_cant_be_blank: "Minimum Mark can't be blank"
-  maxmarks_cant_be_blank: "Maximum Mark can't be blank"
   sl_no: "Sl Nr."
-  are_you_sure_to_trnsfer: "All the students will be transferred to the batch"
-  system_settings: "System Settings"
-  administration_operations: "Administration / Operations"
-  student_management: "Student Management"
-  social_other_activity: "Social / Other Activity"
-  grouped_batches: "Grouped Batches"
   name: "Name"
   adm_no: "Aufn.-Nr."
   view_profile: "Profil ansehen"
@@ -440,8 +434,6 @@ de: # locale
   teacher: "Leher"
   total_average: "Gesamtdurchschnitt"
   continue: "Fortfahren"
-  override: "Override"
-  retain_all: "Retain All"
   email: "E-Mail"
   web_address: "Web-Addresse"
   jan: "Jan"
@@ -1211,7 +1203,7 @@ de: # locale
   settings: "Einstellungen"
   sms_sending_failed_with_response: "SMS-Versand mit folgender Antwort fehlgeschlagen"
   sms_configuration_not_found: "SMS-Konfigurationsdatei nicht gefunden."
-  sms_sending_intiated: "SMS sending initiated successfully. <a href='%{log_url}'>Click here</a> to view log."
+  sms_sending_intiated: "'SMS sending initiated successfully. Please check SMS logs for further details"
   sms_settings_page: "SMS-Einstellungen-Seite"
   send_sms_to_students: "SMS an Schüler senden"
   sms_to_batches: "SMS an Partien senden"
@@ -1391,8 +1383,7 @@ de: # locale
   student_admission_done: "Schüleraufnahme erledigt. Der Benutzername ist"
   password_is: "und das Passwort ist"
   select_one_of_the_guardians: "Wähle einen Vormund als Notfallkontakt."
-  max_size: "max 500KB"
-  height_width: "150x110"
+  max_size: "max 50KB"
   unknown: "Unbekannt"
   student_detail_step1: "Schritt 1 - Schülerdetails"
   last_course: "Letzter besuchter Kurs"
@@ -1863,10 +1854,9 @@ de: # locale
   select_a_tte: "Wählen Sie einen Zeitplan"
   basestart_date_overlap: "Startzeit ist im Bereich von einem anderen Zeitplan"
   baseend_date_overlap: "Ende der Zeit ist im Bereich von einem anderen Zeitplan"
-  basetimetable_in_between_given_dates: "Ein weiterer Zeitplan existiert zwischen den angegebenen Terminen"
   basestart_date_is_lower_than_today: "Startdatum ist niedriger als das heutige Datum"
   basestart_date_is_lower_than_end_date: "Enddatum ist niedriger als Startdatum"
-  baseend_date_is_lower_than_today: "Enddatum ist niedriger als das heutige Datum"
+  baseend_date_is_lower_than_end_date: "Enddatum ist niedriger als das heutige Datum"
   time_period:  "Zeit"
   select_a_batch: "Wählen Sie eine Batch"
   select_employee: "Wählen Sie Mitarbeiter"
@@ -1880,7 +1870,6 @@ de: # locale
   remove_entry_confirm: "Eintrag löschen?"
   should_not_be_admin: "Should Not Be Admin"
   edit_current_tte_confirm: "This timetable is currently in use. Please remove the attendance related to the class timings of removing timetable entries before editing if subject-wise attendance is in use."
-  multiple_entries: "Multiple entries"
 
 
   #exam updates
@@ -2023,7 +2012,6 @@ de: # locale
   flash_msg40: "Alle Schüler erfolgreich zugewiesen"
   flash_msg41: "Schüler erfolgreich entfernt"
   flash_msg42: "Alle Schüler erfolgreich entfernt"
-  flash_msg43: "Invalid Submission. Please try again."
 
 #configuration controller translation
   configuration:
@@ -2136,7 +2124,6 @@ de: # locale
     flash2: "Lohnabrechnungskategorie aktualisiert"
     flash3: "Erfolgreich gelöscht!"
     flash4: "Konnte nicht gelöscht werden!"
-    new_admission_link: "For new admission"
 
 #employee_attendance translation
   employee_attendance:
@@ -2198,8 +2185,6 @@ de: # locale
     flash13: "Erfolgreich gelöscht!"
     flash14: "Sorry! Kann nicht gelöscht werden, wenn Einträge unter dem gewählten Detail exisitieren"
     flash15: "Sorry! Schüler kann nicht gelöscht werden, wenn abhängige Einträge existieren"
-    flash20: "Benutzer verfügt nicht über eine E-Mail-ID!"
-    new_admission_link: "For new admission"
   
    ## traslation for finance controller
   finance:

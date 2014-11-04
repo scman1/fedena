@@ -278,8 +278,10 @@ ar:
     abbr_day_names: [Sun, Mon, Tue, Wed, Thur, Fri, Sat]
     month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
     abbr_month_names: [~, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
-    order: [ :day, :month, :year ]
-
+    order:
+      - :day
+      - :month
+      - :year
 
   time:
     formats:
@@ -350,15 +352,7 @@ ar:
     batch_transfers:
       errors_found: "تم العثور على الأخطاء التالية :"
 
-  minmarks_cant_be_blank: "Minimum Mark can't be blank"
-  maxmarks_cant_be_blank: "Maximum Mark can't be blank"
   sl_no: "لا SL."
-  are_you_sure_to_trnsfer: "All the students will be transferred to the batch"
-  system_settings: "System Settings"
-  administration_operations: "Administration / Operations"
-  student_management: "Student Management"
-  social_other_activity: "Social / Other Activity"
-  grouped_batches: "Grouped Batches"
   name: "اسم"
   adm_no: "ADM لا."
   view_profile: "عرض الملف الشخصي"
@@ -442,8 +436,6 @@ ar:
   teacher: "معلم"
   total_average: "مجموع متوسط"
   continue: "تواصل"
-  override: "Override"
-  retain_all: "Retain All"
   email: "البريد الإلكتروني"
   web_address: "العنوان على شبكة الإنترنت"
   jan: "يان"
@@ -1212,7 +1204,7 @@ ar:
   settings: "إعدادات"
   sms_sending_failed_with_response: "فشل إرسال الرسائل القصيرة مع استجابة"
   sms_configuration_not_found: "SMS ملف التكوين غير موجود."
-  sms_sending_intiated: "SMS sending initiated successfully. <a href='%{log_url}'>Click here</a> to view log."
+  sms_sending_intiated: "'SMS sending initiated successfully. Please check SMS logs for further details"
   sms_settings_page: "صفحة إعدادات SMS"
   send_sms_to_students: "ارسال الرسائل القصيرة للطلاب"
   sms_to_batches: "ارسال الرسائل القصيرة لأفواج"
@@ -1392,8 +1384,7 @@ ar:
   student_admission_done: "قبول الطالب القيام به. اسم المستخدم هو"
   password_is: "وكلمة السر هي"
   select_one_of_the_guardians: "حدد أحد الأوصياء والاتصال في حالات الطوارئ."
-  max_size: "500KB ماكس"
-  height_width: "150x110"
+  max_size: "50KB ماكس"
   unknown: "غير معروف"
   student_detail_step1: "الخطوة 1 -- تفاصيل الطلاب"
   last_course: "حضر الدورة الماضية"
@@ -1862,10 +1853,9 @@ ar:
   select_a_tte: "حدد جدولا زمنيا"
   basestart_date_overlap: "وقت البدء هو ضمن مجموعة من آخر جدول زمني"
   baseend_date_overlap: "وقت النهاية هو ضمن مجموعة من آخر جدول زمني"
-  basetimetable_in_between_given_dates: "آخر موجود في الجدول الزمني بين تواريخ معينة"
   basestart_date_is_lower_than_today: "تاريخ البدء أقل من تاريخ اليوم"
   basestart_date_is_lower_than_end_date: "تاريخ انتهاء أقل من تاريخ بدء"
-  baseend_date_is_lower_than_today: "تاريخ انتهاء أقل من تاريخ اليوم"
+  baseend_date_is_lower_than_end_date: "تاريخ انتهاء أقل من تاريخ اليوم"
   time_period:  "فترة"
   select_a_batch: "حدد دفعة"
   select_employee: "حدد الموظف"
@@ -1879,7 +1869,6 @@ ar:
   remove_entry_confirm: "إزالة دخول؟"
   should_not_be_admin: "لا ينبغي أن المسؤول"
   edit_current_tte_confirm: "This timetable is currently in use. Please remove the attendance related to the class timings of removing timetable entries before editing if subject-wise attendance is in use."
-  multiple_entries: "Multiple entries"
 
 
   #exam updates
@@ -2022,7 +2011,6 @@ ar:
   flash_msg40: "تعيين جميع الطلاب بنجاح"
   flash_msg41: "إزالة الطلاب بنجاح"
   flash_msg42: "إزالة جميع الطلاب بنجاح"
-  flash_msg43: "Invalid Submission. Please try again."
 
 #configuration controller translation
   configuration:
@@ -2135,7 +2123,6 @@ ar:
     flash2: "الفئة الرواتب المحدثة"
     flash3: "حذف بنجاح!"
     flash4: "غير قادر على حذف!"
-    new_admission_link: "For new admission"
 
 #employee_attendance translation
   employee_attendance:
@@ -2197,8 +2184,6 @@ ar:
     flash13: "حذف بنجاح!"
     flash14: "آسف! غير قادر على حذف عند مداخل موجود تحت التفصيل المحدد"
     flash15: "آسف! لا يمكن حذف سجل الطالب عندما تعتمد موجود"
-    flash20: "المستخدم ليس لديه هوية البريد الالكتروني!"
-    new_admission_link: "For new admission"
 
    ## traslation for finance controller
   finance:

@@ -277,7 +277,10 @@ mr: # locale
     abbr_day_names: [रवी, सोम, मंगळ, बुध, गुरु, शुक्र, शनी]
     month_names: [~, जानेवारी, फेब्रुवारी, मार्च, एप्रिल, मे, जून, जुलै, ऑगस्ट, सप्टेंबर, ऑक्टोबर, नोव्हेंबर, डिसेंबर]
     abbr_month_names: [~, जाने, फेब्रु, मार्च, एप्रिल, मे, जून, जुलै, ऑग, सप्टे, ऑक्टो, नोव्हे, डिसें]
-    order: [ :दिवस, :महिना, :वर्ष ]
+    order:
+      - :दिवस
+      - :महिना
+      - :वर्ष
 
   time:
     formats:
@@ -348,15 +351,7 @@ mr: # locale
     batch_transfers:
       errors_found: "खालील त्रूटी आढळल्या"
 
-  minmarks_cant_be_blank: "Minimum Mark can't be blank"
-  maxmarks_cant_be_blank: "Maximum Mark can't be blank"
   sl_no: "अनु. क्रम."
-  are_you_sure_to_trnsfer: "All the students will be transferred to the batch"
-  system_settings: "System Settings"
-  administration_operations: "Administration / Operations"
-  student_management: "Student Management"
-  social_other_activity: "Social / Other Activity"
-  grouped_batches: "Grouped Batches"
   name: "नाव "
   adm_no: "प्रवेश संख्या "
   view_profile: "प्रोफाइल बघा"
@@ -442,8 +437,6 @@ mr: # locale
   teacher: "शिक्षक"
   total_average: "एकूण सरासरी"
   continue: "पुढे"
-  override: "Override"
-  retain_all: "Retain All"
   email: "ई मेल"
   web_address: "वेबसाईट"
   jan: "जाने"
@@ -1201,7 +1194,7 @@ mr: # locale
   departments: "विभाग"
   employees: "कर्मचारी"
   settings: "सेटींग्स"
-  sms_sending_intiated: "SMS sending initiated successfully. <a href='%{log_url}'>Click here</a> to view log."
+  sms_sending_intiated: "'SMS sending initiated successfully. Please check SMS logs for further details"
   sms_settings_page: "SMS सेटींग्स"
   send_sms_to_students: "विद्यार्थ्यांना SMS पाठवा"
   sms_to_batches: "तुकड्यांना SMS पाठवा"
@@ -1381,8 +1374,7 @@ mr: # locale
   student_admission_done: "विद्यार्थी प्रवेश झाला. युजरनेम आहे"
   password_is: "व पासवर्ड आहे"
   select_one_of_the_guardians: "खालील एक पालक निवडा आपत्कालीन संपर्कासाठी."
-  max_size: "कमाल 500KB"
-  height_width: "150x110"
+  max_size: "कमाल 50KB"
   unknown: "Unknown"
   student_detail_step1: "क्रम १ - विद्यार्थी माहिती"
   last_course: "पूर्वीचा अभ्यासक्रम"
@@ -1853,10 +1845,9 @@ mr: # locale
   select_a_tte: "Select a timetable"
   basestart_date_overlap: "Start time is within the range of another timetable"
   baseend_date_overlap: "End time is within the range of another timetable"
-  basetimetable_in_between_given_dates: "Another timetable exists in between the given dates"
   basestart_date_is_lower_than_today: "Start date is lower than today's date"
   basestart_date_is_lower_than_end_date: "End date is lower than start date"
-  baseend_date_is_lower_than_today: "End date is lower than today's date"
+  baseend_date_is_lower_than_end_date: "End date is lower than today's date"
   time_period:  "Period"
   select_a_batch: "Select a batch"
   select_employee: "Select employee"
@@ -1870,7 +1861,6 @@ mr: # locale
   remove_entry_confirm: "Remove entry?"
   should_not_be_admin: "Should Not Be Admin"
   edit_current_tte_confirm: "This timetable is currently in use. Please remove the attendance related to the class timings of removing timetable entries before editing if subject-wise attendance is in use."
-  multiple_entries: "Multiple entries"
 
 
   #exam updates
@@ -2013,7 +2003,6 @@ mr: # locale
   flash_msg40: "सगळ्या विद्यार्थ्यांची नेमणूक यशस्वी"
   flash_msg41: "विद्यार्थी काढण्यात यशस्वी"
   flash_msg42: "सगळे विद्यार्थी काढण्यात यशस्वी"
-  flash_msg43: "Invalid Submission. Please try again."
 
 #configuration controller translation
   configuration:
@@ -2126,7 +2115,6 @@ mr: # locale
     flash2: "वेतनपट प्रकार अद्यावत "
     flash3: "यशस्वीपणे काढले! "
     flash4: "काढण्यात असमर्थ !"
-    new_admission_link: "For new admission"
 
 #employee_attendance translation
   employee_attendance:
@@ -2169,7 +2157,6 @@ mr: # locale
     flash17: "युजर खाते बनले ! "
     flash18: "रिसेट पासवर्ड लिंक तुमच्या ई मेल वर पाठविण्यात आली आहे ."
     flash19: "या युजरनेमचा कोणताच युजर अस्तित्वात नाही."
-    flash20: "User does not have an email id!"
 
 #student controller translation
   student:
@@ -2188,8 +2175,6 @@ mr: # locale
     flash13: "यशस्वीपणे काढले!"
     flash14: "क्षमस्व! निवडलेल्या माहिती अंतर्गत नोंदी असताना काढण्यात असमर्थ."
     flash15: "क्षमस्व ! अवलंबित नोंदी असताना विद्यार्थी काढू शकत नाही."
-    flash20: "User does not have an email id!"
-    new_admission_link: "For new admission"
 
    ## traslation for finance controller
   finance:

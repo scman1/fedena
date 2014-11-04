@@ -277,7 +277,10 @@ en: # locale
     abbr_day_names: [Sun, Mon, Tue, Wed, Thur, Fri, Sat]
     month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
     abbr_month_names: [~, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
-    order: [ :day, :month, :year ]
+    order:
+      - :day
+      - :month
+      - :year
 
   time:
     formats:
@@ -349,17 +352,11 @@ en: # locale
       errors_found: "Following errors were found"
 
   sl_no: "Sl  no."
-  system_settings: "System Settings"
-  administration_operations: "Administration / Operations"
-  student_management: "Student Management"
-  social_other_activity: "Social / Other Activity"
-  grouped_batches: "Grouped Batches"
   name: "Name"
   adm_no: "Adm no."
   view_profile: "View Profile"
   select_a_category: "Select a Category"
   select_a_batch: "Select a Batch"
-  are_you_sure_to_trnsfer: "All the students will be transferred to the batch"
   select_a_course: "Select a Course"
   create_text: "Create"
   student_text: "Student"
@@ -374,8 +371,6 @@ en: # locale
   batch: "Batch"
   delete_text: "Delete"
   admission_number: "Admission number"
-  minmarks_cant_be_blank: "Minimum Mark can't be blank"
-  maxmarks_cant_be_blank: "Maximum Mark can't be blank"
   all: "All"
   select: "Select"
   option: "Option"
@@ -442,8 +437,6 @@ en: # locale
   teacher: "Teacher"
   total_average: "Total Average"
   continue: "Continue"
-  override: "Override"
-  retain_all: "Retain All"
   email: "Email"
   web_address: "Web Address"
   jan: "Jan"
@@ -654,7 +647,7 @@ en: # locale
   fine: "Fine"
   fine_on: "Fine on"
   payment_done: "Payment Done"
-  partial_payment_on: "Payment done on"
+  partial_payment_on: "Partial Payment on"
   profile_text: "Profile"
   messages: "Messages"
   reminder_text: "Reminder"
@@ -1218,7 +1211,7 @@ en: # locale
   settings: "Settings"
   sms_sending_failed_with_response: "SMS sending failed with response "
   sms_configuration_not_found: "SMS configuration file not found."
-  sms_sending_intiated: "SMS sending initiated successfully. <a href='%{log_url}'>Click here</a> to view log."
+  sms_sending_intiated: "'SMS sending initiated successfully. Please check SMS logs for further details"
   sms_settings_page: "SMS Settings page"
   send_sms_to_students: "Send SMS to Students"
   sms_to_batches: "Send SMS to Batches"
@@ -1398,8 +1391,7 @@ en: # locale
   student_admission_done: "Student admission done. username is"
   password_is: "and password is"
   select_one_of_the_guardians: "Select one of the guardians as emergency contact."
-  max_size: "500KB max"
-  height_width: "150x110"
+  max_size: "50KB max"
   unknown: "Unknown"
   student_detail_step1: "Step 1 - Student details"
   last_course: "Last Attended Course"
@@ -1840,12 +1832,6 @@ en: # locale
   sms_logs: "SMS Logs"
   view_all_messages: "View all messages and their status"
   enable_news_comment_moderation: "Enable News Comment Moderation"
-  choose_from_existing: "Choose from existing"
-  assign_subject_amount: "Assign subject amount"
-  edit_subject_amount: "Edit "
-  discount_type: "Mode"
-  flash_period: "period"
-  
   
 
 #  modified timetable and timetable entries
@@ -1876,10 +1862,9 @@ en: # locale
   select_a_tte: "Select a timetable"
   basestart_date_overlap: "Start time is within the range of another timetable"
   baseend_date_overlap: "End time is within the range of another timetable"
-  basetimetable_in_between_given_dates: "Another timetable exists in between the given dates"
   basestart_date_is_lower_than_today: "Start date is lower than today's date"
   basestart_date_is_lower_than_end_date: "End date is lower than start date"
-  baseend_date_is_lower_than_today: "End date is lower than today's date"
+  baseend_date_is_lower_than_end_date: "End date is lower than today's date"
   time_period:  "Period"
   select_a_batch: "Select a batch"
   select_employee: "Select employee"
@@ -1893,8 +1878,6 @@ en: # locale
   remove_entry_confirm: "Remove entry?"
   should_not_be_admin: "Should Not Be Admin"
   edit_current_tte_confirm: "This timetable is currently in use. Please remove the attendance related to the class timings of removing timetable entries before editing if subject-wise attendance is in use."
-  multiple_entries: "Multiple entries"
-  hr_text: "HR"
 
   #exam updates
   ranking_levels_text: "Ranking Levels"
@@ -1994,10 +1977,6 @@ en: # locale
   is_final_exam: "Is Final Exam?"
   retaken: "Retaken"
   grouped_exam_reports_not_generated: "Grouped Exam Reports have not been generated for this Student."
-  enable_first_time_login: "Enable first time login change password."
-  first_login_attempt: "Please change your password before proceeding"
-  not_applicable: "Not applicable"
-  password_update: "Password successfully updated"
   
   flash_msg1: "Updated additional exam group successfully."
   flash_msg2: "Sorry"
@@ -2006,7 +1985,6 @@ en: # locale
   flash_msg5: "You are not allowed to view that information."
   flash_msg6: "Access denied!"
   flash_msg7: "is absent on"
-  flash_subject: "for the subject"
   flash_msg8: "Settings has been saved"
   flash_msg9: "Exam name can't be blank"
   flash_msg10: "New exam created successfully."
@@ -2041,7 +2019,6 @@ en: # locale
   flash_msg40: "Assign all students successfully"
   flash_msg41: "Remove students successfully"
   flash_msg42: "Remove all students successfully"
-  flash_msg43: "Invalid Submission. Please try again."
 
 #configuration controller translation
   configuration:
@@ -2147,14 +2124,13 @@ en: # locale
     flash44: "Cannot delete the employee when dependecy exists. Use change to former option"
     flash45: "Payslip Date cant be generated before joining date"
     flash46: "Employee deleted successfully."
-    
+
 #payroll translation
   payroll:
     flash1: "Payroll category saved"
     flash2: "Payroll category updated"
     flash3: "Successfully deleted!"
     flash4: "Unable to delete!"
-    new_admission_link: "For new admission"
 
 #employee_attendance translation
   employee_attendance:
@@ -2216,9 +2192,7 @@ en: # locale
     flash13: "Successfully deleted!"
     flash14: "Sorry! Unable to delete when entries exists under the selected detail"
     flash15: "Sorry ! Could not delete student when dependent record exists"
-    flash20: "User does not have an email id!"
-    new_admission_link: "For new admission"
-
+  
    ## traslation for finance controller
   finance:
     flash1: "Donation accepted"

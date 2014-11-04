@@ -24,7 +24,7 @@ class ApplicationController < ActionController::Base
   
   before_filter { |c| Authorization.current_user = c.current_user }
   before_filter :message_user
-  before_filter :set_user_language
+  before_filter :set_i18n_locale_from_params
   before_filter :set_variables
   before_filter :login_check
 
@@ -343,15 +343,19 @@ class ApplicationController < ActionController::Base
   end
 
   private
-  def set_user_language
-    lan = Configuration.find_by_config_key("Locale")
-    I18n.default_locale = :en
-    Translator.fallback(true)
-    if session[:language].nil?
-      I18n.locale = lan.config_value
-    else
-      I18n.locale = session[:language]
+  protected
+    def set_i18n_locale_from_params
+      if params[:locale]
+        if I18n.available_locales.include?(params[:locale].to_sym)
+          I18n.locale = params[:locale]
+        else
+          flash.now[:notice] =
+            "#{params[:locale]} translation not available"
+          logger.error flash.now[:notice]
+        end
+      end
     end
-    News.new.reload_news_bar
-  end
+    def default_url_options
+      { locale: I18n.locale }
+    end
 end

@@ -121,7 +121,29 @@
 
     config.autoload_paths += %W(#{config.root}/lib)
 
-20. Problemas con internacionalización. en lugar de usar solo t se debe cambiar a I18n.t
+20. Problemas con internacionalización. 
+    Fedena Usa Translator para internacionalización, el problema es que esta gema funciona solo para rails 2. 
+    aparentemente no hay actualizaciones para rails 3+
+    Solución usar i18n que provee rails.
+    Para esto debemos crear un scope e incluir las rutas que deben ser traducidas en dicho scope.
+
+    1. todos los archivos de locales dan problemas al cargarse porque tiene la forma:
+
+    order: [ :year, :month, :day ]
+
+       Para que puedan ser leidos correctamente se deben cambiar a 
+
+    order:
+
+      - :day
+
+      - :month
+
+      - :year
+	
+
+    2. en los lugares donde se usa solo "t" se debe cambiar a "I18n.t
+
 
 20. Arreglar rutas y terminar de agregar plugins a Gemfile
 

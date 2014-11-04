@@ -70,6 +70,7 @@ class User < ActiveRecord::Base
   def self.authenticate?(username, password)
     u = User.find_by_username username
     u.hashed_password == Digest::SHA1.hexdigest(u.salt + password)
+  end
 
   def random_string(len)
     randstr = ""

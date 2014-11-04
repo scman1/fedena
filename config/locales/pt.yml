@@ -277,7 +277,10 @@ pt: # locale
     abbr_day_names: [Dom., Seg., Ter., Qua., Qui., Sex., Sáb.]
     month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
     abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
-    order: [ :dia, :mês, :ano ]
+    order:
+      - :dia
+      - :mês
+      - :ano
 
   time:
     formats:
@@ -348,15 +351,7 @@ pt: # locale
     batch_transfers:
       errors_found: "Os Seguintes erros foram encontrados"
 
-  minmarks_cant_be_blank: "Minimum Mark can't be blank"
-  maxmarks_cant_be_blank: "Maximum Mark can't be blank"
   sl_no: "Sl  no."
-  are_you_sure_to_trnsfer: "All the students will be transferred to the batch"
-  system_settings: "System Settings"
-  administration_operations: "Administration / Operations"
-  student_management: "Student Management"
-  social_other_activity: "Social / Other Activity"
-  grouped_batches: "Grouped Batches"
   name: "Nome"
   adm_no: "Adm. No."
   view_profile: "Ver Perfil"
@@ -440,8 +435,6 @@ pt: # locale
   teacher: "Professor/a"
   total_average: "Média Total"
   continue: "Continuar"
-  override: "Override"
-  retain_all: "Retain All"
   email: "Email"
   web_address: "Endereço Web"
   jan: "Jan"
@@ -1210,7 +1203,6 @@ pt: # locale
   sms_sent_to_employee: "SMS enviada com sucesso ao funcionario ao funcionario selecionado"
   sent_to_selected_department: "SMS enviado com sucesso aos departamento selecionado"
   sms_settings_page: "Pagina de configuração de SMS"
-  sms_sending_intiated: "SMS sending initiated successfully. <a href='%{log_url}'>Click here</a> to view log."
   send_sms_to_students: "Enviar SMS a Estudante"
   sms_to_batches: "Enviar SMS a um Grupo"
   sms_to_employees: "Enviar SMS a Funcionarios"
@@ -1390,8 +1382,7 @@ pt: # locale
   student_admission_done: "Admissão de Estudantes, FEITO. Usuário é"
   password_is: "e a senha é"
   select_one_of_the_guardians: "Selecionar um dos responsaveis como contactos de emergencia."
-  max_size: "500KB max"
-  height_width: "150x110"
+  max_size: "50KB max"
   unknown: "Desconhecido"
   student_detail_step1: "Passo 1 - Detalhes do Estudante"
   last_course: "Ultimo curso frequentado"
@@ -1861,10 +1852,9 @@ pt: # locale
   select_a_tte: "Selecione um calendário"
   basestart_date_overlap: "Hora de início está dentro da faixa de um outro calendário"
   baseend_date_overlap: "término está dentro da faixa de um outro calendário"
-  basetimetable_in_between_given_dates: "Outro calendário existe entre as datas indicadas"
   basestart_date_is_lower_than_today: "inicio é menor que a data de hoje"
   basestart_date_is_lower_than_end_date: "Data final é menor que a data inicial"
-  baseend_date_is_lower_than_today: "Data final é menor do que a data de hoje"
+  baseend_date_is_lower_than_end_date: "Data final é menor do que a data de hoje"
   time_period:  "Período"
   select_a_batch: "Selecione um grupo"
   select_employee: "Selecione empregado"
@@ -1878,7 +1868,6 @@ pt: # locale
   remove_entry_confirm: "Remover entrada?"
   should_not_be_admin: "não deve ser Admin"
   edit_current_tte_confirm: "This timetable is currently in use. Please remove the attendance related to the class timings of removing timetable entries before editing if subject-wise attendance is in use."
-  multiple_entries: "Multiple entries"
 
 
   #exam updates
@@ -2021,7 +2010,6 @@ pt: # locale
   flash_msg40: "Indicar todos estudantes com sucesso"
   flash_msg41: "Estudantes REMOVIDOS com sucesso"
   flash_msg42: "REMOVER todos estudantes com sucesso"
-  flash_msg43: "Invalid Submission. Please try again."
 
 #configuration controller translation
   configuration:
@@ -2134,7 +2122,6 @@ pt: # locale
     flash2: "Categoria da folha de Salário atualizado"
     flash3: "Apagado com sucesso!"
     flash4: "Impossivel APAGAR!"
-    new_admission_link: "For new admission"
 
 #employee_attendance translation
   employee_attendance:
@@ -2177,7 +2164,6 @@ pt: # locale
     flash17: "Conta de Usuário criado! "
     flash18: "Link desfazendo a sua senha foi enviado ao teu email"
     flash19: "Nao existe utilizador com este Usuário"
-    flash20: "O usuário não tem um ID de e-mail!"
 
 #student controller translation
   student:
@@ -2196,7 +2182,6 @@ pt: # locale
     flash13: "APAGADO com sucesso!"
     flash14: "Lamento! impossivel APAGAR quando existe entradas sobre o detalhe selecionado"
     flash15: "Lamento! Nao pode APAGAR estudante quando existe dados ligados a ele"
-    new_admission_link: "For new admission"
 
    ## traslation for finance controller
   finance:
