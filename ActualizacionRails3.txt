@@ -144,11 +144,20 @@
 
     2. en los lugares donde se usa solo "t" se debe cambiar a "I18n.t
 
-
+    Adicionales
+	A1. Agregar paperclip a gemfile
+	A2. Arreglar las rutas a la raíz
+	A3. La aplicación carga y muestra la pantalla de login
+    A4. Al cambiar la incialización se actualiza el lenguaje automaticámente, i18n funciona	
+	
 20. Arreglar rutas y terminar de agregar plugins a Gemfile
+    
 
 21. Arreglar tests
 
+22. Arreglar estilos
+
+23. Arreglar Javascript
 
 
 

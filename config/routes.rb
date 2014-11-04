@@ -87,7 +87,9 @@ Fedena::Application.routes.draw do
   # map.resources :timetables do |timetable|
   scope '(:locale)' do
 	resources :user do
-	  post :forgot_password
+	  collection do
+	    post :forgot_password
+	  end
 	end
     root to: 'user#login', as: 'login'
   end
