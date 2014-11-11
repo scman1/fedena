@@ -16,7 +16,8 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-class FinanceTransactionCategory < ActiveRecord::Base
+class Finance::FinanceTransactionCategory < ActiveRecord::Base
+  attr_accessible :name, :description, :is_income
   has_many :finance_transactions,:class_name => 'FinanceTransaction', :foreign_key => 'category_id'
   has_one  :trigger, :class_name => "FinanceTransactionTrigger", :foreign_key => "category_id"
 
@@ -24,7 +25,7 @@ class FinanceTransactionCategory < ActiveRecord::Base
   validates_presence_of :name
   validates_uniqueness_of  :name, :case_sensitive => false
 
-  named_scope :expense_categories, :conditions => "is_income = false AND name NOT LIKE 'Salary'and deleted = 0"
+  scope :expense_categories, :conditions => "is_income = false AND name NOT LIKE 'Salary'and deleted = 0"
   # named_scope :income_categories, :conditions => "is_income = true AND name NOT IN ('Fee','Salary','Donation','Library','Hostel','Transport') and deleted = 0"
 
   #  def self.expense_categories

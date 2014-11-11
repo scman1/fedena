@@ -121,7 +121,8 @@
 	
       Todos los usos de scope se deben editar para evitar este problema
     
-	Problema 3. Modelos en subdirectorios
+	Problema 3. Modelos en subdirectorios (namespaces)
+	  https://groups.google.com/forum/#!topic/rubyonrails-talk/c-N8Nq4IAyg   
 	  
 	
 18. Rutas... muchos problemas por la vieja sintaxis de las rutas, arreglarlas todas... long hours

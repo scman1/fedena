@@ -17,6 +17,7 @@
 #limitations under the License.
 
 class User < ActiveRecord::Base
+  attr_accessible :admin, :employee
   attr_accessor :password, :role, :old_password, :new_password, :confirm_password
 
   validates_uniqueness_of :username, :scope=> [:is_deleted],:if=> 'is_deleted == false' #, :email

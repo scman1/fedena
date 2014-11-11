@@ -17,6 +17,7 @@
 #limitations under the License.
 
 class Weekday < ActiveRecord::Base
+  attr_accessible :batch_id, :weekday, :day_of_week, :is_deleted
   belongs_to :batch
   has_many :timetable_entries , :dependent=>:destroy
   default_scope :order => 'weekday asc'
