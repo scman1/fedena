@@ -16,17 +16,23 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
+#   Configuration table entries
+#
+#   StudentAttendanceType  => Daily | SubjectWise
+#   CurrencyType           => Rs, $, E, ...
+#   ExamResultType         => Marks | Grades | MarksAndGrades
+#   InstitutionName        => name of the school or college
 class Configuration < ActiveRecord::Base
-
-  STUDENT_ATTENDANCE_TYPE_OPTIONS = [["#{t('daily_text')}", "Daily"], ["#{t('subject_wise_text')}", "SubjectWise"]]
-
-  NETWORK_STATES                   = [["#{t('online')}",'Online'],["#{t('offline')}",'Offline']]
-  LOCALES = []
-  Dir.glob("#{RAILS_ROOT}/config/locales/*.yml").each do |file|
-    file.gsub!("#{RAILS_ROOT}/config/locales/", '')
-    file.gsub!(".yml", '')
-    LOCALES << file
-  end
+  attr_accessible :config_key, :config_value 
+  #STUDENT_ATTENDANCE_TYPE_OPTIONS = [["#{t('daily_text')}", "Daily"], ["#{t('subject_wise_text')}", "SubjectWise"]]
+  #
+  #NETWORK_STATES                   = [["#{t('online')}",'Online'],["#{t('offline')}",'Offline']]
+  #LOCALES = []
+  #Dir.glob("#{RAILS_ROOT}/config/locales/*.yml").each do |file|
+  #  file.gsub!("#{RAILS_ROOT}/config/locales/", '')
+  #  file.gsub!(".yml", '')
+  #  LOCALES << file
+  #end
 
   def validate
     if self.config_key == "StudentAttendanceType"
@@ -133,9 +139,3 @@ class Configuration < ActiveRecord::Base
 
 end
 
-#   Configuration table entries
-#
-#   StudentAttendanceType  => Daily | SubjectWise
-#   CurrencyType           => Rs, $, E, ...
-#   ExamResultType         => Marks | Grades | MarksAndGrades
-#   InstitutionName        => name of the school or college

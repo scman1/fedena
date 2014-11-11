@@ -17,6 +17,7 @@
 #limitations under the License.
 
 class GradingLevel < ActiveRecord::Base
+  attr_accessible :name, :min_score
   belongs_to :batch
 
   validates_presence_of :name, :min_score
@@ -24,8 +25,8 @@ class GradingLevel < ActiveRecord::Base
   validates_uniqueness_of :name, :scope => [:batch_id, :is_deleted],:case_sensitive => false 
 
   default_scope :order => 'min_score desc'
-  named_scope   :default, :conditions => { :batch_id => nil, :is_deleted => false }
-  named_scope   :for_batch, lambda { |b| { :conditions => { :batch_id => b.to_i, :is_deleted => false } } }
+  scope   :default, :conditions => { :batch_id => nil, :is_deleted => false }
+  scope   :for_batch, lambda { |b| { :conditions => { :batch_id => b.to_i, :is_deleted => false } } }
 
   def inactivate
     update_attribute :is_deleted, true

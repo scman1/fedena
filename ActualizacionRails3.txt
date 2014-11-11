@@ -108,6 +108,20 @@
 
     Hasta aqui todas las migraciones pasan... Pendiente cambiar a MySQL y tratar de nuevo
 
+	Inicializar la base de datos.
+	ejecutamos: rake db:seed
+	
+	Problema 1. attr_accessible para tablas, igual que el problema descrito anteriormente
+	Para arreglarlo agregamos lo siguiente a la clase attr_accessible y la lista de campos que se quieren asignar
+	
+	Problema 2. cambio de scope a scope
+	
+	  ActionController::RoutingError (undefined method `scope' for User
+	  Este es un problema ocasionado por que 'scope' se cambio a 'scope' para rails 3+ 
+	
+      Todos los usos de scope se deben editar para evitar este problema
+
+	
 17. Rutas... muchos problemas por la vieja sintaxis de las rutas, arreglarlas todas... long hours
     con esto quedamos igual que en el http://es.asciicasts.com/episodes/225-actualizacion-a-rails-3, la aplicacion "corre", las migraciones tambien se pueden hacer. solo se requiere algunas 
 
@@ -134,25 +148,40 @@
        Para que puedan ser leidos correctamente se deben cambiar a 
 
     order:
-
       - :day
-
       - :month
-
       - :year
 	
 
-    2. en los lugares donde se usa solo "t" se debe cambiar a "I18n.t
-
+    2. en los lugares donde se usa solo "t" se debe cambiar a "I18n.t"
+ 
+    3. Al arrancar la aplicacion se tiene un mensaje de error por que la gema de i18n (i18n (~> 0.6, >= 0.6.4)) 
+	   tiene un bug. 
+	*************************************************************************************
+	* [deprecated] I18n.enforce_available_locales will default to true in the future.   *
+    * If you really want to skip validation of your locale you can set I18n.enforce_av  *
+    * ailable_locales = false to avoid this message.                                    *
+    *************************************************************************************
+    Por el momento se puede dejar así y esperar a la actualización de la gema (cuando movamos a rails mayor que 3.2.14)
+	
     Adicionales
+	
 	A1. Agregar paperclip a gemfile
 	A2. Arreglar las rutas a la raíz
 	A3. La aplicación carga y muestra la pantalla de login
-    A4. Al cambiar la incialización se actualiza el lenguaje automaticámente, i18n funciona	
+    A4. Al cambiar la incialización se actualiza el lenguaje automaticámente, i18n funciona	20
+
+20. Problemas en la primera ejecución (visibles desde el navegador)
 	
+	2. Error en clase configuration
+	  undefined method `find_all_by_config_key' for ActiveSupport::Configurable::Configuration:Class
+	  app/controllers/user_controller.rb:232:in `login'
+	  
+	  Este error viene de como se inicializa la clase 'Configuration'
+	  
+
 20. Arreglar rutas y terminar de agregar plugins a Gemfile
     
-
 21. Arreglar tests
 
 22. Arreglar estilos
