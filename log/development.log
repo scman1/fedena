@@ -17960,3 +17960,428 @@ Connecting to database specified by database.yml
   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "grading_levels" ("batch_id", "created_at", "credit_points", "description", "is_deleted", "min_score", "name", "order", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["batch_id", nil], ["created_at", Tue, 11 Nov 2014 16:26:23 UTC +00:00], ["credit_points", nil], ["description", nil], ["is_deleted", false], ["min_score", 0], ["name", "F"], ["order", nil], ["updated_at", Tue, 11 Nov 2014 16:26:23 UTC +00:00]]
   [1m[35m (120.0ms)[0m  commit transaction
   [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (10.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 10:33:33 -0600
+Processing by UserController#login as HTML
+  [1m[35mSchoolDetail Load (0.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (25.0ms)
+Completed 200 OK in 38ms (Views: 25.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2014-11-11 10:33:34 -0600
+Served asset /application/app_fedena_logo.png - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-11 10:48:39 -0600
+Processing by UserController#login as HTML
+  [1m[36mSchoolDetail Load (0.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (72.0ms)
+Completed 200 OK in 116ms (Views: 73.0ms | ActiveRecord: 36.0ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2014-11-11 10:48:40 -0600
+Served asset /application/app_fedena_logo.png - 304 Not Modified (4ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (10.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (10.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (10.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mHR::EmployeeCategory Load (0.0ms)[0m  SELECT "employee_categories".* FROM "employee_categories" WHERE "employee_categories"."prefix" = 'Admin' LIMIT 1
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (10.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mHR::EmployeeCategory Load (0.0ms)[0m  SELECT "employee_categories".* FROM "employee_categories" WHERE "employee_categories"."prefix" = 'Admin' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mHR::EmployeeCategory Exists (0.0ms)[0m  SELECT 1 AS one FROM "employee_categories" WHERE "employee_categories"."name" = 'System Admin' LIMIT 1
+  [1m[36mHR::EmployeeCategory Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "employee_categories" WHERE "employee_categories"."prefix" = 'Admin' LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "employee_categories" ("name", "prefix", "status") VALUES (?, ?, ?)  [["name", "System Admin"], ["prefix", "Admin"], ["status", true]]
+  [1m[36m (120.0ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (10.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mHR::EmployeeCategory Load (0.0ms)[0m  SELECT "employee_categories".* FROM "employee_categories" WHERE "employee_categories"."prefix" = 'Admin' LIMIT 1
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mHR::EmployeeCategory Load (0.0ms)[0m  SELECT "employee_categories".* FROM "employee_categories" WHERE "employee_categories"."prefix" = 'Admin' LIMIT 1
+  [1m[36mHR::EmployeePosition Load (0.0ms)[0m  [1mSELECT "employee_positions".* FROM "employee_positions" WHERE "employee_positions"."name" = 'System Admin' LIMIT 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (10.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mHR::EmployeeCategory Load (0.0ms)[0m  SELECT "employee_categories".* FROM "employee_categories" WHERE "employee_categories"."prefix" = 'Admin' LIMIT 1
+  [1m[36mHR::EmployeePosition Load (0.0ms)[0m  [1mSELECT "employee_positions".* FROM "employee_positions" WHERE "employee_positions"."name" = 'System Admin' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mHR::EmployeePosition Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "employee_positions" WHERE ("employee_positions"."name" = 'System Admin' AND "employee_positions"."employee_category_id" = 1) LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "employee_positions" ("employee_category_id", "name", "status") VALUES (?, ?, ?)  [["employee_category_id", 1], ["name", "System Admin"], ["status", true]]
+  [1m[36m (130.0ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (10.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mHR::EmployeeCategory Load (0.0ms)[0m  SELECT "employee_categories".* FROM "employee_categories" WHERE "employee_categories"."prefix" = 'Admin' LIMIT 1
+  [1m[36mHR::EmployeePosition Load (0.0ms)[0m  [1mSELECT "employee_positions".* FROM "employee_positions" WHERE "employee_positions"."name" = 'System Admin' LIMIT 1[0m
+  [1m[35mHR::EmployeeDepartment Load (0.0ms)[0m  SELECT "employee_departments".* FROM "employee_departments" WHERE "employee_departments"."code" = 'Admin' LIMIT 1
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (10.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mHR::EmployeeCategory Load (0.0ms)[0m  SELECT "employee_categories".* FROM "employee_categories" WHERE "employee_categories"."prefix" = 'Admin' LIMIT 1
+  [1m[36mHR::EmployeePosition Load (0.0ms)[0m  [1mSELECT "employee_positions".* FROM "employee_positions" WHERE "employee_positions"."name" = 'System Admin' LIMIT 1[0m
+  [1m[35mHR::EmployeeDepartment Load (0.0ms)[0m  SELECT "employee_departments".* FROM "employee_departments" WHERE "employee_departments"."code" = 'Admin' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mHR::EmployeeDepartment Exists (0.0ms)[0m  SELECT 1 AS one FROM "employee_departments" WHERE "employee_departments"."name" = 'System Admin' LIMIT 1
+  [1m[36mHR::EmployeeDepartment Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "employee_departments" WHERE "employee_departments"."code" = 'Admin' LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "employee_departments" ("code", "name", "status") VALUES (?, ?, ?)  [["code", "Admin"], ["name", "System Admin"], ["status", true]]
+  [1m[36m (140.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mHR::EmployeeGrade Load (0.0ms)[0m  SELECT "employee_grades".* FROM "employee_grades" WHERE "employee_grades"."name" = 'System Admin' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mHR::EmployeeGrade Exists (0.0ms)[0m  SELECT 1 AS one FROM "employee_grades" WHERE "employee_grades"."name" = 'System Admin' LIMIT 1
+  [1m[36mHR::EmployeeGrade Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "employee_grades" WHERE "employee_grades"."priority" = 0 LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "employee_grades" ("max_hours_day", "max_hours_week", "name", "priority", "status") VALUES (?, ?, ?, ?, ?)  [["max_hours_day", nil], ["max_hours_week", nil], ["name", "System Admin"], ["priority", 0], ["status", true]]
+  [1m[36m (90.0ms)[0m  [1mcommit transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (10.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (10.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mHR::EmployeeCategory Load (0.0ms)[0m  SELECT "employee_categories".* FROM "employee_categories" WHERE "employee_categories"."prefix" = 'Admin' LIMIT 1
+  [1m[36mHR::EmployeePosition Load (0.0ms)[0m  [1mSELECT "employee_positions".* FROM "employee_positions" WHERE "employee_positions"."name" = 'System Admin' LIMIT 1[0m
+  [1m[35mHR::EmployeeDepartment Load (0.0ms)[0m  SELECT "employee_departments".* FROM "employee_departments" WHERE "employee_departments"."code" = 'Admin' LIMIT 1
+  [1m[36mHR::EmployeeGrade Load (0.0ms)[0m  [1mSELECT "employee_grades".* FROM "employee_grades" WHERE "employee_grades"."name" = 'System Admin' LIMIT 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (10.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mHR::EmployeeCategory Load (0.0ms)[0m  SELECT "employee_categories".* FROM "employee_categories" WHERE "employee_categories"."prefix" = 'Admin' LIMIT 1
+  [1m[36mHR::EmployeePosition Load (0.0ms)[0m  [1mSELECT "employee_positions".* FROM "employee_positions" WHERE "employee_positions"."name" = 'System Admin' LIMIT 1[0m
+  [1m[35mHR::EmployeeDepartment Load (0.0ms)[0m  SELECT "employee_departments".* FROM "employee_departments" WHERE "employee_departments"."code" = 'Admin' LIMIT 1
+  [1m[36mHR::EmployeeGrade Load (0.0ms)[0m  [1mSELECT "employee_grades".* FROM "employee_grades" WHERE "employee_grades"."name" = 'System Admin' LIMIT 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (10.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (10.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mHR::EmployeeCategory Load (0.0ms)[0m  SELECT "employee_categories".* FROM "employee_categories" WHERE "employee_categories"."prefix" = 'Admin' LIMIT 1
+  [1m[36mHR::EmployeePosition Load (0.0ms)[0m  [1mSELECT "employee_positions".* FROM "employee_positions" WHERE "employee_positions"."name" = 'System Admin' LIMIT 1[0m
+  [1m[35mHR::EmployeeDepartment Load (0.0ms)[0m  SELECT "employee_departments".* FROM "employee_departments" WHERE "employee_departments"."code" = 'Admin' LIMIT 1
+  [1m[36mHR::EmployeeGrade Load (10.0ms)[0m  [1mSELECT "employee_grades".* FROM "employee_grades" WHERE "employee_grades"."name" = 'System Admin' LIMIT 1[0m
+  [1m[35mHR::Employee Load (0.0ms)[0m  SELECT "employees".* FROM "employees" WHERE "employees"."employee_number" = 'admin' LIMIT 1
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mHR::EmployeeCategory Load (0.0ms)[0m  SELECT "employee_categories".* FROM "employee_categories" WHERE "employee_categories"."prefix" = 'Admin' LIMIT 1
+  [1m[36mHR::EmployeePosition Load (0.0ms)[0m  [1mSELECT "employee_positions".* FROM "employee_positions" WHERE "employee_positions"."name" = 'System Admin' LIMIT 1[0m
+  [1m[35mHR::EmployeeDepartment Load (0.0ms)[0m  SELECT "employee_departments".* FROM "employee_departments" WHERE "employee_departments"."code" = 'Admin' LIMIT 1
+  [1m[36mHR::EmployeeGrade Load (0.0ms)[0m  [1mSELECT "employee_grades".* FROM "employee_grades" WHERE "employee_grades"."name" = 'System Admin' LIMIT 1[0m
+  [1m[35mHR::Employee Load (0.0ms)[0m  SELECT "employees".* FROM "employees" WHERE "employees"."employee_number" = 'admin' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'admin' AND "users"."is_deleted" = 'f') LIMIT 1
+  [1m[36mHR::Employee Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "employees" WHERE "employees"."employee_number" = 'admin' LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'admin' AND "users"."is_deleted" = 'f') LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'admin' AND "users"."is_deleted" = 'f') LIMIT 1[0m
+  [1m[35mSQL (10.0ms)[0m  INSERT INTO "users" ("admin", "created_at", "email", "employee", "first_name", "hashed_password", "is_deleted", "is_first_login", "last_name", "parent", "reset_password_code", "reset_password_code_until", "salt", "student", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["admin", nil], ["created_at", Tue, 11 Nov 2014 17:30:53 UTC +00:00], ["email", "noreply@fedena.com"], ["employee", nil], ["first_name", "Admin"], ["hashed_password", nil], ["is_deleted", false], ["is_first_login", nil], ["last_name", "User"], ["parent", nil], ["reset_password_code", nil], ["reset_password_code_until", nil], ["salt", nil], ["student", nil], ["updated_at", Tue, 11 Nov 2014 17:30:53 UTC +00:00], ["username", "admin"]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "employees" ("blood_group", "children_count", "created_at", "date_of_birth", "email", "employee_category_id", "employee_department_id", "employee_grade_id", "employee_number", "employee_position_id", "experience_detail", "experience_month", "experience_year", "father_name", "fax", "first_name", "gender", "home_address_line1", "home_address_line2", "home_city", "home_country_id", "home_phone", "home_pin_code", "home_state", "husband_name", "job_title", "joining_date", "last_name", "marital_status", "middle_name", "mobile_phone", "mother_name", "nationality_id", "office_address_line1", "office_address_line2", "office_city", "office_country_id", "office_phone1", "office_phone2", "office_pin_code", "office_state", "photo_content_type", "photo_data", "photo_file_name", "photo_file_size", "qualification", "reporting_manager_id", "status", "status_description", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["blood_group", nil], ["children_count", nil], ["created_at", Tue, 11 Nov 2014 17:30:53 UTC +00:00], ["date_of_birth", Mon, 11 Nov 2013], ["email", "noreply@fedena.com"], ["employee_category_id", 1], ["employee_department_id", 1], ["employee_grade_id", 1], ["employee_number", "admin"], ["employee_position_id", 1], ["experience_detail", nil], ["experience_month", nil], ["experience_year", nil], ["father_name", nil], ["fax", nil], ["first_name", "Admin"], ["gender", nil], ["home_address_line1", nil], ["home_address_line2", nil], ["home_city", nil], ["home_country_id", nil], ["home_phone", nil], ["home_pin_code", nil], ["home_state", nil], ["husband_name", nil], ["job_title", nil], ["joining_date", Tue, 11 Nov 2014], ["last_name", "User"], ["marital_status", nil], ["middle_name", nil], ["mobile_phone", nil], ["mother_name", nil], ["nationality_id", 76], ["office_address_line1", nil], ["office_address_line2", nil], ["office_city", nil], ["office_country_id", nil], ["office_phone1", nil], ["office_phone2", nil], ["office_pin_code", nil], ["office_state", nil], ["photo_content_type", nil], ["photo_data", nil], ["photo_file_name", nil], ["photo_file_size", nil], ["qualification", nil], ["reporting_manager_id", nil], ["status", true], ["status_description", nil], ["updated_at", Tue, 11 Nov 2014 17:30:53 UTC +00:00], ["user_id", 1]]
+  [1m[35m (130.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction

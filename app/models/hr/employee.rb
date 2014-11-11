@@ -16,7 +16,11 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-class Employee < ActiveRecord::Base
+class HR::Employee < ActiveRecord::Base
+  attr_accessible :employee_number, :joining_date, :first_name, :last_name, 
+    :employee_department_id, :employee_grade_id, :employee_position_id, 
+	:employee_category_id, :status, :nationality_id, :date_of_birth, :email
+
   belongs_to  :employee_category
   belongs_to  :employee_position
   belongs_to  :employee_grade
@@ -37,7 +41,7 @@ class Employee < ActiveRecord::Base
   has_many    :employee_attendances
 
   validates_format_of     :email, :with => /^[A-Z0-9._%-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i,   :allow_blank=>true,
-    :message => "#{t('must_be_a_valid_email_address')}"
+    :message => "#{I18n.t('must_be_a_valid_email_address')}"
 
   validates_presence_of :employee_category_id, :employee_number, :first_name, :employee_position_id,
     :employee_department_id,  :date_of_birth,:joining_date,:nationality_id

@@ -16,10 +16,11 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-class EmployeePosition < ActiveRecord::Base
+class HR::EmployeePosition < ActiveRecord::Base
+  attr_accessible :name, :employee_category_id, :status
   validates_presence_of :name, :employee_category_id
   validates_uniqueness_of :name,:scope=>:employee_category_id
-  named_scope :active, :conditions => {:status => true }
+  scope :active, :conditions => {:status => true }
   belongs_to :employee_category
   has_many :employee
 end

@@ -16,13 +16,14 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-class EmployeeGrade < ActiveRecord::Base
+class HR::EmployeeGrade < ActiveRecord::Base
+  attr_accessible :name, :priority, :status, :max_hours_day, :max_hours_week
   validates_presence_of :name
   validates_uniqueness_of :name, :priority
   validates_numericality_of :priority
 
   has_many :employee
-  named_scope :active, :conditions => {:status => true }
+  scope :active, :conditions => {:status => true }
 
   def validate
     self.errors.add(:max_hours_week, "#{t('should_be_greater_than_max_period')}.") \

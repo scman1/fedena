@@ -108,7 +108,7 @@
 
     Hasta aqui todas las migraciones pasan... Pendiente cambiar a MySQL y tratar de nuevo
 
-	Inicializar la base de datos.
+17. Inicializar la base de datos.
 	ejecutamos: rake db:seed
 	
 	Problema 1. attr_accessible para tablas, igual que el problema descrito anteriormente
@@ -120,22 +120,24 @@
 	  Este es un problema ocasionado por que 'scope' se cambio a 'scope' para rails 3+ 
 	
       Todos los usos de scope se deben editar para evitar este problema
-
+    
+	Problema 3. Modelos en subdirectorios
+	  
 	
-17. Rutas... muchos problemas por la vieja sintaxis de las rutas, arreglarlas todas... long hours
+18. Rutas... muchos problemas por la vieja sintaxis de las rutas, arreglarlas todas... long hours
     con esto quedamos igual que en el http://es.asciicasts.com/episodes/225-actualizacion-a-rails-3, la aplicacion "corre", las migraciones tambien se pueden hacer. solo se requiere algunas 
 
     Empezamos con la ruta de raíz y de ahí vamos activando cada ruta como se requira
 
-18. Problema con: 
+19. Problema con: 
     #filter_parameter_logging :password
     en application_controller, comentado pues al parecer no es requerido
 
-19. Problema al cargar las librerias de fedena, modificar el application.rb para que las cargue al iniciar agregando:
+20. Problema al cargar las librerias de fedena, modificar el application.rb para que las cargue al iniciar agregando:
 
     config.autoload_paths += %W(#{config.root}/lib)
 
-20. Problemas con internacionalización. 
+21. Problemas con internacionalización. 
     Fedena Usa Translator para internacionalización, el problema es que esta gema funciona solo para rails 2. 
     aparentemente no hay actualizaciones para rails 3+
     Solución usar i18n que provee rails.
@@ -171,7 +173,7 @@
 	A3. La aplicación carga y muestra la pantalla de login
     A4. Al cambiar la incialización se actualiza el lenguaje automaticámente, i18n funciona	20
 
-20. Problemas en la primera ejecución (visibles desde el navegador)
+22. Problemas en la primera ejecución (visibles desde el navegador)
 	
 	2. Error en clase configuration
 	  undefined method `find_all_by_config_key' for ActiveSupport::Configurable::Configuration:Class
@@ -180,13 +182,13 @@
 	  Este error viene de como se inicializa la clase 'Configuration'
 	  
 
-20. Arreglar rutas y terminar de agregar plugins a Gemfile
+23. Arreglar rutas y terminar de agregar plugins a Gemfile
     
-21. Arreglar tests
+24. Arreglar tests
 
-22. Arreglar estilos
+25. Arreglar estilos
 
-23. Arreglar Javascript
+26. Arreglar Javascript
 
 
 
