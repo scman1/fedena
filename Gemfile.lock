@@ -30,6 +30,7 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.3)
     builder (3.0.4)
+    chardet (0.9.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.4)
@@ -52,7 +53,11 @@ GEM
     hike (1.2.3)
     hoe (3.13.0)
       rake (>= 0.8, < 11.0)
+    html5 (0.10.0)
+      chardet (>= 0.9.0)
+      hoe (>= 1.2.0)
     i18n (0.6.11)
+    in_place_editing (1.2.0)
     journey (1.0.4)
     jquery-rails (3.1.2)
       railties (>= 3.0, < 5.0)
@@ -118,6 +123,8 @@ GEM
       json (>= 1.8.0)
     wicked_pdf (0.11.0)
       rails
+    xss_terminate (0.22)
+      html5 (>= 0.10.0)
 
 PLATFORMS
   x86-mingw32
@@ -126,6 +133,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   declarative_authorization
   delayed_job_active_record
+  in_place_editing
   jquery-rails
   paperclip
   rails (= 3.2.14)
@@ -134,3 +142,4 @@ DEPENDENCIES
   test-unit (= 1.2.3)
   uglifier (>= 1.0.3)
   wicked_pdf
+  xss_terminate (~> 0.22)

@@ -99,8 +99,9 @@
         Solución:
         agregamos "1" al nombre del indice y continuamos. debemos movernos a mysql tan pronto como sea posible
 
-      4 20130110095412_add_index_to_student_data.rb este indice:    #add_index :student_additional_details, [:student_id,:additional_field_id], :name => "student_data_index"
- ya existe, marcado como comentario
+      4 20130110095412_add_index_to_student_data.rb este indice:
+	    #add_index :student_additional_details, [:student_id,:additional_field_id], :name => "student_data_index"
+        ya existe, marcado como comentario
 
         Este problema solo pasaen SQLite porque no acepta duplicar los nombres de indices en diferentes tablas.
         Solución:
@@ -124,21 +125,47 @@
 	Problema 3. Modelos en subdirectorios (namespaces)
 	  https://groups.google.com/forum/#!topic/rubyonrails-talk/c-N8Nq4IAyg   
 	  
+	Al terminar la base de datos se migra con éxito y contiene las configuraciones iniciales
+
+18.  Tratamos de correr las pruebas
+    Primer problema en course model (course.rb)
 	
-18. Rutas... muchos problemas por la vieja sintaxis de las rutas, arreglarlas todas... long hours
+	1. La gema has_and_belongs_to_many_with_deferred_save no esta actualizada para Rails 3
+
+	  Solución:
+	  Eliminamos de course.rb
+	    has_and_belongs_to_many_with_deferred_save :cce_weightages
+	  Y agregamos a course.rb
+        has_and_belongs_to_many :cce_weightages
+		
+    2. Error porque falta la gema in_place_editing, para el controlador de exam_scores.
+	  
+	  Solución agregamos a gemfile:
+	    gem 'in_place_editing'
+    3. Error porque falta la gema 'xss_terminate', para el modelo news 
+	  
+	  Solución agregamos a gemfile:
+	  gem 'xss_terminate', '~> 0.22'
+	  
+	4. Error en por llamada a translate para internacionalización en el modelo student
+
+      Solución editar student.rb:
+	  cambiar t() por I18n.t
+
+19. Rutas... muchos problemas por la vieja sintaxis de las rutas, arreglarlas todas... long hours
     con esto quedamos igual que en el http://es.asciicasts.com/episodes/225-actualizacion-a-rails-3, la aplicacion "corre", las migraciones tambien se pueden hacer. solo se requiere algunas 
 
     Empezamos con la ruta de raíz y de ahí vamos activando cada ruta como se requira
 
-19. Problema con: 
+20. Problema con: 
     #filter_parameter_logging :password
     en application_controller, comentado pues al parecer no es requerido
 
-20. Problema al cargar las librerias de fedena, modificar el application.rb para que las cargue al iniciar agregando:
+21. Problema al cargar las librerias de fedena, modificar el application.rb para que las cargue al iniciar agregando:
 
     config.autoload_paths += %W(#{config.root}/lib)
 
-21. Problemas con internacionalización. 
+22. Problemas con internacionalización. 
     Fedena Usa Translator para internacionalización, el problema es que esta gema funciona solo para rails 2. 
     aparentemente no hay actualizaciones para rails 3+
     Solución usar i18n que provee rails.
@@ -174,7 +201,7 @@
 	A3. La aplicación carga y muestra la pantalla de login
     A4. Al cambiar la incialización se actualiza el lenguaje automaticámente, i18n funciona	20
 
-22. Problemas en la primera ejecución (visibles desde el navegador)
+23. Problemas en la primera ejecución (visibles desde el navegador)
 	
 	2. Error en clase configuration
 	  undefined method `find_all_by_config_key' for ActiveSupport::Configurable::Configuration:Class
@@ -183,10 +210,8 @@
 	  Este error viene de como se inicializa la clase 'Configuration'
 	  
 
-23. Arreglar rutas y terminar de agregar plugins a Gemfile
+24. Arreglar rutas y terminar de agregar plugins a Gemfile
     
-24. Arreglar tests
-
 25. Arreglar estilos
 
 26. Arreglar Javascript
