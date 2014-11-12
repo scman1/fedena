@@ -16,7 +16,7 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-class FeeCollectionDiscount < ActiveRecord::Base
+class Finance::FeeCollectionDiscount < ActiveRecord::Base
 
   def category_name
     c =StudentCategory.find(self.receiver_id)

@@ -16,7 +16,7 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-class Liability < ActiveRecord::Base
+class Finance::Liability < ActiveRecord::Base
   validates_presence_of :title, :amount
   validates_numericality_of :amount
 end

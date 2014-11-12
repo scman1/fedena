@@ -16,7 +16,7 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-class FinanceFeeStructureElement < ActiveRecord::Base
+class Finance::FinanceFeeStructureElement < ActiveRecord::Base
 
   #  t.decimal    :amount, :precision => 8, :scale => 2
   #  t.string     :label

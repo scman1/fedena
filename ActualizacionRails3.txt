@@ -151,7 +151,33 @@
 
       Solución editar student.rb:
 	  cambiar t() por I18n.t
+	  
+    5. La gema has_and_belongs_to_many_with_deferred_save no esta actualizada para Rails 3
+       
+	  Solución:
+	  Eliminamos de subject.rb
+	    has_and_belongs_to_many_with_deferred_save :fa_groups
+	  Y agregamos a subject.rb
+        has_and_belongs_to_many :fa_groups
+		
+    6. La gema 'will_paginate' falta y es referenciada en el ayudante remote_link_renderer.rb.
+	   Además el ayudante personaliza la salida de will_paginate y por ello debe derivarse de WillPaginate::ActionView::LinkRenderer
 
+	   Solución agregamos a gemfile:
+	    gem 'will_paginate', '~> 3.0'
+      y editar remote_link_renderer.rb para que sea sublcalse de: 
+        WillPaginate::ActionView::LinkRenderer	  
+ 	
+	7. Problema con la clase de la que se deriva BatchFeeCollectionDiscount, le falta el espacio de nombres
+	
+      Solución editar batch_fee_collection_discount.rb para agregar el espacio de nombres
+	    class Finance::BatchFeeCollectionDiscount < Finance::FeeCollectionDiscount
+      y de paso:
+     	agregar namespaces para todas las clases de finance 
+		agregar I18n a todas las solicitudes de traducción
+		cambiar named_scope por scope
+	  
+	
 19. Rutas... muchos problemas por la vieja sintaxis de las rutas, arreglarlas todas... long hours
     con esto quedamos igual que en el http://es.asciicasts.com/episodes/225-actualizacion-a-rails-3, la aplicacion "corre", las migraciones tambien se pueden hacer. solo se requiere algunas 
 

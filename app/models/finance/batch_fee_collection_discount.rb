@@ -16,12 +16,11 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-
-class BatchFeeCollectionDiscount < FeeCollectionDiscount
+class Finance::BatchFeeCollectionDiscount < Finance::FeeCollectionDiscount
 
   belongs_to :receiver ,:class_name=>'Batch'
   belongs_to :finance_fee_collection
-  validates_presence_of  :receiver_id , :message => "#{t('batch_cant_be_blank')}"
+  validates_presence_of  :receiver_id , :message =>  "#{I18n.t('batch_cant_be_blank')}"
 
   def total_payable(student = nil)
     if student.nil?

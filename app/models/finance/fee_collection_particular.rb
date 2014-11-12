@@ -16,7 +16,7 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-class FeeCollectionParticular < ActiveRecord::Base
+class Finance::FeeCollectionParticular < ActiveRecord::Base
   belongs_to :finance_fee_collection
   belongs_to :student_category
   validates_presence_of :name,:amount

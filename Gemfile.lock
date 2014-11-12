@@ -123,6 +123,7 @@ GEM
       json (>= 1.8.0)
     wicked_pdf (0.11.0)
       rails
+    will_paginate (3.0.7)
     xss_terminate (0.22)
       html5 (>= 0.10.0)
 
@@ -142,4 +143,5 @@ DEPENDENCIES
   test-unit (= 1.2.3)
   uglifier (>= 1.0.3)
   wicked_pdf
+  will_paginate (~> 3.0)
   xss_terminate (~> 0.22)

@@ -16,7 +16,7 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-class FeeDiscount < ActiveRecord::Base
+class Finance::FeeDiscount < ActiveRecord::Base
 
   belongs_to :finance_fee_category
   validates_presence_of :name, :discount, :type

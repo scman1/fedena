@@ -17,10 +17,10 @@
 #limitations under the License.
 
 
-class StudentFeeCollectionDiscount < FeeCollectionDiscount
+class Finance::StudentFeeCollectionDiscount < Finance::FeeCollectionDiscount
    belongs_to :receiver ,:class_name=>'Student'
 
-  validates_presence_of  :receiver_id , :message => "#{t('student_admission_no_cant_be_blank')}"
+  validates_presence_of  :receiver_id , :message =>  "#{I18n.t('student_admission_no_cant_be_blank')}"
 
   
 
