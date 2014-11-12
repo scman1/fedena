@@ -292,9 +292,10 @@ ActiveRecord::Schema.define(:version => 20130110095412) do
     t.integer  "course_id"
     t.datetime "start_date"
     t.datetime "end_date"
-    t.boolean  "is_active",   :default => true
-    t.boolean  "is_deleted",  :default => false
+    t.boolean  "is_active",    :default => true
+    t.boolean  "is_deleted",   :default => false
     t.string   "employee_id"
+    t.string   "grading_type"
   end
 
   add_index "batches", ["is_deleted", "is_active", "course_id", "name"], :name => "index_batches_on_is_deleted_and_is_active_and_course_id_and_name"
@@ -670,7 +671,6 @@ ActiveRecord::Schema.define(:version => 20130110095412) do
     t.integer "fa_group_id"
   end
 
-  add_index "fa_groups_subjects", ["fa_group_id", "subject_id"], :name => "score_index1"
   add_index "fa_groups_subjects", ["fa_group_id"], :name => "index_fa_groups_subjects_on_fa_group_id"
   add_index "fa_groups_subjects", ["subject_id"], :name => "index_fa_groups_subjects_on_subject_id"
 
@@ -1063,8 +1063,6 @@ ActiveRecord::Schema.define(:version => 20130110095412) do
     t.integer "additional_field_id"
     t.string  "additional_info"
   end
-
-  add_index "student_additional_details", ["student_id", "additional_field_id"], :name => "student_data_index1"
 
   create_table "student_additional_field_options", :force => true do |t|
     t.integer  "student_additional_field_id"

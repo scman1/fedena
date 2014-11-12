@@ -18658,3 +18658,944 @@ Connecting to database specified by database.yml
   [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "weekdays" ("batch_id", "day_of_week", "is_deleted", "name", "sort_order", "weekday") VALUES (?, ?, ?, ?, ?, ?)[0m  [["batch_id", nil], ["day_of_week", 5], ["is_deleted", false], ["name", nil], ["sort_order", nil], ["weekday", "5"]]
   [1m[35m (110.0ms)[0m  commit transaction
   [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ApplicationEnabled' LIMIT 1[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20090622100004)
+Migrating to CreateConfigurations (20090622102004)
+Migrating to CreateStudents (20090622104053)
+Migrating to CreateArchivedStudents (20090622104054)
+Migrating to CreateGuardians (20090622114927)
+Migrating to CreateArchivedGuardians (20090622115927)
+Migrating to CreateCountries (20090703074822)
+Migrating to CreateNews (20090706170408)
+Migrating to CreateCoursesAndBatches (20090715234257)
+Migrating to CreateBatchStudentsJoinTable (20090715234258)
+Migrating to CreateSubjects (20090717124241)
+Migrating to CreateElectiveGroups (20090717126241)
+Migrating to CreateGradingLevels (20090718050113)
+Migrating to CreateExamGroups (20090718050453)
+Migrating to CreateExams (20090718050921)
+Migrating to CreateExamScores (20090718052749)
+Migrating to CreateAttendances (20090731092833)
+Migrating to CreateClassTimings (20090818045411)
+Migrating to CreateTimetableEntries (20090818050018)
+Migrating to CreateEmployeeCategories (20090904071048)
+Migrating to CreateEmployeePositions (20090904071548)
+Migrating to CreateEmployeeDepartments (20090904071642)
+Migrating to CreateEmployeeGrades (20090904071905)
+Migrating to CreateBankFields (20090904071906)
+Migrating to CreateEmployeeBankDetails (20090904071907)
+Migrating to CreateAdditionalFields (20090904071908)
+Migrating to CreateEmployeeAdditionalDetails (20090904071909)
+Migrating to CreateEmployees (20090910062751)
+Migrating to CreatePayrollCategories (20090914095002)
+Migrating to CreateEmployeeSalaryStructures (20090914114212)
+Migrating to CreateMonthlyPayslips (20090916052300)
+Migrating to CreateEmployeeLeaveTypes (20090917052349)
+Migrating to CreateEmployeeAttendances (20090917065256)
+Migrating to CreateApplyLeaves (20090924081520)
+Migrating to CreateEmployeesSubjects (20090926071527)
+Migrating to CreateIndividualPayslipCategories (20091009093746)
+Migrating to CreateReminders (20091026065251)
+Migrating to CreateFinanceTransactionCategories (20091202050910)
+Migrating to CreateFinanceTransactions (20091202053600)
+Migrating to CreateFinanceDonations (20091202104818)
+Migrating to CreateFinanceFeeCollections (20091207084711)
+Migrating to CreateFinanceFees (20091207085849)
+Migrating to CreateFinanceFeeStructureElements (20091207090412)
+Migrating to CreatePrivileges (20091217191652)
+Migrating to CreatePrivilegesUsersJoinTable (20091217201118)
+Migrating to CreateFinanceTransactionTriggers (20091224063502)
+Migrating to CreateEvents (20100403073735)
+Migrating to CreateBatchEvents (20100403092229)
+Migrating to CreateEmployeeDepartmentEvents (20100403093355)
+Migrating to CreateStudentAdditionalDetails (20100412105036)
+Migrating to CreateStudentAdditionalFields (20100412105116)
+Migrating to CreateLiabilities (20100422110336)
+Migrating to CreateAssets (20100426094532)
+Migrating to CreatePeriodEntries (20100429093616)
+Migrating to CreateWeekdays (20100505075459)
+Migrating to CreateFinanceFeeCategories (20100515063157)
+Migrating to CreateFinanceFeeParticulars (20100515063814)
+Migrating to CreateSmsSettings (20100520073311)
+Migrating to CreateElectives (20100524093457)
+Migrating to CreateStudentsSubject (20100525055716)
+Migrating to CreateGroupedExams (20100602115152)
+Migrating to CreateArchivedEmployees (20100604103435)
+Migrating to CreateArchivedEmployeeSalaryStructures (20100604103916)
+Migrating to CreateArchivedEmployeeBankDetails (20100604104308)
+Migrating to CreateArchivedEmployeeAdditionalDetails (20100604104759)
+Migrating to CreateStudentPreviousDatas (20100609073016)
+Migrating to CreateStudentPreviousSubjectMarks (20100609074544)
+Migrating to CreateArchivedExamScores (20100730092747)
+Migrating to CreateAdditionalExamGroups (20100731053458)
+Migrating to CreateAdditionalExams (20100731054033)
+Migrating to CreateAdditionalExamScores (20100731055437)
+Migrating to CreateEmployeeLeaves (20101209063633)
+Migrating to AddNewColumnsToFedena (20110221051223)
+Migrating to AddColumnsToStudent (20110510121550)
+Migrating to AddColumnsToEmployee (20110511053223)
+Migrating to AddIndexToFedena (20110516110336)
+Migrating to ChangeFinanceTransaction (20110706114907)
+Migrating to CreateUserEvents (20110711100500)
+Migrating to CreateFeeDiscounts (20110721122326)
+Migrating to CreateFeeCollectionDiscounts (20110728115723)
+Migrating to CreateFeeCollectionParticulars (20110729055539)
+Migrating to AddIndexToFedena2 (20110730100503)
+Migrating to AddFormerToArchivedEmployee (20110805072425)
+Migrating to AddUserIdToStudentsEmployees (20110810052138)
+Migrating to AddPolymorphicToFinanceTransaction (20110912062640)
+Migrating to AddRecieptAndVoucherNoToFinanceTransaction (20110928054502)
+Migrating to AddPolymorphicToEvent (20111015111840)
+Migrating to AddIsPaidToFinanceFees (20111020074717)
+Migrating to AddFieldsToPrivilege (20111105052819)
+Migrating to CreateSchoolDetails (20120321065124)
+Migrating to AddRemarkToMonthlyPayslip (20120326114112)
+Migrating to CreateTimetables (20120404051019)
+Migrating to AddTimetableIdToTimetableEntries (20120404051814)
+Migrating to AddColumnsToWeekdays (20120404052524)
+Migrating to CreateSubjectLeaves (20120410081920)
+Migrating to ChangeDataTypeOfMonthdate (20120413090231)
+Migrating to AddIsApprovedColumnToNewsComments (20120420085643)
+Migrating to CreateClassDesignations (20120421061939)
+Migrating to CreateRankingLevels (20120421062319)
+Migrating to AddCreditPointsToGradingLevels (20120421062549)
+Migrating to AddCreditHoursToSubjects (20120421062917)
+Migrating to AddIsFinalExamToExamGroups (20120421063035)
+Migrating to AddParentColumnToUser (20120423061415)
+Migrating to AddIsDeletedToWeekdaysAndClassTiming (20120423100037)
+Migrating to ChangeCreditPointsToDecimal (20120424092335)
+Migrating to AddUserColumnToGuardian (20120425052412)
+Migrating to AddBatchIdToAttendanceAndSubjectLeave (20120427102307)
+Migrating to AddAmountToSubjects (20120503062405)
+Migrating to AddIndexToFedena3 (20120503112304)
+Migrating to CreateDelayedJobs (20120504123001)
+Migrating to AddLowerLimitToRankingLevels (20120507064439)
+Migrating to AddWeightageToGroupedExams (20120508085619)
+Migrating to CreateGroupedExamReports (20120510070334)
+Migrating to CreateFaCriterias (20120514050238)
+Migrating to CreateObservationGroups (20120514050318)
+Migrating to CreateObservations (20120514050339)
+Migrating to CreateDescriptiveIndicators (20120514050353)
+Migrating to CreateAssessmentTools (20120514050415)
+Migrating to CreateCceGradeSets (20120514050433)
+Migrating to CreateCceGrades (20120514050455)
+Migrating to CreateCceWeightages (20120514050500)
+Migrating to CreateCceExamCategories (20120514050522)
+Migrating to CreateAssessmentScores (20120514050548)
+Migrating to CreateCceReports (20120514050603)
+Migrating to CreateCoursesObservationGroups (20120514063103)
+Migrating to CreateCceWeightagesCourses (20120514063142)
+Migrating to AddFullCourseToRankingLevels (20120516052659)
+Migrating to CreateSmsLogs (20120517112833)
+Migrating to CreateSmsMessages (20120517122038)
+Migrating to AddMarksToClassDesignations (20120518091221)
+Migrating to CreateFaGroups (20120521120315)
+Migrating to CreateBatchGroups (20120522065318)
+Migrating to CreateGroupedBatches (20120522065410)
+Migrating to AddIndexToFedenaGpaAndCwa (20120525100324)
+Migrating to CreateFaGroupsSubjects (20120528060855)
+Migrating to AddObservationKindToObservationGroups (20120530120325)
+Migrating to AddCceEnabledToCourses (20120602095356)
+Migrating to AddGradingTypeToCourses (20120606050437)
+Migrating to AddCourseIdToRankingLevels (20120608090107)
+Migrating to AddCourseIdToClassDesignations (20120608090126)
+Migrating to AddCceExamCategoryIdToExamGroups (20120613063621)
+Migrating to RemoveCceEnabledFromCourses (20120613070054)
+Migrating to AddExamIdToAssessmentScores (20120614092829)
+Migrating to RemoveTableAssessmentTools (20120615084815)
+Migrating to AddDescriptiveIndicatorIdToAssessmentScores (20120615085346)
+Migrating to AddCceGradeSetToFaGroups (20120615103301)
+Migrating to AddExamIdToCceReports (20120618053150)
+Migrating to AddOrderToFaCriteriaAndObservations (20120618102301)
+Migrating to AddMaxMarksToObservationGroups (20120625072331)
+Migrating to AddMaxMarksToFaGroups (20120625073818)
+Migrating to AddLimitTypesToRankingLevels (20120626082424)
+Migrating to CreatePreviousExamScores (20120702062719)
+Migrating to AddCceIndices (20120704103545)
+Migrating to AddPrivilegeForStudentView (20120706090514)
+Migrating to AddGpaCwaIndices (20120706103712)
+Migrating to AddIsDeletedToCceTables (20120710054428)
+Migrating to CreateTimeZones (20120816045034)
+Migrating to AddColumnsToPrivileges (20120918052524)
+Migrating to CreatePrivilegeTags (20120919042401)
+Migrating to CreateStudentAdditionalFieldOptions (20121019112317)
+Migrating to AddIsMandatoryAndInputTypeToStudentAdditionalFields (20121019113037)
+Migrating to AddPriorityToStudentAdditionalFields (20121107104248)
+Migrating to AddFieldsToAdditionalFields (20121108112341)
+Migrating to CreateAdditionalFieldOptions (20121108112904)
+Migrating to ChangeEmployee (20121122114907)
+Migrating to ChangeArchivedEmployee (20121130114907)
+Migrating to CreateSubjectAmounts (20121203080313)
+Migrating to AddIsFirstLoginToUsers (20121211100911)
+Migrating to AddUserIdToArchivedStudents (20130102064437)
+Migrating to AddUserIdToArchivedEmployees (20130102064652)
+Migrating to AddIsDeletedToUsers (20130105063619)
+Migrating to AddIndexToStudentData (20130110095412)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (15.6ms)[0m  [1mSELECT version FROM schema_migrations[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "InstitutionName"], ["config_value", ""]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "InstitutionAddress"], ["config_value", ""]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "InstitutionPhoneNo"], ["config_value", ""]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "StudentAttendanceType"], ["config_value", "Daily"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "CurrencyType"], ["config_value", "$"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "Locale"], ["config_value", "en"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.6ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "AdmissionNumberAutoIncrement"], ["config_value", "1"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.6ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "EmployeeNumberAutoIncrement"], ["config_value", "1"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.6ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "TotalSmsCount"], ["config_value", "0"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "NetworkState"], ["config_value", "Online"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (15.6ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (140.4ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "FinancialYearStartDate"], ["config_value", Wed, 12 Nov 2014]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "FinancialYearEndDate"], ["config_value", Thu, 12 Nov 2015]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "AutomaticLeaveReset"], ["config_value", "0"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "LeaveResetPeriod"], ["config_value", "4"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "LastAutoLeaveReset"], ["config_value", nil]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "GPA"], ["config_value", "0"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "CWA"], ["config_value", "0"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "CCE"], ["config_value", "0"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "DefaultCountry"], ["config_value", "76"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.6ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "FirstTimeLoginEnable"], ["config_value", "0"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.6ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "AvailableModules"], ["config_value", "HR"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (15.6ms)[0m  INSERT INTO "configurations" ("config_key", "config_value") VALUES (?, ?)  [["config_key", "AvailableModules"], ["config_value", "Finance"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mGradingLevel Exists (15.6ms)[0m  SELECT 1 AS one FROM "grading_levels" WHERE (LOWER("grading_levels"."name") = LOWER('A') AND "grading_levels"."batch_id" IS NULL AND "grading_levels"."is_deleted" = 'f') LIMIT 1
+  [1m[36mSQL (93.6ms)[0m  [1mINSERT INTO "grading_levels" ("batch_id", "created_at", "credit_points", "description", "is_deleted", "min_score", "name", "order", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["batch_id", nil], ["created_at", Wed, 12 Nov 2014 05:56:41 UTC +00:00], ["credit_points", nil], ["description", nil], ["is_deleted", false], ["min_score", 90], ["name", "A"], ["order", nil], ["updated_at", Wed, 12 Nov 2014 05:56:41 UTC +00:00]]
+  [1m[35m (31.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mGradingLevel Exists (0.0ms)[0m  SELECT 1 AS one FROM "grading_levels" WHERE (LOWER("grading_levels"."name") = LOWER('B') AND "grading_levels"."batch_id" IS NULL AND "grading_levels"."is_deleted" = 'f') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "grading_levels" ("batch_id", "created_at", "credit_points", "description", "is_deleted", "min_score", "name", "order", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["batch_id", nil], ["created_at", Wed, 12 Nov 2014 05:56:41 UTC +00:00], ["credit_points", nil], ["description", nil], ["is_deleted", false], ["min_score", 80], ["name", "B"], ["order", nil], ["updated_at", Wed, 12 Nov 2014 05:56:41 UTC +00:00]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mGradingLevel Exists (0.0ms)[0m  SELECT 1 AS one FROM "grading_levels" WHERE (LOWER("grading_levels"."name") = LOWER('C') AND "grading_levels"."batch_id" IS NULL AND "grading_levels"."is_deleted" = 'f') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "grading_levels" ("batch_id", "created_at", "credit_points", "description", "is_deleted", "min_score", "name", "order", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["batch_id", nil], ["created_at", Wed, 12 Nov 2014 05:56:41 UTC +00:00], ["credit_points", nil], ["description", nil], ["is_deleted", false], ["min_score", 70], ["name", "C"], ["order", nil], ["updated_at", Wed, 12 Nov 2014 05:56:41 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mGradingLevel Exists (0.0ms)[0m  SELECT 1 AS one FROM "grading_levels" WHERE (LOWER("grading_levels"."name") = LOWER('D') AND "grading_levels"."batch_id" IS NULL AND "grading_levels"."is_deleted" = 'f') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "grading_levels" ("batch_id", "created_at", "credit_points", "description", "is_deleted", "min_score", "name", "order", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["batch_id", nil], ["created_at", Wed, 12 Nov 2014 05:56:41 UTC +00:00], ["credit_points", nil], ["description", nil], ["is_deleted", false], ["min_score", 60], ["name", "D"], ["order", nil], ["updated_at", Wed, 12 Nov 2014 05:56:41 UTC +00:00]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mGradingLevel Exists (0.0ms)[0m  SELECT 1 AS one FROM "grading_levels" WHERE (LOWER("grading_levels"."name") = LOWER('E') AND "grading_levels"."batch_id" IS NULL AND "grading_levels"."is_deleted" = 'f') LIMIT 1
+  [1m[36mSQL (15.6ms)[0m  [1mINSERT INTO "grading_levels" ("batch_id", "created_at", "credit_points", "description", "is_deleted", "min_score", "name", "order", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["batch_id", nil], ["created_at", Wed, 12 Nov 2014 05:56:41 UTC +00:00], ["credit_points", nil], ["description", nil], ["is_deleted", false], ["min_score", 50], ["name", "E"], ["order", nil], ["updated_at", Wed, 12 Nov 2014 05:56:41 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mGradingLevel Exists (0.0ms)[0m  SELECT 1 AS one FROM "grading_levels" WHERE (LOWER("grading_levels"."name") = LOWER('F') AND "grading_levels"."batch_id" IS NULL AND "grading_levels"."is_deleted" = 'f') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "grading_levels" ("batch_id", "created_at", "credit_points", "description", "is_deleted", "min_score", "name", "order", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["batch_id", nil], ["created_at", Wed, 12 Nov 2014 05:56:41 UTC +00:00], ["credit_points", nil], ["description", nil], ["is_deleted", false], ["min_score", 0], ["name", "F"], ["order", nil], ["updated_at", Wed, 12 Nov 2014 05:56:41 UTC +00:00]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mHR::EmployeeCategory Load (0.0ms)[0m  SELECT "employee_categories".* FROM "employee_categories" WHERE "employee_categories"."prefix" = 'Admin' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mHR::EmployeeCategory Exists (0.0ms)[0m  SELECT 1 AS one FROM "employee_categories" WHERE "employee_categories"."name" = 'System Admin' LIMIT 1
+  [1m[36mHR::EmployeeCategory Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "employee_categories" WHERE "employee_categories"."prefix" = 'Admin' LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "employee_categories" ("name", "prefix", "status") VALUES (?, ?, ?)  [["name", "System Admin"], ["prefix", "Admin"], ["status", true]]
+  [1m[36m (46.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mHR::EmployeePosition Load (0.0ms)[0m  SELECT "employee_positions".* FROM "employee_positions" WHERE "employee_positions"."name" = 'System Admin' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mHR::EmployeePosition Exists (0.0ms)[0m  SELECT 1 AS one FROM "employee_positions" WHERE ("employee_positions"."name" = 'System Admin' AND "employee_positions"."employee_category_id" = 1) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "employee_positions" ("employee_category_id", "name", "status") VALUES (?, ?, ?)[0m  [["employee_category_id", 1], ["name", "System Admin"], ["status", true]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36mHR::EmployeeDepartment Load (0.0ms)[0m  [1mSELECT "employee_departments".* FROM "employee_departments" WHERE "employee_departments"."code" = 'Admin' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mHR::EmployeeDepartment Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "employee_departments" WHERE "employee_departments"."name" = 'System Admin' LIMIT 1[0m
+  [1m[35mHR::EmployeeDepartment Exists (0.0ms)[0m  SELECT 1 AS one FROM "employee_departments" WHERE "employee_departments"."code" = 'Admin' LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "employee_departments" ("code", "name", "status") VALUES (?, ?, ?)[0m  [["code", "Admin"], ["name", "System Admin"], ["status", true]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36mHR::EmployeeGrade Load (0.0ms)[0m  [1mSELECT "employee_grades".* FROM "employee_grades" WHERE "employee_grades"."name" = 'System Admin' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mHR::EmployeeGrade Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "employee_grades" WHERE "employee_grades"."name" = 'System Admin' LIMIT 1[0m
+  [1m[35mHR::EmployeeGrade Exists (0.0ms)[0m  SELECT 1 AS one FROM "employee_grades" WHERE "employee_grades"."priority" = 0 LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "employee_grades" ("max_hours_day", "max_hours_week", "name", "priority", "status") VALUES (?, ?, ?, ?, ?)[0m  [["max_hours_day", nil], ["max_hours_week", nil], ["name", "System Admin"], ["priority", 0], ["status", true]]
+  [1m[35m (31.2ms)[0m  commit transaction
+  [1m[36mHR::Employee Load (15.6ms)[0m  [1mSELECT "employees".* FROM "employees" WHERE "employees"."employee_number" = 'admin' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'admin' AND "users"."is_deleted" = 'f') LIMIT 1[0m
+  [1m[35mHR::Employee Exists (0.0ms)[0m  SELECT 1 AS one FROM "employees" WHERE "employees"."employee_number" = 'admin' LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'admin' AND "users"."is_deleted" = 'f') LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" WHERE ("users"."username" = 'admin' AND "users"."is_deleted" = 'f') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "employee", "first_name", "hashed_password", "is_deleted", "is_first_login", "last_name", "parent", "reset_password_code", "reset_password_code_until", "salt", "student", "updated_at", "username") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Wed, 12 Nov 2014 05:56:43 UTC +00:00], ["email", "noreply@fedena.com"], ["employee", nil], ["first_name", "Admin"], ["hashed_password", nil], ["is_deleted", false], ["is_first_login", nil], ["last_name", "User"], ["parent", nil], ["reset_password_code", nil], ["reset_password_code_until", nil], ["salt", nil], ["student", nil], ["updated_at", Wed, 12 Nov 2014 05:56:43 UTC +00:00], ["username", "admin"]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "employees" ("blood_group", "children_count", "created_at", "date_of_birth", "email", "employee_category_id", "employee_department_id", "employee_grade_id", "employee_number", "employee_position_id", "experience_detail", "experience_month", "experience_year", "father_name", "fax", "first_name", "gender", "home_address_line1", "home_address_line2", "home_city", "home_country_id", "home_phone", "home_pin_code", "home_state", "husband_name", "job_title", "joining_date", "last_name", "marital_status", "middle_name", "mobile_phone", "mother_name", "nationality_id", "office_address_line1", "office_address_line2", "office_city", "office_country_id", "office_phone1", "office_phone2", "office_pin_code", "office_state", "photo_content_type", "photo_data", "photo_file_name", "photo_file_size", "qualification", "reporting_manager_id", "status", "status_description", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["blood_group", nil], ["children_count", nil], ["created_at", Wed, 12 Nov 2014 05:56:43 UTC +00:00], ["date_of_birth", Tue, 12 Nov 2013], ["email", "noreply@fedena.com"], ["employee_category_id", 1], ["employee_department_id", 1], ["employee_grade_id", 1], ["employee_number", "admin"], ["employee_position_id", 1], ["experience_detail", nil], ["experience_month", nil], ["experience_year", nil], ["father_name", nil], ["fax", nil], ["first_name", "Admin"], ["gender", nil], ["home_address_line1", nil], ["home_address_line2", nil], ["home_city", nil], ["home_country_id", nil], ["home_phone", nil], ["home_pin_code", nil], ["home_state", nil], ["husband_name", nil], ["job_title", nil], ["joining_date", Wed, 12 Nov 2014], ["last_name", "User"], ["marital_status", nil], ["middle_name", nil], ["mobile_phone", nil], ["mother_name", nil], ["nationality_id", 76], ["office_address_line1", nil], ["office_address_line2", nil], ["office_city", nil], ["office_country_id", nil], ["office_phone1", nil], ["office_phone2", nil], ["office_pin_code", nil], ["office_state", nil], ["photo_content_type", nil], ["photo_data", nil], ["photo_file_name", nil], ["photo_file_size", nil], ["qualification", nil], ["reporting_manager_id", nil], ["status", true], ["status_description", nil], ["updated_at", Wed, 12 Nov 2014 05:56:43 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE ("users"."username" = 'admin' AND "users"."id" != 1 AND "users"."is_deleted" = 'f') LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  UPDATE "users" SET "admin" = 't', "employee" = 'f', "updated_at" = '2014-11-12 05:56:43.445256' WHERE "users"."id" = 1
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Salary' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFinance::FinanceTransactionCategory Exists (0.0ms)[0m  SELECT 1 AS one FROM "finance_transaction_categories" WHERE LOWER("finance_transaction_categories"."name") = LOWER('Salary') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "finance_transaction_categories" ("deleted", "description", "is_income", "name") VALUES (?, ?, ?, ?)[0m  [["deleted", false], ["description", " "], ["is_income", false], ["name", "Salary"]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36mFinance::FinanceTransactionCategory Load (0.0ms)[0m  [1mSELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Donation' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFinance::FinanceTransactionCategory Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "finance_transaction_categories" WHERE LOWER("finance_transaction_categories"."name") = LOWER('Donation') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "finance_transaction_categories" ("deleted", "description", "is_income", "name") VALUES (?, ?, ?, ?)  [["deleted", false], ["description", " "], ["is_income", true], ["name", "Donation"]]
+  [1m[36m (31.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Fee' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFinance::FinanceTransactionCategory Exists (15.6ms)[0m  SELECT 1 AS one FROM "finance_transaction_categories" WHERE LOWER("finance_transaction_categories"."name") = LOWER('Fee') LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "finance_transaction_categories" ("deleted", "description", "is_income", "name") VALUES (?, ?, ?, ?)[0m  [["deleted", false], ["description", " "], ["is_income", true], ["name", "Fee"]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "weekdays" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (15.6ms)[0m  [1mINSERT INTO "weekdays" ("batch_id", "day_of_week", "is_deleted", "name", "sort_order", "weekday") VALUES (?, ?, ?, ?, ?, ?)[0m  [["batch_id", nil], ["day_of_week", 1], ["is_deleted", false], ["name", nil], ["sort_order", nil], ["weekday", "1"]]
+  [1m[35m (31.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "weekdays" ("batch_id", "day_of_week", "is_deleted", "name", "sort_order", "weekday") VALUES (?, ?, ?, ?, ?, ?)  [["batch_id", nil], ["day_of_week", 2], ["is_deleted", false], ["name", nil], ["sort_order", nil], ["weekday", "2"]]
+  [1m[36m (46.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "weekdays" ("batch_id", "day_of_week", "is_deleted", "name", "sort_order", "weekday") VALUES (?, ?, ?, ?, ?, ?)[0m  [["batch_id", nil], ["day_of_week", 3], ["is_deleted", false], ["name", nil], ["sort_order", nil], ["weekday", "3"]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "weekdays" ("batch_id", "day_of_week", "is_deleted", "name", "sort_order", "weekday") VALUES (?, ?, ?, ?, ?, ?)  [["batch_id", nil], ["day_of_week", 4], ["is_deleted", false], ["name", nil], ["sort_order", nil], ["weekday", "4"]]
+  [1m[36m (31.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "weekdays" ("batch_id", "day_of_week", "is_deleted", "name", "sort_order", "weekday") VALUES (?, ?, ?, ?, ?, ?)[0m  [["batch_id", nil], ["day_of_week", 5], ["is_deleted", false], ["name", nil], ["sort_order", nil], ["weekday", "5"]]
+  [1m[35m (46.8ms)[0m  commit transaction
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ApplicationEnabled' LIMIT 1[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Salary' LIMIT 1
+  [1m[36mFinance::FinanceTransactionCategory Load (0.0ms)[0m  [1mSELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Donation' LIMIT 1[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Fee' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "weekdays" [0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ApplicationEnabled' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "sms_settings" ("is_enabled", "settings_key") VALUES (?, ?)  [["is_enabled", false], ["settings_key", "ApplicationEnabled"]]
+  [1m[36m (140.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ParentSmsEnabled' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "sms_settings" ("is_enabled", "settings_key") VALUES (?, ?)  [["is_enabled", false], ["settings_key", "ParentSmsEnabled"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'EmployeeSmsEnabled' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "sms_settings" ("is_enabled", "settings_key") VALUES (?, ?)  [["is_enabled", false], ["settings_key", "EmployeeSmsEnabled"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'StudentSmsEnabled' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "sms_settings" ("is_enabled", "settings_key") VALUES (?, ?)  [["is_enabled", false], ["settings_key", "StudentSmsEnabled"]]
+  [1m[36m (31.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ResultPublishEnabled' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "sms_settings" ("is_enabled", "settings_key") VALUES (?, ?)  [["is_enabled", false], ["settings_key", "ResultPublishEnabled"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'StudentAdmissionEnabled' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "sms_settings" ("is_enabled", "settings_key") VALUES (?, ?)  [["is_enabled", false], ["settings_key", "StudentAdmissionEnabled"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ExamScheduleResultEnabled' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "sms_settings" ("is_enabled", "settings_key") VALUES (?, ?)  [["is_enabled", false], ["settings_key", "ExamScheduleResultEnabled"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'AttendanceEnabled' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "sms_settings" ("is_enabled", "settings_key") VALUES (?, ?)  [["is_enabled", false], ["settings_key", "AttendanceEnabled"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'NewsEventsEnabled' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "sms_settings" ("is_enabled", "settings_key") VALUES (?, ?)  [["is_enabled", false], ["settings_key", "NewsEventsEnabled"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mPrivilege Load (0.0ms)[0m  SELECT "privileges".* FROM "privileges" 
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events" [0m
+  [1m[35mPrivilegeTag Load (0.0ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'system_settings' LIMIT 1
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-12 06:01:32 +0000
+Processing by UserController#login as HTML
+  [1m[36mSchoolDetail Load (1.0ms)[0m  [1mSELECT "school_details".* FROM "school_details" LIMIT 1[0m
+  Rendered user/login.html.erb (300.0ms)
+Completed 200 OK in 979ms (Views: 836.0ms | ActiveRecord: 92.0ms)
+
+
+Started GET "/assets/application/app_fedena_logo.png" for 127.0.0.1 at 2014-11-12 06:01:37 +0000
+Served asset /application/app_fedena_logo.png - 200 OK (175ms)
+
+
+Started GET "/es" for 127.0.0.1 at 2014-11-12 06:01:46 +0000
+Processing by UserController#login as HTML
+  Parameters: {"locale"=>"es"}
+  [1m[35mSchoolDetail Load (0.0ms)[0m  SELECT "school_details".* FROM "school_details" LIMIT 1
+  Rendered user/login.html.erb (6.0ms)
+Completed 200 OK in 27ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (15.6ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Salary' LIMIT 1
+  [1m[36mFinance::FinanceTransactionCategory Load (0.0ms)[0m  [1mSELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Donation' LIMIT 1[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Fee' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "weekdays" [0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ApplicationEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ParentSmsEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'EmployeeSmsEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'StudentSmsEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ResultPublishEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'StudentAdmissionEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ExamScheduleResultEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'AttendanceEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'NewsEventsEnabled' LIMIT 1
+  [1m[36mPrivilege Load (0.0ms)[0m  [1mSELECT "privileges".* FROM "privileges" [0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" 
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'system_settings' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (140.4ms)[0m  [1mINSERT INTO "privilege_tags" ("created_at", "name_tag", "priority", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Wed, 12 Nov 2014 06:02:40 UTC +00:00], ["name_tag", "system_settings"], ["priority", 5], ["updated_at", Wed, 12 Nov 2014 06:02:40 UTC +00:00]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'administration_operations' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (15.6ms)[0m  [1mINSERT INTO "privilege_tags" ("created_at", "name_tag", "priority", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Wed, 12 Nov 2014 06:02:40 UTC +00:00], ["name_tag", "administration_operations"], ["priority", 1], ["updated_at", Wed, 12 Nov 2014 06:02:40 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'academics' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "privilege_tags" ("created_at", "name_tag", "priority", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Wed, 12 Nov 2014 06:02:40 UTC +00:00], ["name_tag", "academics"], ["priority", 3], ["updated_at", Wed, 12 Nov 2014 06:02:40 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'student_management' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "privilege_tags" ("created_at", "name_tag", "priority", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Wed, 12 Nov 2014 06:02:40 UTC +00:00], ["name_tag", "student_management"], ["priority", 2], ["updated_at", Wed, 12 Nov 2014 06:02:40 UTC +00:00]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'social_other_activity' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "privilege_tags" ("created_at", "name_tag", "priority", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Wed, 12 Nov 2014 06:02:40 UTC +00:00], ["name_tag", "social_other_activity"], ["priority", 4], ["updated_at", Wed, 12 Nov 2014 06:02:40 UTC +00:00]]
+  [1m[35m (15.6ms)[0m  commit transaction
+Connecting to database specified by database.yml
+
+
+Started POST "/es" for 127.0.0.1 at 2014-11-12 06:04:37 +0000
+Processing by UserController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ISyeIP17LrMJIjQ7kk87nNtL2z9vhS2BB3n+kdqn740=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Iniciar sesión", "locale"=>"es"}
+Completed 500 Internal Server Error in 10ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: username, password):
+  app/controllers/user_controller.rb:239:in `new'
+  app/controllers/user_controller.rb:239:in `login'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (252.0ms)
+
+
+Started POST "/es" for 127.0.0.1 at 2014-11-12 06:06:45 +0000
+Processing by UserController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ISyeIP17LrMJIjQ7kk87nNtL2z9vhS2BB3n+kdqn740=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Iniciar sesión", "locale"=>"es"}
+Completed 500 Internal Server Error in 74ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: username, password):
+  app/controllers/user_controller.rb:239:in `new'
+  app/controllers/user_controller.rb:239:in `login'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (233.0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (15.6ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Salary' LIMIT 1
+  [1m[36mFinance::FinanceTransactionCategory Load (0.0ms)[0m  [1mSELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Donation' LIMIT 1[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Fee' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "weekdays" [0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ApplicationEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ParentSmsEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'EmployeeSmsEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'StudentSmsEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ResultPublishEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'StudentAdmissionEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ExamScheduleResultEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'AttendanceEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'NewsEventsEnabled' LIMIT 1
+  [1m[36mPrivilege Load (0.0ms)[0m  [1mSELECT "privileges".* FROM "privileges" [0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" 
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'system_settings' LIMIT 1[0m
+  [1m[35mPrivilegeTag Load (15.6ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'administration_operations' LIMIT 1
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'academics' LIMIT 1[0m
+  [1m[35mPrivilegeTag Load (0.0ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'student_management' LIMIT 1
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'social_other_activity' LIMIT 1[0m
+  [1m[35mStudentAdditionalField Load (0.0ms)[0m  SELECT "student_additional_fields".* FROM "student_additional_fields" 
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Salary' LIMIT 1
+  [1m[36mFinance::FinanceTransactionCategory Load (0.0ms)[0m  [1mSELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Donation' LIMIT 1[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Fee' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "weekdays" [0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ApplicationEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ParentSmsEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'EmployeeSmsEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'StudentSmsEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ResultPublishEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'StudentAdmissionEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ExamScheduleResultEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'AttendanceEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'NewsEventsEnabled' LIMIT 1
+  [1m[36mPrivilege Load (0.0ms)[0m  [1mSELECT "privileges".* FROM "privileges" [0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" 
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'system_settings' LIMIT 1[0m
+  [1m[35mPrivilegeTag Load (0.0ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'administration_operations' LIMIT 1
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'academics' LIMIT 1[0m
+  [1m[35mPrivilegeTag Load (0.0ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'student_management' LIMIT 1
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'social_other_activity' LIMIT 1[0m
+  [1m[35mStudentAdditionalField Load (0.0ms)[0m  SELECT "student_additional_fields".* FROM "student_additional_fields" 
+  [1m[36mAdditionalField Load (0.0ms)[0m  [1mSELECT "additional_fields".* FROM "additional_fields" [0m
+  [1m[35mPrivilegeTag Load (0.0ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'system_settings' LIMIT 1
+  [1m[36mPrivilege Load (0.0ms)[0m  [1mSELECT "privileges".* FROM "privileges" WHERE "privileges"."name" = 'GeneralSettings' LIMIT 1[0m
+
+
+Started POST "/es" for 127.0.0.1 at 2014-11-12 06:10:58 +0000
+Processing by UserController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ISyeIP17LrMJIjQ7kk87nNtL2z9vhS2BB3n+kdqn740=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Iniciar sesión", "locale"=>"es"}
+Completed 500 Internal Server Error in 66ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: username):
+  app/controllers/user_controller.rb:239:in `new'
+  app/controllers/user_controller.rb:239:in `login'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (217.0ms)
+
+
+Started POST "/es" for 127.0.0.1 at 2014-11-12 06:11:11 +0000
+Processing by UserController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ISyeIP17LrMJIjQ7kk87nNtL2z9vhS2BB3n+kdqn740=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Iniciar sesión", "locale"=>"es"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."is_deleted" = 'f' AND "users"."username" = 'admin' LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'admin' LIMIT 1
+Completed 500 Internal Server Error in 403ms
+
+NoMethodError (undefined method `+' for nil:NilClass):
+  app/models/user.rb:73:in `authenticate?'
+  app/controllers/user_controller.rb:241:in `login'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (219.0ms)
+
+
+Started POST "/es" for 127.0.0.1 at 2014-11-12 06:16:29 +0000
+Processing by UserController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ISyeIP17LrMJIjQ7kk87nNtL2z9vhS2BB3n+kdqn740=", "user"=>{"username"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Iniciar sesión", "locale"=>"es"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."is_deleted" = 'f' AND "users"."username" = 'admin' LIMIT 1[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'admin' LIMIT 1
+Completed 500 Internal Server Error in 58ms
+
+NoMethodError (undefined method `+' for nil:NilClass):
+  app/models/user.rb:73:in `authenticate?'
+  app/controllers/user_controller.rb:241:in `login'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.14/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (226.0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Salary' LIMIT 1
+  [1m[36mFinance::FinanceTransactionCategory Load (0.0ms)[0m  [1mSELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Donation' LIMIT 1[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Fee' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "weekdays" [0m
+  [1m[35mSmsSetting Load (15.6ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ApplicationEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ParentSmsEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'EmployeeSmsEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'StudentSmsEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ResultPublishEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'StudentAdmissionEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ExamScheduleResultEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'AttendanceEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'NewsEventsEnabled' LIMIT 1
+  [1m[36mPrivilege Load (0.0ms)[0m  [1mSELECT "privileges".* FROM "privileges" [0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" 
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'system_settings' LIMIT 1[0m
+  [1m[35mPrivilegeTag Load (0.0ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'administration_operations' LIMIT 1
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'academics' LIMIT 1[0m
+  [1m[35mPrivilegeTag Load (0.0ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'student_management' LIMIT 1
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'social_other_activity' LIMIT 1[0m
+  [1m[35mStudentAdditionalField Load (0.0ms)[0m  SELECT "student_additional_fields".* FROM "student_additional_fields" 
+  [1m[36mAdditionalField Load (0.0ms)[0m  [1mSELECT "additional_fields".* FROM "additional_fields" [0m
+  [1m[35mPrivilegeTag Load (0.0ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'system_settings' LIMIT 1
+  [1m[36mPrivilege Load (0.0ms)[0m  [1mSELECT "privileges".* FROM "privileges" WHERE "privileges"."name" = 'GeneralSettings' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (31.2ms)[0m  [1mINSERT INTO "privileges" ("created_at", "description", "name", "priority", "privilege_tag_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Nov 2014 06:17:18 UTC +00:00], ["description", nil], ["name", "GeneralSettings"], ["priority", nil], ["privilege_tag_id", nil], ["updated_at", Wed, 12 Nov 2014 06:17:18 UTC +00:00]]
+  [1m[35m (62.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (15.6ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Salary' LIMIT 1
+  [1m[36mFinance::FinanceTransactionCategory Load (0.0ms)[0m  [1mSELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Donation' LIMIT 1[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Fee' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "weekdays" [0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ApplicationEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ParentSmsEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'EmployeeSmsEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'StudentSmsEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ResultPublishEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'StudentAdmissionEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ExamScheduleResultEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'AttendanceEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'NewsEventsEnabled' LIMIT 1
+  [1m[36mPrivilege Load (0.0ms)[0m  [1mSELECT "privileges".* FROM "privileges" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mUPDATE "privileges" SET "description" = 'general_settings_privilege', "updated_at" = '2014-11-12 06:20:02.410479' WHERE "privileges"."id" = 1[0m
+  [1m[35m (46.8ms)[0m  commit transaction
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events" [0m
+  [1m[35mPrivilegeTag Load (0.0ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'system_settings' LIMIT 1
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'administration_operations' LIMIT 1[0m
+  [1m[35mPrivilegeTag Load (0.0ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'academics' LIMIT 1
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'student_management' LIMIT 1[0m
+  [1m[35mPrivilegeTag Load (15.6ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'social_other_activity' LIMIT 1
+  [1m[36mStudentAdditionalField Load (0.0ms)[0m  [1mSELECT "student_additional_fields".* FROM "student_additional_fields" [0m
+  [1m[35mAdditionalField Load (0.0ms)[0m  SELECT "additional_fields".* FROM "additional_fields" 
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'system_settings' LIMIT 1[0m
+  [1m[35mPrivilege Load (0.0ms)[0m  SELECT "privileges".* FROM "privileges" WHERE "privileges"."name" = 'GeneralSettings' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  UPDATE "privileges" SET "privilege_tag_id" = 1, "priority" = 10, "updated_at" = '2014-11-12 06:20:02.675679' WHERE "privileges"."id" = 1
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mPrivilege Load (0.0ms)[0m  SELECT "privileges".* FROM "privileges" WHERE "privileges"."name" = 'AddNewBatch' LIMIT 1
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Salary' LIMIT 1
+  [1m[36mFinance::FinanceTransactionCategory Load (0.0ms)[0m  [1mSELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Donation' LIMIT 1[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Fee' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "weekdays" [0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ApplicationEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ParentSmsEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'EmployeeSmsEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'StudentSmsEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ResultPublishEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'StudentAdmissionEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ExamScheduleResultEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'AttendanceEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'NewsEventsEnabled' LIMIT 1
+  [1m[36mPrivilege Load (0.0ms)[0m  [1mSELECT "privileges".* FROM "privileges" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" 
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'system_settings' LIMIT 1[0m
+  [1m[35mPrivilegeTag Load (0.0ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'administration_operations' LIMIT 1
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'academics' LIMIT 1[0m
+  [1m[35mPrivilegeTag Load (0.0ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'student_management' LIMIT 1
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'social_other_activity' LIMIT 1[0m
+  [1m[35mStudentAdditionalField Load (0.0ms)[0m  SELECT "student_additional_fields".* FROM "student_additional_fields" 
+  [1m[36mAdditionalField Load (0.0ms)[0m  [1mSELECT "additional_fields".* FROM "additional_fields" [0m
+  [1m[35mPrivilegeTag Load (0.0ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'system_settings' LIMIT 1
+  [1m[36mPrivilege Load (0.0ms)[0m  [1mSELECT "privileges".* FROM "privileges" WHERE "privileges"."name" = 'GeneralSettings' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mPrivilege Load (0.0ms)[0m  SELECT "privileges".* FROM "privileges" WHERE "privileges"."name" = 'AddNewBatch' LIMIT 1
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionName' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionAddress' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'InstitutionPhoneNo' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'StudentAttendanceType' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CurrencyType' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'Locale' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AdmissionNumberAutoIncrement' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'EmployeeNumberAutoIncrement' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'TotalSmsCount' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'NetworkState' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearStartDate' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FinancialYearEndDate' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AutomaticLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LeaveResetPeriod' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'LastAutoLeaveReset' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'GPA' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CWA' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'CCE' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'DefaultCountry' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'FirstTimeLoginEnable' LIMIT 1[0m
+  [1m[35mConfiguration Load (0.0ms)[0m  SELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'HR' LIMIT 1
+  [1m[36mConfiguration Load (0.0ms)[0m  [1mSELECT "configurations".* FROM "configurations" WHERE "configurations"."config_key" = 'AvailableModules' AND "configurations"."config_value" = 'Finance' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "grading_levels" 
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."admin" = 't' LIMIT 1[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Salary' LIMIT 1
+  [1m[36mFinance::FinanceTransactionCategory Load (0.0ms)[0m  [1mSELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Donation' LIMIT 1[0m
+  [1m[35mFinance::FinanceTransactionCategory Load (0.0ms)[0m  SELECT "finance_transaction_categories".* FROM "finance_transaction_categories" WHERE "finance_transaction_categories"."name" = 'Fee' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "weekdays" [0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ApplicationEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ParentSmsEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'EmployeeSmsEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'StudentSmsEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ResultPublishEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (15.6ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'StudentAdmissionEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'ExamScheduleResultEnabled' LIMIT 1
+  [1m[36mSmsSetting Load (0.0ms)[0m  [1mSELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'AttendanceEnabled' LIMIT 1[0m
+  [1m[35mSmsSetting Load (0.0ms)[0m  SELECT "sms_settings".* FROM "sms_settings" WHERE "sms_settings"."settings_key" = 'NewsEventsEnabled' LIMIT 1
+  [1m[36mPrivilege Load (0.0ms)[0m  [1mSELECT "privileges".* FROM "privileges" [0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" 
+  [1m[36mPrivilegeTag Load (46.8ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'system_settings' LIMIT 1[0m
+  [1m[35mPrivilegeTag Load (0.0ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'administration_operations' LIMIT 1
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'academics' LIMIT 1[0m
+  [1m[35mPrivilegeTag Load (0.0ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'student_management' LIMIT 1
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'social_other_activity' LIMIT 1[0m
+  [1m[35mStudentAdditionalField Load (0.0ms)[0m  SELECT "student_additional_fields".* FROM "student_additional_fields" 
+  [1m[36mAdditionalField Load (0.0ms)[0m  [1mSELECT "additional_fields".* FROM "additional_fields" [0m
+  [1m[35mPrivilegeTag Load (0.0ms)[0m  SELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'system_settings' LIMIT 1
+  [1m[36mPrivilege Load (0.0ms)[0m  [1mSELECT "privileges".* FROM "privileges" WHERE "privileges"."name" = 'GeneralSettings' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mPrivilege Load (0.0ms)[0m  SELECT "privileges".* FROM "privileges" WHERE "privileges"."name" = 'AddNewBatch' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (31.2ms)[0m  INSERT INTO "privileges" ("created_at", "description", "name", "priority", "privilege_tag_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Nov 2014 06:24:21 UTC +00:00], ["description", nil], ["name", "AddNewBatch"], ["priority", nil], ["privilege_tag_id", nil], ["updated_at", Wed, 12 Nov 2014 06:24:21 UTC +00:00]]
+  [1m[36m (62.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (15.6ms)[0m  [1mUPDATE "privileges" SET "privilege_tag_id" = 1, "priority" = 20, "updated_at" = '2014-11-12 06:24:21.977736' WHERE "privileges"."id" = 2[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mPrivilege Load (0.0ms)[0m  [1mSELECT "privileges".* FROM "privileges" WHERE "privileges"."name" = 'SubjectMaster' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (15.6ms)[0m  [1mINSERT INTO "privileges" ("created_at", "description", "name", "priority", "privilege_tag_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 12 Nov 2014 06:24:21 UTC +00:00], ["description", nil], ["name", "SubjectMaster"], ["priority", nil], ["privilege_tag_id", nil], ["updated_at", Wed, 12 Nov 2014 06:24:21 UTC +00:00]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  UPDATE "privileges" SET "privilege_tag_id" = 1, "priority" = 30, "updated_at" = '2014-11-12 06:24:22.024536' WHERE "privileges"."id" = 3
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mPrivilege Load (0.0ms)[0m  SELECT "privileges".* FROM "privileges" WHERE "privileges"."name" = 'SMSManagement' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "privileges" ("created_at", "description", "name", "priority", "privilege_tag_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Nov 2014 06:24:22 UTC +00:00], ["description", nil], ["name", "SMSManagement"], ["priority", nil], ["privilege_tag_id", nil], ["updated_at", Wed, 12 Nov 2014 06:24:22 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (15.6ms)[0m  [1mUPDATE "privileges" SET "privilege_tag_id" = 1, "priority" = 40, "updated_at" = '2014-11-12 06:24:22.055736' WHERE "privileges"."id" = 4[0m
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36mPrivilegeTag Load (0.0ms)[0m  [1mSELECT "privilege_tags".* FROM "privilege_tags" WHERE "privilege_tags"."name_tag" = 'administration_operations' LIMIT 1[0m
+  [1m[35mPrivilege Load (0.0ms)[0m  SELECT "privileges".* FROM "privileges" WHERE "privileges"."name" = 'HrBasics' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "privileges" ("created_at", "description", "name", "priority", "privilege_tag_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 12 Nov 2014 06:24:22 UTC +00:00], ["description", nil], ["name", "HrBasics"], ["priority", nil], ["privilege_tag_id", nil], ["updated_at", Wed, 12 Nov 2014 06:24:22 UTC +00:00]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mUPDATE "privileges" SET "privilege_tag_id" = 2, "priority" = 50, "updated_at" = '2014-11-12 06:24:22.102536' WHERE "privileges"."id" = 5[0m
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36mPrivilege Load (0.0ms)[0m  [1mSELECT "privileges".* FROM "privileges" WHERE "privileges"."name" = 'EmployeeSearch' LIMIT 1[0m

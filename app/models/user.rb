@@ -17,7 +17,7 @@
 #limitations under the License.
 
 class User < ActiveRecord::Base
-  attr_accessible :admin, :employee
+  attr_accessible :admin, :employee, :password, :username
   attr_accessor :password, :role, :old_password, :new_password, :confirm_password
 
   validates_uniqueness_of :username, :scope=> [:is_deleted],:if=> 'is_deleted == false' #, :email
@@ -81,10 +81,10 @@ class User < ActiveRecord::Base
   end
 
   def role_name
-    return "#{t('admin')}" if self.admin?
-    return "#{t('student_text')}" if self.student?
-    return "#{t('employee_text')}" if self.employee?
-    return "#{t('parent')}" if self.parent?
+    return "#{I18n.t('admin')}" if self.admin?
+    return "#{I18n.t('student_text')}" if self.student?
+    return "#{I18n.t('employee_text')}" if self.employee?
+    return "#{I18n.t('parent')}" if self.parent?
     return nil
   end
 

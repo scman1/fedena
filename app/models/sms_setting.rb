@@ -17,7 +17,8 @@
 #limitations under the License.
 
 class SmsSetting < ActiveRecord::Base
-
+  attr_accessible :settings_key, :is_enabled
+  
   def application_sms_active
     application_sms = SmsSetting.find_by_settings_key("ApplicationEnabled")
     return true if application_sms.is_enabled

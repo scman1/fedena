@@ -111,16 +111,16 @@ class UserController < ApplicationController
         if params[:user][:new_password] == params[:user][:confirm_password]
           @user.password = params[:user][:new_password]
           if @user.update_attributes(:password => @user.password, :role => @user.role_name)
-            flash[:notice] = "#{t('flash9')}"
+            flash[:notice] = "#{I18n.t('flash9')}"
             redirect_to :action => 'dashboard'
           else
             flash[:warn_notice] = "<p>#{@user.errors.full_messages}</p>"
           end
         else
-          flash[:warn_notice] = "<p>#{t('flash10')}</p>"
+          flash[:warn_notice] = "<p>#{I18n.t('flash10')}</p>"
         end
       else
-        flash[:warn_notice] = "<p>#{t('flash11')}</p>"
+        flash[:warn_notice] = "<p>#{I18n.t('flash11')}</p>"
       end
     end
   end
@@ -130,18 +130,18 @@ class UserController < ApplicationController
 
     if request.post?
       if params[:user][:new_password]=='' and params[:user][:confirm_password]==''
-        flash[:warn_notice]= "<p>#{t('flash6')}</p>"
+        flash[:warn_notice]= "<p>#{I18n.t('flash6')}</p>"
       else
         if params[:user][:new_password] == params[:user][:confirm_password]
           @user.password = params[:user][:new_password]
           if @user.update_attributes(:password => @user.password,:role => @user.role_name)
-            flash[:notice]= "#{t('flash7')}"
+            flash[:notice]= "#{I18n.t('flash7')}"
             redirect_to :action=>"edit", :id=>@user.username
           else
             render :user_change_password
           end
         else
-          flash[:warn_notice] =  "<p>#{t('flash10')}</p>"
+          flash[:warn_notice] =  "<p>#{I18n.t('flash10')}</p>"
         end
       end
 
@@ -156,10 +156,10 @@ class UserController < ApplicationController
     if request.post?
           
       if @user.save
-        flash[:notice] = "#{t('flash17')}"
+        flash[:notice] = "#{I18n.t('flash17')}"
         redirect_to :controller => 'user', :action => 'edit', :id => @user.username
       else
-        flash[:notice] = "#{t('flash16')}"
+        flash[:notice] = "#{I18n.t('flash16')}"
       end
            
     end
@@ -169,7 +169,7 @@ class UserController < ApplicationController
     @user = User.active.find_by_username(params[:id],:conditions=>"admin = 1")
     unless @user.nil?
       if @user.employee_record.nil?
-        flash[:notice] = "#{t('flash12')}" if @user.destroy
+        flash[:notice] = "#{I18n.t('flash12')}" if @user.destroy
       end
     end
     redirect_to :controller => 'user'
@@ -178,7 +178,7 @@ class UserController < ApplicationController
   def dashboard
     @user = current_user
     @config = Configuration.available_modules
-    @employee = @user.employee_record if ["#{t('admin')}","#{t('employee_text')}"].include?(@user.role_name)
+    @employee = @user.employee_record if ["#{I18n.t('admin')}","#{I18n.t('employee_text')}"].include?(@user.role_name)
     if @user.student?
       @student = Student.find_by_admission_no(@user.username)
     end
@@ -187,7 +187,7 @@ class UserController < ApplicationController
     end
     @first_time_login = Configuration.get_config_value('FirstTimeLoginEnable')
     if  session[:user_id].present? and @first_time_login == "1" and @user.is_first_login != false
-      flash[:notice] = "#{t('first_login_attempt')}"
+      flash[:notice] = "#{I18n.t('first_login_attempt')}"
       redirect_to :controller => "user",:action => "first_login_change_password",:id => @user.username
     end
   end
@@ -197,7 +197,7 @@ class UserController < ApplicationController
     @user = User.active.find_by_username(params[:id])
     @current_user = current_user
     if request.post? and @user.update_attributes(params[:user])
-      flash[:notice] = "#{t('flash13')}"
+      flash[:notice] = "#{I18n.t('flash13')}"
       redirect_to :controller => 'user', :action => 'profile', :id => @user.username
     end
   end
@@ -215,14 +215,14 @@ class UserController < ApplicationController
           user.save(false)
           url = "#{request.protocol}#{request.host_with_port}"
           UserNotifier.deliver_forgot_password(user,url)
-          flash[:notice] = "#{t('flash18')}"
+          flash[:notice] = "#{I18n.t('flash18')}"
           redirect_to :action => "index"
         else
-          flash[:notice] = "#{t('flash20')}"
+          flash[:notice] = "#{I18n.t('flash20')}"
           return
         end
       else
-        flash[:notice] = "#{t('flash19')} #{params[:reset_password][:username]}"
+        flash[:notice] = "#{I18n.t('flash19')} #{params[:reset_password][:username]}"
       end
     end
   end
@@ -246,7 +246,7 @@ class UserController < ApplicationController
     if authenticated_user.present?
       successful_user_login(authenticated_user) and return
     elsif authenticated_user.blank? and request.post?
-      flash[:notice] = "#{t('login_error_message')}"
+      flash[:notice] = "#{I18n.t('login_error_message')}"
     end
   end
 
@@ -257,7 +257,7 @@ class UserController < ApplicationController
       if request.post?
         if params[:user][:new_password] == params[:user][:confirm_password]
           if @user.update_attributes(:password => params[:user][:confirm_password],:is_first_login => false)
-            flash[:notice] = "#{t('password_update')}"
+            flash[:notice] = "#{I18n.t('password_update')}"
             redirect_to :controller => "user",:action => "dashboard"
           else
             render :first_login_change_password
@@ -268,7 +268,7 @@ class UserController < ApplicationController
         end
       end
     else
-      flash[:notice] = "#{t('not_applicable')}"
+      flash[:notice] = "#{I18n.t('not_applicable')}"
       redirect_to :controller => "user",:action => "dashboard"
     end
   end
@@ -278,7 +278,7 @@ class UserController < ApplicationController
     Rails.cache.delete("user_autocomplete_menu#{session[:user_id]}")
     session[:user_id] = nil
     session[:language] = nil
-    flash[:notice] = "#{t('logged_out')}"
+    flash[:notice] = "#{I18n.t('logged_out')}"
     available_login_authes = FedenaPlugin::AVAILABLE_MODULES.select{|m| m[:name].classify.constantize.respond_to?("logout_hook")}
     selected_logout_hook = available_login_authes.first if available_login_authes.count>=1
     if selected_logout_hook
@@ -299,7 +299,7 @@ class UserController < ApplicationController
       @ward  = @user.parent_record if @user.parent
 
     else
-      flash[:notice] = "#{t('flash14')}"
+      flash[:notice] = "#{I18n.t('flash14')}"
       redirect_to :action => 'dashboard'
     end
   end
@@ -310,11 +310,11 @@ class UserController < ApplicationController
       if user.reset_password_code_until > Time.now
         redirect_to :action => 'set_new_password', :id => user.reset_password_code
       else
-        flash[:notice] = "#{t('flash1')}"
+        flash[:notice] = "#{I18n.t('flash1')}"
         redirect_to :action => 'index'
       end
     else
-      flash[:notice]= "#{t('flash2')}"
+      flash[:notice]= "#{I18n.t('flash2')}"
       redirect_to :action => 'index'
     end
   end
@@ -349,14 +349,14 @@ class UserController < ApplicationController
           user.clear_menu_cache
           #User.update(user.id, :password => params[:set_new_password][:new_password],
           # :reset_password_code => nil, :reset_password_code_until => nil)
-          flash[:notice] = "#{t('flash3')}"
+          flash[:notice] = "#{I18n.t('flash3')}"
           redirect_to :action => 'index'
         else
-          flash[:notice] = "#{t('user.flash4')}"
+          flash[:notice] = "#{I18n.t('user.flash4')}"
           redirect_to :action => 'set_new_password', :id => user.reset_password_code
         end
       else
-        flash[:notice] = "#{t('flash5')}"
+        flash[:notice] = "#{I18n.t('flash5')}"
         redirect_to :action => 'index'
       end
     end
@@ -374,7 +374,7 @@ class UserController < ApplicationController
       new_privileges ||= []
       @user.privileges = Privilege.find_all_by_id(new_privileges)
       @user.clear_menu_cache
-      flash[:notice] = "#{t('flash15')}"
+      flash[:notice] = "#{I18n.t('flash15')}"
       redirect_to :action => 'profile',:id => @user.username
     end
   end
@@ -393,7 +393,7 @@ class UserController < ApplicationController
   private
   def successful_user_login(user)
     session[:user_id] = user.id
-    flash[:notice] = "#{t('welcome')}, #{user.first_name} #{user.last_name}!"
+    flash[:notice] = "#{I18n.t('welcome')}, #{user.first_name} #{user.last_name}!"
     redirect_to session[:back_url] || {:controller => 'user', :action => 'dashboard'}
   end
 end
