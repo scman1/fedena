@@ -24,15 +24,16 @@
 #   InstitutionName        => name of the school or college
 class Configuration < ActiveRecord::Base
   attr_accessible :config_key, :config_value 
-  #STUDENT_ATTENDANCE_TYPE_OPTIONS = [[ "#{I18n.t('daily_text')}", "Daily"], [ "#{I18n.t('subject_wise_text')}", "SubjectWise"]]
-  #
-  #NETWORK_STATES                   = [[ "#{I18n.t('online')}",'Online'],[ "#{I18n.t('offline')}",'Offline']]
-  #LOCALES = []
-  #Dir.glob("#{RAILS_ROOT}/config/locales/*.yml").each do |file|
-  #  file.gsub!("#{RAILS_ROOT}/config/locales/", '')
-  #  file.gsub!(".yml", '')
-  #  LOCALES << file
-  #end
+  STUDENT_ATTENDANCE_TYPE_OPTIONS = [[ "#{I18n.t('daily_text')}", "Daily"], [ "#{I18n.t('subject_wise_text')}", "SubjectWise"]]
+  
+  NETWORK_STATES                   = [[ "#{I18n.t('online')}",'Online'],[ "#{I18n.t('offline')}",'Offline']]
+  LOCALES = []
+  
+  Dir.glob(Rails.root.join("config", "locales", "*.yml")).each do |file|
+    file.gsub!(Rails.root.join("config", "locales/").to_s, "")
+    file.gsub!(".yml", "")
+    LOCALES << file
+  end
 
   def validate
     if self.config_key == "StudentAttendanceType"
@@ -55,7 +56,7 @@ class Configuration < ActiveRecord::Base
     end
   
     def save_institution_logo(upload)
-      directory, filename = "#{RAILS_ROOT}/public/uploads/image", 'institute_logo.jpg'
+      directory, filename = "#{Rails.root}/public/uploads/image", 'institute_logo.jpg'
       path = File.join(directory, filename) # create the file path
       File.open(path, "wb") { |f| f.write(upload['datafile'].read) } # write the file
     end
