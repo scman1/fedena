@@ -198,8 +198,15 @@
       end
 	  
 	  y modificar los usos de los matchers de shoulda en los casos de pruebas
+	  por ejemplo 
+	  should_have_many se cambia a have_many
+	  no hay un matcher para should_have_named_scope... asi que estos casos se comentan
 	  
-	  
+	11. Problemas por diferencias en las fixtures para pruebas
+	
+	   Muchas de las fixtures estan desfasadas con las clases usadas en fedena
+	   esto ocasiona problemas al cargar el contexto de pruebas. Algunas tablas o
+	   campos han sido eliminados.
 	  
 19. Rutas... muchos problemas por la vieja sintaxis de las rutas, arreglarlas todas... long hours
     con esto quedamos igual que en el http://es.asciicasts.com/episodes/225-actualizacion-a-rails-3, la aplicacion "corre", las migraciones tambien se pueden hacer. solo se requiere algunas 
