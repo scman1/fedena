@@ -2,8 +2,8 @@ require File.expand_path(File.dirname(__FILE__) + './../test_helper')
 
 class UserTest < ActiveSupport::TestCase
 
-  should_validate_presence_of :email
-  should_validate_presence_of :role
+  validate_presence_of :email
+  validate_presence_of :role
 
   context 'a new user' do
     setup do

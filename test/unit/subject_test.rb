@@ -2,12 +2,15 @@ require File.expand_path(File.dirname(__FILE__) + './../test_helper')
 
 class SubjectTest < ActiveSupport::TestCase
 
-  should_validate_presence_of :name,:code,:max_weekly_classes,:batch_id
-  should_validate_numericality_of :max_weekly_classes
-  should_belong_to :batch
-  should_belong_to :elective_group
-  should_have_many :timetable_entries
-  should_have_many :employees_subjects
+  validate_presence_of :name
+  validate_presence_of :code
+  validate_presence_of :max_weekly_classes
+  validate_presence_of :batch_id
+  validate_numericality_of :max_weekly_classes
+  belong_to :batch
+  belong_to :elective_group
+  have_many :timetable_entries
+  have_many :employees_subjects
   
   context 'new general subject' do
 

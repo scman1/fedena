@@ -2,7 +2,7 @@ require File.expand_path(File.dirname(__FILE__) + './../test_helper')
 
 class GradingLevelTest < ActiveSupport::TestCase
   fixtures :batches
-  should_belong_to :batch
+  belong_to :batch
   
   context 'a new grading level' do
     setup do

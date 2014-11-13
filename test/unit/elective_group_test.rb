@@ -1,12 +1,13 @@
 require 'test_helper'
 
 class ElectiveGroupTest < ActiveSupport::TestCase
-  should_belong_to :batch
-  should_have_many :subjects
+  belong_to :batch
+  have_many :subjects
 
-  should_validate_presence_of :name,:batch_id
+  validate_presence_of :name
+  validate_presence_of :batch_id
 
-  should_have_named_scope :for_batch
+  #have_named_scope :for_batch
 
   context "existing elective group" do
 

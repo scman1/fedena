@@ -2,9 +2,9 @@ require File.expand_path(File.dirname(__FILE__) + './../test_helper')
 
 class EmployeeCategoryTest < ActiveSupport::TestCase
 
- should_have_many :employees
- should_have_many :employee_positions
- should_have_named_scope :active, :conditions => {:status => true }
+ have_many :employees
+ have_many :employee_positions
+ #have_named_scope :active, :conditions => {:status => true }
 
 
   context 'a new department' do

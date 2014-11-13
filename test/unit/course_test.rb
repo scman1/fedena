@@ -2,11 +2,12 @@ require File.expand_path(File.dirname(__FILE__) + './../test_helper')
 
 class CourseTest < ActiveSupport::TestCase
 
-  should_validate_presence_of :course_name, :code
-  should_have_many :batches
+  validate_presence_of :course_name
+  validate_presence_of :code
+  have_many :batches
 
-  should_have_named_scope :active, :conditions => { :is_deleted => false }, :order => 'course_name asc'
-  should_have_named_scope :deleted, :conditions => { :is_deleted => true }, :order => 'course_name asc'
+  #have_named_scope :active, :conditions => { :is_deleted => false }, :order => 'course_name asc'
+  #have_named_scope :deleted, :conditions => { :is_deleted => true }, :order => 'course_name asc'
 
   context 'a new course' do
     setup do

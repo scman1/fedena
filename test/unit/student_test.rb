@@ -2,12 +2,12 @@ require File.expand_path(File.dirname(__FILE__) + './../test_helper')
 
 class StudentTest < ActiveSupport::TestCase
 
-  should_belong_to :batch
-  should_belong_to :student_category
-  should_belong_to :country
-  should_belong_to :nationality
-  should_have_many :guardians
-  should_have_many :finance_transactions
+  belong_to :batch
+  belong_to :student_category
+  belong_to :country
+  belong_to :nationality
+  have_many :guardians
+  have_many :finance_transactions
   
   context 'a new student' do
     setup { @student = Factory.build(:student) }

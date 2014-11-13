@@ -1,8 +1,8 @@
 require File.expand_path(File.dirname(__FILE__) + './../test_helper')
 
 class ExamGroupTest < ActiveSupport::TestCase
-  should_validate_presence_of :name
-  should_have_many :exams
+  validate_presence_of :name
+  have_many :exams
 
   context 'a new exam group' do
     setup do

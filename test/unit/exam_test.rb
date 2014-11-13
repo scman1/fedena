@@ -3,8 +3,8 @@ require File.expand_path(File.dirname(__FILE__) + './../test_helper')
 class ExamTest < ActiveSupport::TestCase
   fixtures :users
 
-  should_belong_to :exam_group
-  should_belong_to :subject
+  belong_to :exam_group
+  belong_to :subject
 
   context 'a new exam record' do
     setup do

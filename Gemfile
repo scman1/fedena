@@ -45,3 +45,8 @@ gem 'paperclip'
 gem 'in_place_editing'
 gem 'xss_terminate', '~> 0.22'
 gem 'will_paginate', '~> 3.0'
+group :test do
+  gem 'rspec-rails'
+  gem 'shoulda'
+  gem 'shoulda-context'
+end
