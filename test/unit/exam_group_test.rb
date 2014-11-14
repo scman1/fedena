@@ -1,12 +1,14 @@
 require File.expand_path(File.dirname(__FILE__) + './../test_helper')
 
 class ExamGroupTest < ActiveSupport::TestCase
+  include FactoryGirl::Syntax::Methods
+  
   validate_presence_of :name
   have_many :exams
 
   context 'a new exam group' do
     setup do
-      @exam_group = Factory.build(:exam_group)
+      @exam_group = build(:exam_group)
     end
 
     should 'be valid' do

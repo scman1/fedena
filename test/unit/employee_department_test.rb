@@ -2,12 +2,13 @@ require File.expand_path(File.dirname(__FILE__) + './../test_helper')
 
 class EmployeeDepartmentTest < ActiveSupport::TestCase
   
- have_many :employees
- #have_named_scope :active, :conditions => {:status => true }
- 
-
+  include FactoryGirl::Syntax::Methods
+  
+  have_many :employees
+  #have_named_scope :active, :conditions => {:status => true }
+   
   context 'a new department' do
-    setup { @department = Factory.build(:employee_department) }
+    setup { @department = build(:employee_department) }
 
     should 'be new record' do
       assert @department.new_record?
@@ -24,20 +25,17 @@ class EmployeeDepartmentTest < ActiveSupport::TestCase
     end
 
     should 'not create a department with same code' do
-      @department = Factory.create(:general_department)
-      @department2 = Factory.build(:general_department)
+      @department = create(:general_department)
+      @department2 = build(:general_department)
       assert_invalid @department2
       assert @department2.errors.invalid?(:code)
     end
 
     should 'not create a department with same name' do
-      @department = Factory.create(:general_department)
-      @department2 = Factory.build(:general_department)
+      @department = create(:general_department)
+      @department2 = build(:general_department)
       assert_invalid @department2
       assert @department2.errors.invalid?(:name)
     end
-
-
-
   end
 end

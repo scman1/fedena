@@ -1,6 +1,8 @@
 require File.expand_path(File.dirname(__FILE__) + './../test_helper')
 
 class ExamTest < ActiveSupport::TestCase
+  include FactoryGirl::Syntax::Methods
+
   fixtures :users
 
   belong_to :exam_group
@@ -8,8 +10,8 @@ class ExamTest < ActiveSupport::TestCase
 
   context 'a new exam record' do
     setup do
-      @exam = Factory.build(:exam)
-      @exam_group = Factory.create(:exam_group, :exam_date => Date.today)
+      @exam = build(:exam)
+      @exam_group = create(:exam_group, :exam_date => Date.today)
       @exam.exam_group = @exam_group
     end
 
@@ -33,11 +35,11 @@ class ExamTest < ActiveSupport::TestCase
 
   context 'an existing exam record' do
     setup do
-      @exam_group = Factory.create(:exam_group, :exam_date => Date.today)
-      @course = Factory.create(:course)
+      @exam_group = create(:exam_group, :exam_date => Date.today)
+      @course = create(:course)
       @batch = @course.batches.first
-      @subject = Factory.create(:subject, :batch_id => @batch.id)
-      @exam = Factory.create(:exam, 
+      @subject = create(:subject, :batch_id => @batch.id)
+      @exam = create(:exam, 
         :exam_group_id => @exam_group.id,
         :subject_id => @subject.id)
     end

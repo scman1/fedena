@@ -1,6 +1,9 @@
 require File.expand_path(File.dirname(__FILE__) + './../test_helper')
 
 class UserControllerTest < ActionController::TestCase
+
+  include FactoryGirl::Syntax::Methods
+  
   fixtures :batches, :courses, :users
 
   setup do

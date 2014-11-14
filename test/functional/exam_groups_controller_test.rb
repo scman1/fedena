@@ -1,6 +1,9 @@
 require File.expand_path(File.dirname(__FILE__) + '/../test_helper')
 
 class ExamGroupsControllerTest < ActionController::TestCase
+
+  include FactoryGirl::Syntax::Methods
+
   fixtures :users
 
   context 'with admin logged in' do
@@ -10,9 +13,9 @@ class ExamGroupsControllerTest < ActionController::TestCase
       @response = ActionController::TestResponse.new
       @request.session[:user_id] = 1
 
-      @c = Factory.create(:course)
-      @b = Factory.create(:batch,  :course_id => @c.id)
-      @exam_group = Factory.create(:exam_group,:exam_date => Date.today)
+      @c = create(:course)
+      @b = create(:batch,  :course_id => @c.id)
+      @exam_group = create(:exam_group,:exam_date => Date.today)
     end
 
     should 'render index' do
@@ -34,7 +37,7 @@ class ExamGroupsControllerTest < ActionController::TestCase
 
     should 'redirect to index if correct parameters are give in new form' do
       post :create, {
-        :exam_group => Factory.attributes_for(:exam_group),
+        :exam_group => attributes_for(:exam_group),
         :batch_id => @b.id
       }
       assert_redirected_to :action => 'index'
@@ -53,7 +56,7 @@ class ExamGroupsControllerTest < ActionController::TestCase
 
     should 'redirect to show if correct parameters are give in edit form' do
       post :update, {
-        :exam_group => Factory.attributes_for(:exam_group),
+        :exam_group => attributes_for(:exam_group),
         :batch_id => @b.id, :id=>@exam_group.id
       }
       assert_redirected_to :action => 'show'

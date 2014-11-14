@@ -2,6 +2,8 @@ require File.expand_path(File.dirname(__FILE__) + './../test_helper')
 
 class StudentTest < ActiveSupport::TestCase
 
+  include FactoryGirl::Syntax::Methods
+
   belong_to :batch
   belong_to :student_category
   belong_to :country
@@ -10,7 +12,7 @@ class StudentTest < ActiveSupport::TestCase
   have_many :finance_transactions
   
   context 'a new student' do
-    setup { @student = Factory.build(:student) }
+    setup { @student = build(:student) }
 
     should 'be new record' do
       assert @student.new_record?
@@ -110,7 +112,7 @@ class StudentTest < ActiveSupport::TestCase
 
   context 'saving a new user' do
     setup do
-      @student = Factory.build(:student)
+      @student = build(:student)
     end
 
     should 'save the record successfully' do
@@ -121,8 +123,8 @@ class StudentTest < ActiveSupport::TestCase
 
   context 'destroying a student record' do
     setup do
-      @student = Factory.create(:student)
-      @guardian = Factory.create(:guardian)
+      @student = create(:student)
+      @guardian = create(:guardian)
       @student.guardians << @guardian
     end
 
