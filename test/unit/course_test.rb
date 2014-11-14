@@ -2,6 +2,8 @@ require File.expand_path(File.dirname(__FILE__) + './../test_helper')
 
 class CourseTest < ActiveSupport::TestCase
 
+  include FactoryGirl::Syntax::Methods
+
   validate_presence_of :course_name
   validate_presence_of :code
   have_many :batches
@@ -11,8 +13,8 @@ class CourseTest < ActiveSupport::TestCase
 
   context 'a new course' do
     setup do
-      @course = Factory.build(:course)
-      @batch = Factory.build(:batch)
+      @course = build(:course)
+      @batch = build(:batch)
       @course.batches << @batch
     end
 
@@ -25,7 +27,7 @@ class CourseTest < ActiveSupport::TestCase
 
   context 'existing course' do
     setup do
-      @course = Factory.create(:course)
+      @course = create(:course)
     end
 
     should 'be inactive' do

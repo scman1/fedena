@@ -2,6 +2,8 @@ require File.expand_path(File.dirname(__FILE__) + './../test_helper')
 
 class SubjectTest < ActiveSupport::TestCase
 
+  include FactoryGirl::Syntax::Methods
+  
   validate_presence_of :name
   validate_presence_of :code
   validate_presence_of :max_weekly_classes
@@ -15,7 +17,7 @@ class SubjectTest < ActiveSupport::TestCase
   context 'new general subject' do
 
     setup do
-      @subject = Factory.build(:general_subject)
+      @subject = build(:general_subject)
     end
 
     should 'be a new record' do
@@ -29,14 +31,14 @@ class SubjectTest < ActiveSupport::TestCase
     end
 
     should 'not create a subject with same code' do
-      @subject = Factory.create(:general_subject)
-      @subject2 = Factory.build(:general_subject)
+      @subject = create(:general_subject)
+      @subject2 = build(:general_subject)
       assert_invalid @subject2
-      assert @subject2.errors.invalid?(:code)
+      assert @subject2.errors[:code].any?
     end
 
     should 'save with valid data' do
-      @subject = Factory.build(:general_subject)
+      @subject = build(:general_subject)
       @subject.save
       assert_equal Subject.count, 1
     end

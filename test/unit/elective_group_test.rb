@@ -1,6 +1,9 @@
 require 'test_helper'
 
 class ElectiveGroupTest < ActiveSupport::TestCase
+
+  include FactoryGirl::Syntax::Methods
+
   belong_to :batch
   have_many :subjects
 
@@ -12,7 +15,7 @@ class ElectiveGroupTest < ActiveSupport::TestCase
   context "existing elective group" do
 
     setup do
-      @elective_group = Factory.build(:elective_group)
+      @elective_group = build(:elective_group)
     end
 
     should 'be new a active new record' do

@@ -25,43 +25,43 @@ class StudentTest < ActiveSupport::TestCase
 #    should 'validate presence of admission no' do
 #      @student.admission_no = nil
 #      assert_invalid @student
-#      assert @student.errors.invalid?(:admission_no)
+#      assert @student.errors[:admission_no].any
 #    end
 
     should 'validate presence of admission date' do
       @student.admission_date = nil
       assert_invalid @student
-      assert @student.errors.invalid?(:admission_date)
+      assert @student.errors[:admission_date].any?
     end
 
     should 'validate presence of first name' do
       @student.first_name = nil
       assert_invalid @student
-      assert @student.errors.invalid?(:first_name)
+      assert @student.errors[:first_name].any?
     end
 
     should 'validate presence of batch' do
       @student.batch_id = nil
       assert_invalid @student
-      assert @student.errors.invalid?(:batch_id)
+      assert @student.errors[:batch_id].any?
     end
 
     should 'validate presence of date of birth' do
       @student.date_of_birth = nil
       assert_invalid @student
-      assert @student.errors.invalid?(:date_of_birth)
+      assert @student.errors[:date_of_birth].any?
     end
 
     should 'not have date of birth in future' do
       @student.date_of_birth = Date.today
       assert_invalid @student
-      assert @student.errors.invalid?(:date_of_birth)
+      assert @student.errors[:date_of_birth].any?
     end
 
     should 'validate presence of gender attribute' do
       @student.gender = nil
       assert_invalid @student
-      assert @student.errors.invalid?(:gender)
+      assert @student.errors[:gender].any?
     end
 
     should 'return correct first and last names' do
@@ -105,7 +105,7 @@ class StudentTest < ActiveSupport::TestCase
     should 'not accept invalid gender attributes' do
       @student.gender = 'qwerty'
       assert_invalid @student
-      assert @student.errors.invalid?(:gender)
+      assert @student.errors[:gender].any?
     end
 
   end
