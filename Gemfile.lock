@@ -51,6 +51,11 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.2.2)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.5.0)
+      factory_girl (~> 4.5.0)
+      railties (>= 3.0.0)
     hike (1.2.3)
     hoe (3.13.0)
       rake (>= 0.8, < 11.0)
@@ -157,6 +162,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   declarative_authorization
   delayed_job_active_record
+  factory_girl_rails (~> 4.0)
   in_place_editing
   jquery-rails
   paperclip

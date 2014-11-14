@@ -1,13 +1,14 @@
 require File.expand_path(File.dirname(__FILE__) + './../test_helper')
 
 class UserTest < ActiveSupport::TestCase
-
+  include FactoryGirl::Syntax::Methods  
+  
   validate_presence_of :email
   validate_presence_of :role
 
   context 'a new user' do
     setup do
-      @user = Factory.build(:admin_user)
+      @user = build(:admin_user)
     end
 
     should 'be new record' do
@@ -55,13 +56,13 @@ class UserTest < ActiveSupport::TestCase
     should 'not save without username attribute' do
       @user.username = nil
       assert_invalid @user
-      assert @user.errors.invalid?(:username)
+      assert @user.errors[:username].any?
     end
 
     should 'not accept empty username' do
       @user.username = ''
       assert_invalid @user
-      assert @user.errors.invalid?(:username)
+      assert @user.errors[:username].any?
     end
 
     should 'not accept spl characters in username' do
@@ -69,32 +70,32 @@ class UserTest < ActiveSupport::TestCase
       usernames.each do |username|
         @user.username = username
         assert_invalid @user
-        assert @user.errors.invalid?(:username)
+        assert @user.errors[:username].any?
       end
     end
 
     should 'not accept spaces in username' do
       @user.username = 'john doe'
       assert_invalid @user
-      assert @user.errors.invalid?(:username)
+      assert @user.errors[:username].any?
     end
 
-    should 'not accepot 21 character usernames' do
+    should 'not accept 21 character usernames' do
       @user.username = 'a'*21
       assert_invalid @user
-      assert @user.errors.invalid?(:username)
+      assert @user.errors[:username].any?
     end
 
     should 'not accept empty password on create' do
       @user.password = ''
       assert_invalid @user
-      assert @user.errors.invalid?(:password)
+      assert @user.errors[:password].any?
     end
 
     should 'not accept nil as password' do
       @user.password = nil
       assert_invalid @user
-      assert @user.errors.invalid?(:password)
+      assert @user.errors[:password].any?
     end
 
     should 'accept alphanumerics and spl characters in passwords' do
@@ -132,8 +133,8 @@ class UserTest < ActiveSupport::TestCase
 
   context 'with admin user present' do
     setup do
-      @admin_user = Factory.create(:admin_user, :username => 'admin1')
-      @new_user   = Factory.build(:admin_user, :username => 'john')
+      @admin_user = create(:admin_user, :username => 'admin1')
+      @new_user   = build(:admin_user, :username => 'john')
     end
 
     should 'setup a valid saved user' do

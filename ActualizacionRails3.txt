@@ -196,7 +196,7 @@
         gem 'shoulda'
         gem 'shoulda-context'
       end
-	  
+	    
 	  y modificar los usos de los matchers de shoulda en los casos de pruebas
 	  por ejemplo 
 	  should_have_many se cambia a have_many
@@ -207,7 +207,33 @@
 	   Muchas de las fixtures estan desfasadas con las clases usadas en fedena
 	   esto ocasiona problemas al cargar el contexto de pruebas. Algunas tablas o
 	   campos han sido eliminados.
-	  
+	   
+	   Solución: 
+	   
+	   Editar las fixtures incorrectas y eliminar las no usadas
+
+    12. Problema con pruebas que usan la gema 'factory_girl
+    	
+	  'factory_girl' se usa para crear pruebas sin usar fixtures.
+	   
+	  Solución:
+	   
+	  Configurar factory_girl (agregar a gemfile y verificar el inicializador)
+	  1. Agregar a gemfile
+	    gem "factory_girl_rails", "~> 4.0"
+	  2. Actualizar el conjunto de gemas usadas ejecutando:
+	    bundle install
+	  3. Configurar el conjunto de casos de pruebas incluyendo factory_girl
+	    class Test::Unit::TestCase
+		  # Agregamos esta línea a las pruebas que usan factory_girl
+          include FactoryGirl::Syntax::Methods  
+        end
+	  4. Editar el archivo factories.rb para agregar
+	    FactoryGirl.define do
+		  define do...
+        end 
+		y reemplazar Factory.define por define 
+	13. 
 19. Rutas... muchos problemas por la vieja sintaxis de las rutas, arreglarlas todas... long hours
     con esto quedamos igual que en el http://es.asciicasts.com/episodes/225-actualizacion-a-rails-3, la aplicacion "corre", las migraciones tambien se pueden hacer. solo se requiere algunas 
 
@@ -238,7 +264,6 @@
       - :month
       - :year
 	
-
     2. en los lugares donde se usa solo "t" se debe cambiar a "I18n.t"
  
     3. Al arrancar la aplicacion se tiene un mensaje de error por que la gema de i18n (i18n (~> 0.6, >= 0.6.4)) 

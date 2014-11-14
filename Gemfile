@@ -49,4 +49,5 @@ group :test do
   gem 'rspec-rails'
   gem 'shoulda'
   gem 'shoulda-context'
+  gem "factory_girl_rails", "~> 4.0"
 end

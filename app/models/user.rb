@@ -17,6 +17,7 @@
 #limitations under the License.
 
 class User < ActiveRecord::Base
+  
   attr_accessible :admin, :employee, :password, :username
   attr_accessor :password, :role, :old_password, :new_password, :confirm_password
 
