@@ -17,7 +17,7 @@
 #limitations under the License.
 
 class GradingLevel < ActiveRecord::Base
-  attr_accessible :name, :min_score
+  attr_accessible :name, :min_score, :order, :batch_id
   belongs_to :batch
 
   validates_presence_of :name, :min_score
