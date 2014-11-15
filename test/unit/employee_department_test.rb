@@ -20,21 +20,21 @@ class EmployeeDepartmentTest < ActiveSupport::TestCase
 
     should 'validate presence of name' do
       @department.name = nil
-      assert_invalid @department
+      assert !@department.valid?
       assert @department.errors[:name].any?
     end
 
     should 'not create a department with same code' do
       @department = create(:general_department)
       @department2 = build(:general_department)
-      assert_invalid @department2
+      assert !@department2.valid?
       assert @department2.errors[:code].any?
     end
 
     should 'not create a department with same name' do
       @department = create(:general_department)
       @department2 = build(:general_department)
-      assert_invalid @department2
+      assert !@department2.valid?
       assert @department2.errors[:name].any
     end
   end

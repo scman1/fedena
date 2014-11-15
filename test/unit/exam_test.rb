@@ -17,18 +17,18 @@ class ExamTest < ActiveSupport::TestCase
 
     should 'validate presence of maximum marks' do
       @exam.maximum_marks = nil
-      assert_invalid @exam
+      assert !@exam.valid?
     end
 
     should 'validate presence of minimum marks' do
       @exam.minimum_marks = nil
-      assert_invalid @exam
+      assert !@exam.valid?
     end
 
     should 'not have minimum marks more than maximum marks' do
       @exam.maximum_marks = 50
       @exam.minimum_marks = 51
-      assert_invalid @exam
+      assert !@exam.valid?
     end
 
   end

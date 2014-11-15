@@ -25,12 +25,12 @@ class UserTest < ActiveSupport::TestCase
 
     should 'not save user without username' do
       @user.username = nil
-      assert_invalid @user
+      assert !@user.valid?
     end
 
     should 'not save without password' do
       @user.password = nil
-      assert_invalid @user
+      assert !@user.valid?
     end
 
     should 'accept single character usernames' do
@@ -55,13 +55,13 @@ class UserTest < ActiveSupport::TestCase
 
     should 'not save without username attribute' do
       @user.username = nil
-      assert_invalid @user
+      assert !@user.valid?
       assert @user.errors[:username].any?
     end
 
     should 'not accept empty username' do
       @user.username = ''
-      assert_invalid @user
+      assert !@user.valid?
       assert @user.errors[:username].any?
     end
 
@@ -69,32 +69,32 @@ class UserTest < ActiveSupport::TestCase
       usernames = ["O'Hara", 'jack=', 'a&&*']
       usernames.each do |username|
         @user.username = username
-        assert_invalid @user
+        assert !@user.valid?
         assert @user.errors[:username].any?
       end
     end
 
     should 'not accept spaces in username' do
       @user.username = 'john doe'
-      assert_invalid @user
+      assert !@user.valid?
       assert @user.errors[:username].any?
     end
 
     should 'not accept 21 character usernames' do
       @user.username = 'a'*21
-      assert_invalid @user
+      assert !@user.valid?
       assert @user.errors[:username].any?
     end
 
     should 'not accept empty password on create' do
       @user.password = ''
-      assert_invalid @user
+      assert !@user.valid?
       assert @user.errors[:password].any?
     end
 
     should 'not accept nil as password' do
       @user.password = nil
-      assert_invalid @user
+      assert !@user.valid?
       assert @user.errors[:password].any?
     end
 
@@ -118,7 +118,7 @@ class UserTest < ActiveSupport::TestCase
       passwords = [nil, '', 'asd']
       passwords.each do |password|
         @user.password = password
-        assert_invalid @user
+        assert !@user.valid?
       end
     end
 
@@ -126,7 +126,7 @@ class UserTest < ActiveSupport::TestCase
       emails = ["blah", "b lah"]
       emails.each do |email|
         @user.email = email
-        assert_invalid @user
+        assert !@user.valid?
       end
     end
   end
@@ -153,7 +153,7 @@ class UserTest < ActiveSupport::TestCase
 
     should 'not save with duplicate username' do
       @new_user.username = 'admin'
-      assert_invalid @new_user
+      assert !@new_user.valid?
     end
 
     should 'return correct role name for admin' do

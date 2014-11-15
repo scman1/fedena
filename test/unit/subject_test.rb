@@ -27,13 +27,13 @@ class SubjectTest < ActiveSupport::TestCase
     should 'create a subject without exam' do
       @subject.batch_id = 1
       @subject.no_exams = true
-      assert_valid @subject
+      assert @subject.valid?
     end
 
     should 'not create a subject with same code' do
       @subject = create(:general_subject)
       @subject2 = build(:general_subject)
-      assert_invalid @subject2
+      assert !@subject2.valid?
       assert @subject2.errors[:code].any?
     end
 

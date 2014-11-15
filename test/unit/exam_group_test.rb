@@ -12,12 +12,12 @@ class ExamGroupTest < ActiveSupport::TestCase
     end
 
     should 'be valid' do
-      assert_valid @exam_group
+      assert @exam_group.valid?
     end
 
     should 'validate presence of name' do
       @exam_group.name = nil
-      assert_invalid @exam_group
+      assert !@exam_group.valid?
     end
 
     should 'save current date if date is not given' do
