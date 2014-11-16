@@ -1,6 +1,6 @@
 
 FactoryGirl.define do
-  factory :employee_user, :class => User do |u|
+  factory :employee_user, class:  User do |u|
     u.sequence(:username) { |n| "emp#{n}" }
     u.password            { |u1| "#{u1.username}123" }
     u.email               { |u1| "#{u1.username}@fedena.com" }
@@ -9,7 +9,7 @@ FactoryGirl.define do
     u.role                'Employee'
   end
 
-  factory :admin_user, :class => User do |u|
+  factory :admin_user, class: User do |u|
     u.sequence(:username) { |n| "admin#{n}" }
     u.password { |u1| "#{u1.username}123" }
     u.first_name 'Fedena'
@@ -36,71 +36,71 @@ FactoryGirl.define do
   factory :guardian do |g|
     g.first_name 'Fname'
     g.last_name  'Lname'
-  g.relation   'Parent'
-end
+    g.relation   'Parent'
+  end
 
-factory :course do |c|
-  c.course_name  '1'
-  c.section_name 'A'
-  c.code         '1A'
+  factory :course do |c|
+    c.course_name  '1'
+    c.section_name 'A'
+    c.code         '1A'
 
-  c.batches { |batches| [batches.association(:batch)] }
-end
+    c.batches { |batches| [batches.association(:batch)] }
+  end
 
-factory :batch do |b|
-  b.name       '2010/11'
-  b.start_date Date.today
-  b.end_date   Date.today + 1.years
-end
+  factory :batch do |b|
+    b.name       '2010/11'
+    b.start_date Date.today
+    b.end_date   Date.today + 1.years
+  end
 
-factory :exam_group do |e|
-  e.sequence(:name) { |n| "Exam Group #{n}" }
-  e.exam_date       Date.today
-end
+  factory :exam_group do |e|
+    e.sequence(:name) { |n| "Exam Group #{n}" }
+    e.exam_date       Date.today
+  end
 
-factory :subject do |s|
-  s.name               'Subject'
-  s.code               'SUB'
-  s.max_weekly_classes 8
-end
+  factory :subject do |s|
+    s.name               'Subject'
+    s.code               'SUB'
+    s.max_weekly_classes 8
+  end
 
-factory :exam do |e|
-  e.start_time    Time.now
-  e.end_time      Time.now + 1.hours
-  e.maximum_marks 100
-  e.minimum_marks 30
-  e.weightage     50
-end
+  factory :exam do |e|
+    e.start_time    Time.now
+    e.end_time      Time.now + 1.hours
+    e.maximum_marks 100
+    e.minimum_marks 30
+    e.weightage     50
+  end
 
-factory :general_subject,:class=>"Subject" do |s|
-  s.name  "Subject"
-  s.code   "SUB1"
-  s.batch_id           1
-  s.max_weekly_classes 5
-end
+  factory :general_subject, class: Subject do |s|
+    s.name  "Subject"
+    s.code   "SUB1"
+    s.batch_id           1
+    s.max_weekly_classes 5
+  end
 
-factory :elective_group do |s|
-  s.name  "Test Elective"
-  s.batch_id           1
-end
+  factory :elective_group do |s|
+    s.name  "Test Elective"
+    s.batch_id           1
+  end
 
-factory :employee_department do |e|
-  e.sequence(:name) { |n| "emp_department#{n}" }
-  e.sequence(:code) { |n| "forad#{n}" }
-end
+  factory :employee_department, class: HR::EmployeeDepartment do |e|
+    e.sequence(:name) { |n| "emp_department#{n}" }
+    e.sequence(:code) { |n| "forad#{n}" }
+  end
 
-factory :general_department,:class=>"EmployeeDepartment" do |s|
-  s.name  "Dep1"
-  s.code   "forad"
-end
+  factory :general_department, class: HR::EmployeeDepartment do |s|
+    s.name  "Dep1"
+    s.code   "forad"
+  end
 
-  factory :employee_category do |e|
+  factory :employee_category, class: HR::EmployeeCategory do |e|
     e.sequence(:name) { |n| "emp_category#{n}" }
     e.sequence(:prefix) { |n| "forad#{n}" }
   end
 
-factory :general_emp_category,:class=>"EmployeeCategory" do |s|
-  s.name  "cat1"
-  s.prefix   "forads"
-end
+  factory :general_emp_category, class: HR::EmployeeCategory do |s|
+    s.name  "cat1"
+    s.prefix   "forads"
+  end
 end

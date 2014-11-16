@@ -17,6 +17,9 @@
 #limitations under the License.
 
 class Batch < ActiveRecord::Base
+
+  attr_accessible :name
+
   GRADINGTYPES = {"1"=>"GPA","2"=>"CWA","3"=>"CCE"}
 
   belongs_to :course

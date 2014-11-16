@@ -123,8 +123,8 @@ class StudentTest < ActiveSupport::TestCase
 
   context 'destroying a student record' do
     setup do
-      @student = create(:student)
-      @guardian = create(:guardian)
+      @student = build(:student)
+      @guardian = build(:guardian)
       @student.guardians << @guardian
     end
 

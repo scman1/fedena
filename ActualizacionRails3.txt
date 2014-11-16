@@ -256,7 +256,10 @@
 	1. problemas de mass assignment por atributos no declarados como accesibles
 	   Agregar attr_accessible en las clases que lo reguieran
 	
-	
+	2. errores por falta de espacios de nombres en las clases de HR
+	   Agregamos el prefijo HR:: a las declaraciones de clase en el archivo factories.rb
+	   
+	   
 19. Rutas... muchos problemas por la vieja sintaxis de las rutas, arreglarlas todas... long hours
     con esto quedamos igual que en el http://es.asciicasts.com/episodes/225-actualizacion-a-rails-3, la aplicacion "corre", las migraciones tambien se pueden hacer. solo se requiere algunas 
 

@@ -35,7 +35,7 @@ class EmployeeDepartmentTest < ActiveSupport::TestCase
       @department = create(:general_department)
       @department2 = build(:general_department)
       assert !@department2.valid?
-      assert @department2.errors[:name].any
+      assert @department2.errors[:name].any?
     end
   end
 end
