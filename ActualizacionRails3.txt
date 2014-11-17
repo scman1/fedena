@@ -258,22 +258,32 @@
 	
 	2. errores por falta de espacios de nombres en las clases de HR
 	   Agregamos el prefijo HR:: a las declaraciones de clase en el archivo factories.rb
-	   
-	   
-19. Rutas... muchos problemas por la vieja sintaxis de las rutas, arreglarlas todas... long hours
+
+    3. errores por rutas no resueltas.
+	   Agregamos las rutas necesarias para disminuir el número de errores en las pruebas funcionales
+
+20. Error por uso de palabra reservada Configuration como nombre de una clase de fedena
+
+    Configuration es una palabra reservada de Rails (ActiveSupport::Configurable::Configuration:Class)
+
+	Aqui debemos hacer un cambio mayor ya que configuration se usa varias veces en la aplicación. 
+	Cambiaremos la clase y todas las llamadas a ella.
+		 
+		 
+21. Rutas... muchos problemas por la vieja sintaxis de las rutas, arreglarlas todas... long hours
     con esto quedamos igual que en el http://es.asciicasts.com/episodes/225-actualizacion-a-rails-3, la aplicacion "corre", las migraciones tambien se pueden hacer. solo se requiere algunas 
 
     Empezamos con la ruta de raíz y de ahí vamos activando cada ruta como se requiera
 
-20. Problema con: 
+22. Problema con: 
     #filter_parameter_logging :password
     en application_controller, comentado pues al parecer no es requerido
 
-21. Problema al cargar las librerias de fedena, modificar el application.rb para que las cargue al iniciar agregando:
+23. Problema al cargar las librerias de fedena, modificar el application.rb para que las cargue al iniciar agregando:
 
     config.autoload_paths += %W(#{config.root}/lib)
 
-22. Problemas con internacionalización. 
+24. Problemas con internacionalización. 
     Fedena Usa Translator para internacionalización, el problema es que esta gema funciona solo para rails 2. 
     aparentemente no hay actualizaciones para rails 3+
     Solución usar i18n que provee rails.
@@ -308,7 +318,7 @@
 	A3. La aplicación carga y muestra la pantalla de login
     A4. Al cambiar la incialización se actualiza el lenguaje automaticámente, i18n funciona	20
 
-23. Problemas en la primera ejecución (visibles desde el navegador)
+25. Problemas en la primera ejecución (visibles desde el navegador)
 	
 	2. Error en clase configuration
 	  undefined method `find_all_by_config_key' for ActiveSupport::Configurable::Configuration:Class
@@ -317,11 +327,11 @@
 	  Este error viene de como se inicializa la clase 'Configuration'
 	  
 
-24. Arreglar rutas y terminar de agregar plugins a Gemfile
+26. Arreglar rutas y terminar de agregar plugins a Gemfile
     
-25. Arreglar estilos
+27. Arreglar estilos
 
-26. Arreglar Javascript
+28. Arreglar Javascript
 
 
 

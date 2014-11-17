@@ -1,50 +1,23 @@
 Fedena::Application.routes.draw do 
   
-  # stop using map  
-  #map.resources :grading_levels
-  resources :grading_levels
-  # map.resources :ranking_levels, :collection => {:create_ranking_level=>[:get,:post], :edit_ranking_level=>[:get,:post], :update_ranking_level=>[:get,:post], :delete_ranking_level=>[:get,:post], :ranking_level_cancel=>[:get,:post], :change_priority=>[:get,:post]}
-  resources :ranking_levels do
-    collection do
-	  get  :create_ranking_level
-	  post :create_ranking_level
-	  get  :edit_ranking_level
-	  post :edit_ranking_level
-	  get  :update_ranking_level
-	  post :update_ranking_level
-	  get  :delete_ranking_level
-	  post :delete_ranking_level
-	  get  :ranking_level_cancel
-	  post :ranking_level_cancel
-	  get  :change_priority
-	  post :change_priority
-    end
-  end
+   # map.resources :ranking_levels, :collection => {:create_ranking_level=>[:get,:post], :edit_ranking_level=>[:get,:post], :update_ranking_level=>[:get,:post], :delete_ranking_level=>[:get,:post], :ranking_level_cancel=>[:get,:post], :change_priority=>[:get,:post]}
   # map.resources :class_designations
-  resources :class_designations
-
+ 
   # #map.resources :exam_reports, :collection => {:course_reports_index=>[:get,:post], :batch_reports_index=>[:get,:post]}
 
   # map.resources :class_timings
-  resources :class_timings 
    
   # map.resources :subjects
-  resources :subjects
   
   # map.resources :attendances, :collection=>{:daily_register=>:get,:subject_wise_register=>:get}
-  resources :attendances
   
   # map.resources :employee_attendances
-  resources :employee_attendances
   
   # map.resources :attendance_reports
-  resources :attendance_reports
   
   # map.resources :cce_exam_categories
-  resources :cce_exam_categories
   
   # map.resources :assessment_scores,:collection=>{:exam_fa_groups=>[:get],:observation_groups=>[:get]}
-  resources :assessment_scores
   
   # map.resources :cce_settings,:collection=>{:basic=>[:get],:scholastic=>[:get],:co_scholastic=>[:get]}
   # map.resources :scheduled_jobs,:except => [:show]
@@ -86,7 +59,33 @@ Fedena::Application.routes.draw do
 
   # map.resources :timetables do |timetable|
   scope '(:locale)' do
-	resources :user do
+    resources :assessment_scores
+    resources :attendances
+    resources :attendance_reports
+    resources :cce_exam_categories
+    resources :class_designations
+    resources :class_timings 
+    resources :employee_attendances
+	resources :exam_groups
+    resources :grading_levels
+    resources :ranking_levels do
+      collection do
+	    get  :create_ranking_level
+	    post :create_ranking_level
+  	    get  :edit_ranking_level
+	    post :edit_ranking_level
+     	get  :update_ranking_level
+	    post :update_ranking_level
+	    get  :delete_ranking_level
+	    post :delete_ranking_level
+	    get  :ranking_level_cancel
+	    post :ranking_level_cancel
+	    get  :change_priority
+	    post :change_priority
+      end
+    end
+    resources :subjects
+    resources :user do
 	  collection do
 	    post :forgot_password
 	  end
