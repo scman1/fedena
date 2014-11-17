@@ -95,7 +95,7 @@ class ArchivedEmployeeController < ApplicationController
 
 
   def profile_payroll_details
-    @currency_type = Configuration.find_by_config_key("CurrencyType").config_value
+    @currency_type = CustomSetting.find_by_config_key("CurrencyType").config_value
     @employee = ArchivedEmployee.find(params[:id])
     @payroll_details = ArchivedEmployeeSalaryStructure.find_all_by_employee_id(@employee, :order=>"payroll_category_id ASC")
     render :partial => "payroll_details"

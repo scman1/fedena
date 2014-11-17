@@ -292,10 +292,9 @@ ActiveRecord::Schema.define(:version => 20130110095412) do
     t.integer  "course_id"
     t.datetime "start_date"
     t.datetime "end_date"
-    t.boolean  "is_active",    :default => true
-    t.boolean  "is_deleted",   :default => false
+    t.boolean  "is_active",   :default => true
+    t.boolean  "is_deleted",  :default => false
     t.string   "employee_id"
-    t.string   "grading_type"
   end
 
   add_index "batches", ["is_deleted", "is_active", "course_id", "name"], :name => "index_batches_on_is_deleted_and_is_active_and_course_id_and_name"
@@ -373,14 +372,6 @@ ActiveRecord::Schema.define(:version => 20130110095412) do
 
   add_index "class_timings", ["batch_id", "start_time", "end_time"], :name => "index_class_timings_on_batch_id_and_start_time_and_end_time"
 
-  create_table "configurations", :force => true do |t|
-    t.string "config_key"
-    t.string "config_value"
-  end
-
-  add_index "configurations", ["config_key"], :name => "index_configurations_on_config_key"
-  add_index "configurations", ["config_value"], :name => "index_configurations_on_config_value"
-
   create_table "countries", :force => true do |t|
     t.string "name"
   end
@@ -404,6 +395,14 @@ ActiveRecord::Schema.define(:version => 20130110095412) do
 
   add_index "courses_observation_groups", ["course_id"], :name => "index_courses_observation_groups_on_course_id"
   add_index "courses_observation_groups", ["observation_group_id"], :name => "index_courses_observation_groups_on_observation_group_id"
+
+  create_table "custom_settings", :force => true do |t|
+    t.string "config_key"
+    t.string "config_value"
+  end
+
+  add_index "custom_settings", ["config_key"], :name => "index_custom_settings_on_config_key"
+  add_index "custom_settings", ["config_value"], :name => "index_custom_settings_on_config_value"
 
   create_table "delayed_jobs", :force => true do |t|
     t.integer  "priority",   :default => 0
@@ -671,6 +670,7 @@ ActiveRecord::Schema.define(:version => 20130110095412) do
     t.integer "fa_group_id"
   end
 
+  add_index "fa_groups_subjects", ["fa_group_id", "subject_id"], :name => "score_index1"
   add_index "fa_groups_subjects", ["fa_group_id"], :name => "index_fa_groups_subjects_on_fa_group_id"
   add_index "fa_groups_subjects", ["subject_id"], :name => "index_fa_groups_subjects_on_subject_id"
 
@@ -1063,6 +1063,8 @@ ActiveRecord::Schema.define(:version => 20130110095412) do
     t.integer "additional_field_id"
     t.string  "additional_info"
   end
+
+  add_index "student_additional_details", ["student_id", "additional_field_id"], :name => "student_data_index1"
 
   create_table "student_additional_field_options", :force => true do |t|
     t.integer  "student_additional_field_id"

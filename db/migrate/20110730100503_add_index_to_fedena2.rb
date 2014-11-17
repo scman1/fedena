@@ -5,7 +5,7 @@ class AddIndexToFedena2 < ActiveRecord::Migration
     add_index :students, [:first_name,:middle_name,:last_name],:limit => 10
     add_index :employees,[:employee_number],:limit => 10
     add_index :privileges_users, :user_id
-    add_index :configurations,:config_value,:limit => 10
+    add_index :custom_settings,:config_value,:limit => 10
     add_index :batches,[:is_deleted,:is_active]
 
 
@@ -17,7 +17,7 @@ class AddIndexToFedena2 < ActiveRecord::Migration
     remove_index :students, [:first_name,:middle_name,:last_name]
     remove_index :employees, [:employee_number]
     remove_index :privileges_users,:user_id
-    remove_index :configurations,:config_value
+    remove_index :custom_settings,:config_value
     
   end
 end

@@ -130,11 +130,11 @@ class BatchesController < ApplicationController
       redirect_to [@course, @batch]
     else
       @grade_types=[]
-      gpa = Configuration.find_by_config_key("GPA").config_value
+      gpa = CustomSetting.find_by_config_key("GPA").config_value
       if gpa == "1"
         @grade_types << "GPA"
       end
-      cwa = Configuration.find_by_config_key("CWA").config_value
+      cwa = CustomSetting.find_by_config_key("CWA").config_value
       if cwa == "1"
         @grade_types << "CWA"
       end

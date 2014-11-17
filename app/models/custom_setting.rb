@@ -16,13 +16,13 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-#   Configuration table entries
+#   Custom Settings table entries
 #
 #   StudentAttendanceType  => Daily | SubjectWise
 #   CurrencyType           => Rs, $, E, ...
 #   ExamResultType         => Marks | Grades | MarksAndGrades
 #   InstitutionName        => name of the school or college
-class Configuration < ActiveRecord::Base
+class CustomSetting < ActiveRecord::Base
   attr_accessible :config_key, :config_value 
   STUDENT_ATTENDANCE_TYPE_OPTIONS = [[ "#{I18n.t('daily_text')}", "Daily"], [ "#{I18n.t('subject_wise_text')}", "SubjectWise"]]
   
@@ -37,7 +37,7 @@ class Configuration < ActiveRecord::Base
 
   def validate
     if self.config_key == "StudentAttendanceType"
-      errors.add_to_base( "#{I18n.t('student_attendance_type_should_be_one')} #{STUDENT_ATTENDANCE_TYPE_OPTIONS}") unless Configuration::STUDENT_ATTENDANCE_TYPE_OPTIONS.collect{|d| d[1] == self.config_value}.include?(true)
+      errors.add_to_base( "#{I18n.t('student_attendance_type_should_be_one')} #{STUDENT_ATTENDANCE_TYPE_OPTIONS}") unless CustomSetting::STUDENT_ATTENDANCE_TYPE_OPTIONS.collect{|d| d[1] == self.config_value}.include?(true)
     end
     if self.config_key == "NetworkState"
       errors.add_to_base( "#{I18n.t('network_state_should_be_one')} #{NETWORK_STATES}") unless NETWORK_STATES.collect{|d| d[1] == self.config_value}.include?(true)
@@ -73,7 +73,7 @@ class Configuration < ActiveRecord::Base
     def set_value(key, value)
       config = find_by_config_key(key)
       config.nil? ?
-        Configuration.create(:config_key => key, :config_value => value) :
+        CustomSetting.create(:config_key => key, :config_value => value) :
         config.update_attribute(:config_value, value)
     end
 
@@ -110,7 +110,7 @@ class Configuration < ActiveRecord::Base
       server_time = Time.now
       server_time_to_gmt = server_time.getgm
       local_tzone_time = server_time
-      time_zone = Configuration.find_by_config_key("TimeZone")
+      time_zone = CustomSetting.find_by_config_key("TimeZone")
       unless time_zone.nil?
         unless time_zone.config_value.nil?
           zone = TimeZone.find(time_zone.config_value)

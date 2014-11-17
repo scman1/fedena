@@ -30,7 +30,7 @@ class GradingLevelsController < ApplicationController
     if @batch.present?
       @credit = @batch.gpa_enabled? || @batch.cce_enabled?
     else
-      @credit = Configuration.cce_enabled? || Configuration.get_config_value('CWA')=='1' || Configuration.get_config_value('GPA')=='1'
+      @credit = CustomSetting.cce_enabled? || CustomSetting.get_config_value('CWA')=='1' || CustomSetting.get_config_value('GPA')=='1'
     end
     respond_to do |format|
       format.js { render :action => 'new' }
@@ -62,7 +62,7 @@ class GradingLevelsController < ApplicationController
     if @batch.present?
       @credit = @batch.gpa_enabled? || @batch.cce_enabled?
     else
-      @credit = Configuration.get_config_value('CCE')=='1' || Configuration.get_config_value('CWA')=='1' || Configuration.get_config_value('GPA')=='1'
+      @credit = CustomSetting.get_config_value('CCE')=='1' || CustomSetting.get_config_value('CWA')=='1' || CustomSetting.get_config_value('GPA')=='1'
     end
     respond_to do |format|
       format.html { }

@@ -5,7 +5,7 @@ class AddIndexToFedena < ActiveRecord::Migration
       add_index :finance_fees, [:fee_collection_id, :student_id]
       add_index :batch_students, [:batch_id, :student_id]
       add_index :subjects, [:batch_id, :elective_group_id,:is_deleted]
-      add_index :configurations, [:config_key],:limit => 10
+      add_index :custom_settings, [:config_key],:limit => 10
       add_index :exam_scores, [:student_id,:exam_id]
       add_index :archived_exam_scores, [:student_id,:exam_id]
       add_index :exams, [:exam_group_id,:subject_id]
@@ -28,7 +28,7 @@ class AddIndexToFedena < ActiveRecord::Migration
       remove_index :finance_fees, [:fee_collection_id, :student_id]
       remove_index :batch_students, [:batch_id, :student_id]
       remove_index :subjects, [:batch_id, :elective_group_id,:is_deleted]
-      remove_index :configurations, [:config_key]
+      remove_index :custom_settings, [:config_key]
       remove_index :exam_scores, [:student_id,:exam_id]
       remove_index :exams, [:exam_group_id,:subject_id]
       remove_index :archived_exam_scores, [:student_id,:exam_id]

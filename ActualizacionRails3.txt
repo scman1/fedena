@@ -267,8 +267,12 @@
     Configuration es una palabra reservada de Rails (ActiveSupport::Configurable::Configuration:Class)
 
 	Aqui debemos hacer un cambio mayor ya que configuration se usa varias veces en la aplicación. 
-	Cambiaremos la clase y todas las llamadas a ella.
-		 
+	Cambiaremos la tabla de la base de datos, la clase, el controlador, las vistas, semillas, pruebas y todas las llamadas a ella.
+	
+	La clase sera renombrada como custom_settings
+	Empezamos cambiando la migración de configuraciones y las referencias a configuraciones en el archivo de semillas
+	
+	
 		 
 21. Rutas... muchos problemas por la vieja sintaxis de las rutas, arreglarlas todas... long hours
     con esto quedamos igual que en el http://es.asciicasts.com/episodes/225-actualizacion-a-rails-3, la aplicacion "corre", las migraciones tambien se pueden hacer. solo se requiere algunas 

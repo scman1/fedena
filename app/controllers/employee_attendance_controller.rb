@@ -67,11 +67,11 @@ class EmployeeAttendanceController < ApplicationController
   end
 
   def leave_reset_settings
-    #  @config = Configuration.get_multiple_configs_as_hash ['AutomaticLeaveReset', 'LeaveResetPeriod', 'LastAutoLeaveReset']
-    @auto_reset = Configuration.find_by_config_key('AutomaticLeaveReset')
-    @reset_period = Configuration.find_by_config_key('LeaveResetPeriod')
-    @last_reset = Configuration.find_by_config_key('LastAutoLeaveReset')
-    @fin_start_date = Configuration.find_by_config_key('FinancialYearStartDate')
+    #  @config = CustomSetting.get_multiple_configs_as_hash ['AutomaticLeaveReset', 'LeaveResetPeriod', 'LastAutoLeaveReset']
+    @auto_reset = CustomSetting.find_by_config_key('AutomaticLeaveReset')
+    @reset_period = CustomSetting.find_by_config_key('LeaveResetPeriod')
+    @last_reset = CustomSetting.find_by_config_key('LastAutoLeaveReset')
+    @fin_start_date = CustomSetting.find_by_config_key('FinancialYearStartDate')
     if request.post?
       @auto_reset.update_attributes(:config_value=> params[:configuration][:automatic_leave_reset])
       @reset_period.update_attributes(:config_value=> params[:configuration][:leave_reset_period])
