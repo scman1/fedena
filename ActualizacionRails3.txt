@@ -267,12 +267,21 @@
 	   
 	5. error en prueba: "with admin logged in should redirect to index if exam group is destroyed"
 	  Solucón:
-	  1. se cambia el metodo "show" por el metodo "destroy"
-	  2. se agrega la ruta "batches" y se anida la ruta "exam_groups" en ella.
+	    1. se cambia el metodo "show" por el metodo "destroy"
+	    2. se agrega la ruta "batches" y se anida la ruta "exam_groups" en ella.
 	6. error en prueba: "with admin logged in should render edit template if wrong parameters are given in edit form"
-	  1. se cabia el metodo "post" por el metod put
-	  2. se agrega la ruta courses
-	  
+	  Solución:
+	    1. se cabia el metodo "post" por el metod put
+	    2. se agrega la ruta courses
+	7. error en la prueba: "with admin logged in should render edit" por el uso f.error_messages en edit.html.erb de exam groups
+	   Solución: Editar 
+	     Cambiar
+         <%= f.error_messages %>
+         Por:  
+          <% @exam_group.errors.full_messages.each do |msg| %>
+            <p><%= msg %></p>
+          <% end %>
+    8. 
 20. Error por uso de palabra reservada Configuration como nombre de una clase de fedena
 
     Configuration es una palabra reservada de Rails (ActiveSupport::Configurable::Configuration:Class)
