@@ -263,7 +263,12 @@
 	   Agregamos las rutas necesarias para disminuir el número de errores en las pruebas funcionales
     
 	4. error por mass assignment para la clase ExamGroups
-	   Agregamos attr_accessible para name y exam_date
+	   Agregamos attr_accessible para name y exam_date 
+	   
+	5. error en prueba: "with admin logged in should redirect to index if exam group is destroyed"
+	  Solucón:
+	  1. se cambia el metodo "show" por el metodo "destroy"
+	  2. se agrega la ruta "batches" y se anida la ruta "exam_groups" en ella.
 	   
 20. Error por uso de palabra reservada Configuration como nombre de una clase de fedena
 

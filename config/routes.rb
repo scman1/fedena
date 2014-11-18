@@ -62,11 +62,14 @@ Fedena::Application.routes.draw do
     resources :assessment_scores
     resources :attendances
     resources :attendance_reports
+	resources :batches do
+	  resources :exam_groups
+	end
     resources :cce_exam_categories
     resources :class_designations
     resources :class_timings 
     resources :employee_attendances
-	resources :exam_groups
+	#resources :exam_groups
     resources :grading_levels
     resources :ranking_levels do
       collection do
