@@ -269,7 +269,10 @@
 	  Solucón:
 	  1. se cambia el metodo "show" por el metodo "destroy"
 	  2. se agrega la ruta "batches" y se anida la ruta "exam_groups" en ella.
-	   
+	6. error en prueba: "with admin logged in should render edit template if wrong parameters are given in edit form"
+	  1. se cabia el metodo "post" por el metod put
+	  2. se agrega la ruta courses
+	  
 20. Error por uso de palabra reservada Configuration como nombre de una clase de fedena
 
     Configuration es una palabra reservada de Rails (ActiveSupport::Configurable::Configuration:Class)

@@ -50,7 +50,7 @@ class ExamGroupsControllerTest < ActionController::TestCase
     end
 
     should 'render edit template if wrong parameters are given in edit form' do
-      post :update, { :id=>@exam_group.id}
+      put :update, { :id=>@exam_group.id, :batch_id =>@b.id}
       assert_redirected_to :action => 'show'
     end
 
@@ -62,7 +62,7 @@ class ExamGroupsControllerTest < ActionController::TestCase
       assert_redirected_to :action => 'show'
     end
 
-    should 'redirect to index if exam group is destroyed' do # error here
+    should 'redirect to index if exam group is destroyed' do
       delete :destroy, {
         :batch_id => @b.id, :id=>@exam_group.id
       }
