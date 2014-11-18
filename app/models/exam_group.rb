@@ -17,6 +17,8 @@
 #limitations under the License.
 
 class ExamGroup < ActiveRecord::Base
+  attr_accessible :name, :exam_date
+  
   validates_presence_of :name
 
   belongs_to :batch

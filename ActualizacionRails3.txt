@@ -261,7 +261,10 @@
 
     3. errores por rutas no resueltas.
 	   Agregamos las rutas necesarias para disminuir el número de errores en las pruebas funcionales
-
+    
+	4. error por mass assignment para la clase ExamGroups
+	   Agregamos attr_accessible para name y exam_date
+	   
 20. Error por uso de palabra reservada Configuration como nombre de una clase de fedena
 
     Configuration es una palabra reservada de Rails (ActiveSupport::Configurable::Configuration:Class)
@@ -271,7 +274,6 @@
 	
 	La clase sera renombrada como custom_settings
 	Empezamos cambiando la migración de configuraciones y las referencias a configuraciones en el archivo de semillas
-	
 	
 		 
 21. Rutas... muchos problemas por la vieja sintaxis de las rutas, arreglarlas todas... long hours
