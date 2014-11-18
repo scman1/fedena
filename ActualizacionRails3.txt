@@ -281,7 +281,15 @@
           <% @exam_group.errors.full_messages.each do |msg| %>
             <p><%= msg %></p>
           <% end %>
-    8. 
+    8. error en la prueba: "with admin logged in should render index" por nombre de ruta no encontrada en index.html.erb
+	   Solución: Editar 
+	     Cambiar
+          <%= link_to "#{t('exam_management')}", :controller => "exam", :action => "create_exam" %> &raquo;
+
+         Por:  
+          <%= link_to "#{t('exam_management')}", :controller => "exam", :action => "new" %> &raquo;
+	
+	
 20. Error por uso de palabra reservada Configuration como nombre de una clase de fedena
 
     Configuration es una palabra reservada de Rails (ActiveSupport::Configurable::Configuration:Class)
