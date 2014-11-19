@@ -308,6 +308,15 @@
     Empezamos con la ruta de raíz y de ahí vamos activando cada ruta como se requiere. Pero esto generaba problemas a casi cada paso
 	por ello seguimos con una reescritura completa de las rutas.
 	
+	Fuentes consultadas:
+	http://railscasts.com/episodes/7-all-about-layouts?view=asciicast
+	http://blog.55minutes.com/2012/04/untangling-the-rails-asset-pipeline-part-4-troubleshooting/
+	http://guides.rubyonrails.org/layouts_and_rendering.html#structuring-layouts
+	http://railsguides.net/rails-nested-layouts/
+	http://gregmoreno.wordpress.com/2010/08/12/rails-3-upgrade-part-2-routes/
+	http://stackoverflow.com/questions/6537118/map-connect-syntax-for-rails-3
+	http://stackoverflow.com/questions/4091024/help-migrating-routes-to-rails-3-format
+	
 22. Problema con: 
     #filter_parameter_logging :password
     en application_controller, comentado pues al parecer no es requerido
