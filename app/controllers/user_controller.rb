@@ -23,12 +23,6 @@ class UserController < ApplicationController
   before_filter :protect_user_data, :only => [:profile, :user_change_password]
   before_filter :check_if_loggedin, :only => [:login]
   #  filter_access_to :edit_privilege
-  def choose_layout
-    return 'login' if action_name == 'login' or action_name == 'set_new_password'
-    return 'forgotpw' if action_name == 'forgot_password'
-    return 'dashboard' if action_name == 'dashboard'
-    'application'
-  end
   
   def all
     @users = User.active.all
@@ -190,6 +184,7 @@ class UserController < ApplicationController
       flash[:notice] = "#{I18n.t('first_login_attempt')}"
       redirect_to :controller => "user",:action => "first_login_change_password",:id => @user.username
     end
+	render :layout => choose_layout()
   end
 
 
@@ -248,6 +243,7 @@ class UserController < ApplicationController
     elsif authenticated_user.blank? and request.post?
       flash[:notice] = "#{I18n.t('login_error_message')}"
     end
+	render :layout => choose_layout()
   end
 
   def first_login_change_password
@@ -396,5 +392,12 @@ class UserController < ApplicationController
     flash[:notice] = "#{I18n.t('welcome')}, #{user.first_name} #{user.last_name}!"
     redirect_to session[:back_url] || {:controller => 'user', :action => 'dashboard'}
   end
+  def choose_layout()
+    return 'login' if action_name == 'login' or action_name == 'set_new_password'
+    return 'forgotpw' if action_name == 'forgot_password'
+    return 'dashboard' if action_name == 'dashboard'
+    'application'
+  end
+
 end
 

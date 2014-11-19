@@ -305,8 +305,9 @@
     con esto quedamos igual que en el http://es.asciicasts.com/episodes/225-actualizacion-a-rails-3, la aplicacion "corre", 
 	las migraciones y la inicialización de la base de datos también funcionan.  
 
-    Empezamos con la ruta de raíz y de ahí vamos activando cada ruta como se requiera
-
+    Empezamos con la ruta de raíz y de ahí vamos activando cada ruta como se requiere. Pero esto generaba problemas a casi cada paso
+	por ello seguimos con una reescritura completa de las rutas.
+	
 22. Problema con: 
     #filter_parameter_logging :password
     en application_controller, comentado pues al parecer no es requerido
