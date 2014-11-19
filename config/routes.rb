@@ -1,6 +1,7 @@
 Fedena::Application.routes.draw do 
   
-   # map.resources :ranking_levels, :collection => {:create_ranking_level=>[:get,:post], :edit_ranking_level=>[:get,:post], :update_ranking_level=>[:get,:post], :delete_ranking_level=>[:get,:post], :ranking_level_cancel=>[:get,:post], :change_priority=>[:get,:post]}
+  scope '(:locale)' do
+  # map.resources :ranking_levels, :collection => {:create_ranking_level=>[:get,:post], :edit_ranking_level=>[:get,:post], :update_ranking_level=>[:get,:post], :delete_ranking_level=>[:get,:post], :ranking_level_cancel=>[:get,:post], :change_priority=>[:get,:post]}
   # map.resources :class_designations
  
   # #map.resources :exam_reports, :collection => {:course_reports_index=>[:get,:post], :batch_reports_index=>[:get,:post]}
@@ -58,17 +59,25 @@ Fedena::Application.routes.draw do
   # #  end
 
   # map.resources :timetables do |timetable|
-  scope '(:locale)' do
     resources :assessment_scores
-    resources :attendances
+    resources :attendance
     resources :attendance_reports
 	resources :batches do
 	  resources :exam_groups
 	end
+	resources :custom_settings
     resources :cce_exam_categories
     resources :class_designations
     resources :class_timings 
-	resources :courses
+	resources :courses do
+	  resources :batches
+	end
+	resources :employee do
+	  collection do
+	    get :hr
+	  end
+	end
+	resources :finance
     resources :employee_attendances
     resources :exam do
 	  collection do
@@ -93,9 +102,21 @@ Fedena::Application.routes.draw do
       end
     end
     resources :subjects
+	resources :student do
+	  resources :attendance
+	  collection do
+	    get :admission1
+		get :view_all
+		get :advanced_search
+	  end
+	end
+	
+	resources :timetable
+	resources :news
     resources :user do
 	  collection do
 	    post :forgot_password
+		get  :dashboard
 	  end
 	end
     root to: 'user#login', as: 'login'

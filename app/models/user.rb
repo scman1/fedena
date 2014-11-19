@@ -35,7 +35,7 @@ class User < ActiveRecord::Base
   has_many  :user_events
   has_many  :events,:through=>:user_events
   has_one :student_record,:class_name=>"Student",:foreign_key=>"user_id"
-  has_one :employee_record,:class_name=>"Employee",:foreign_key=>"user_id"
+  has_one :employee_record,:class_name=>HR::Employee,:foreign_key=>"user_id"
 
   scope :active, :conditions => { :is_deleted => false }
   scope :inactive, :conditions => { :is_deleted => true }

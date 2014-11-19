@@ -43,8 +43,8 @@ class ExamGroupsControllerTest < ActionController::TestCase
       assert_redirected_to :action => 'index'
     end
 
-    should 'render edit' do # Error here
-      get :edit, { :id => @exam_group.id, :batch_id =>@b.id  }
+    should 'render edit' do
+      get :edit, { :id => @exam_group.id, :batch_id =>@b.id}
       assert_response :success
       assert_template :edit
     end
