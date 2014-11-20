@@ -23,8 +23,8 @@ class Subject < ActiveRecord::Base
   belongs_to :batch
   belongs_to :elective_group
   has_many :timetable_entries,:foreign_key=>'subject_id'
-  has_many :employees_subjects
-  has_many :employees ,:through => :employees_subjects
+  has_many :employees_subjects, class_name: HR::EmployeesSubject
+  has_many :employees, class_name: HR::Employee, :through => :employees_subjects
   has_many :students_subjects
   has_many :students, :through => :students_subjects
   has_many :grouped_exam_reports

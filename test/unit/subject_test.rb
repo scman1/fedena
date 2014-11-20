@@ -47,7 +47,5 @@ class SubjectTest < ActiveSupport::TestCase
       @subject.inactivate
       assert @subject.is_deleted
     end
-
   end
-
 end

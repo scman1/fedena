@@ -288,7 +288,15 @@
 
          Por:  
           <%= link_to "#{t('exam_management')}", :controller => "exam", :action => "new" %> &raquo;
-	
+	9.Error de la prueba de unidad "new general subject should be disabled" por el uso de clases con espacio de nombres 
+	  en las relaciones de "subject"
+	  Solución:
+	  Cambiar las declaraciones de las dos relacione siguientes:
+	    has_many :employees_subjects
+        has_many :employees, :through => :employees_subjects
+	  agregando el nombre de la clase como sigue:
+	    has_many :employees_subjects, class_name: HR::EmployeesSubject
+        has_many :employees, class_name: HR::Employee, :through => :employees_subjects
 	
 20. Error por uso de palabra reservada Configuration como nombre de una clase de fedena
 
