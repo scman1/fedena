@@ -281,14 +281,14 @@
           <% @exam_group.errors.full_messages.each do |msg| %>
             <p><%= msg %></p>
           <% end %>
-    8. error en la prueba: "with admin logged in should render index" por nombre de ruta no encontrada en index.html.erb
+    8. Error en la prueba: "with admin logged in should render index" por nombre de ruta no encontrada en index.html.erb
 	   Solución: Editar 
 	     Cambiar
           <%= link_to "#{t('exam_management')}", :controller => "exam", :action => "create_exam" %> &raquo;
 
          Por:  
           <%= link_to "#{t('exam_management')}", :controller => "exam", :action => "new" %> &raquo;
-	9.Error de la prueba de unidad "new general subject should be disabled" por el uso de clases con espacio de nombres 
+	9. Error de la prueba de unidad "new general subject should be disabled" por el uso de clases con espacio de nombres 
 	  en las relaciones de "subject"
 	  Solución:
 	  Cambiar las declaraciones de las dos relacione siguientes:
@@ -297,6 +297,13 @@
 	  agregando el nombre de la clase como sigue:
 	    has_many :employees_subjects, class_name: HR::EmployeesSubject
         has_many :employees, class_name: HR::Employee, :through => :employees_subjects
+	10. Error en la prueba funcional "with admin logged in should render new." por el método 'error_messages_for', que es obsoleto,
+	  en new.html.erb. El problema es que 'error_messages_for' se utilizaba para desplegar mensajes de error fuera de la forma donde 
+	  se generó y en este caso se usa para listar errores para el símbolo ':exam_group' no de la variable de instacia '@exam_group'. 
+	  Por ahora vamos a usar la variable de instancia y después probaremos si esto es correcto.
+
+	11. Error en la prueba funcional "with admin logged in should render new." por el uso de 'form_remote_for', que es obsoleto, 
+	   en new.html.erb
 	
 20. Error por uso de palabra reservada Configuration como nombre de una clase de fedena
 

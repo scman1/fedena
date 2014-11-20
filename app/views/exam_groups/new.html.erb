@@ -52,8 +52,16 @@
           <%= render :partial=>'exam/exam_grade_form' %>
         <% end %>
       <% else %>
-        <%= error_messages_for :exam_group %>
-        <% form_remote_for :exam_option, :url => {:controller=>'exam',:action => 'update_exam_form',:batch=>@batch} do |form| %>
+		<!-- NEED TO VERIFY IF THIS IS CORRECT -->
+		<!-- are we testing the creation of exam groups at this level -->
+		<% @exam_group = ExamGroup.new(params[:exam_group]) %>
+		<% unless @exam_group.nil?%>
+		  <% @exam_group.errors.full_messages.each do |msg| %> 
+            <p><%= msg %></p>
+          <% end %>
+		<% end %>
+
+        <% form_for :exam_option, :remote => true, :url => {:controller=>'exam',:action => 'update_exam_form',:batch=>@batch} do |form| %>
           <div class="label-field-pair">
             <label for="exam_name"><%= t('exam_name') %></label>
             <% if params[:ename].nil?  %>

@@ -18,24 +18,24 @@ class ExamGroupsControllerTest < ActionController::TestCase
       @exam_group = create(:exam_group,:exam_date => Date.today)
     end
 
-    should 'render index' do # Error here
+    should 'render index' do 
       get :index, {:batch_id => @b.id}
       assert_response :success
       assert_template :index
     end
 
-    should 'render new' do # Error here
+    should 'render new' do 
       get :new, {:batch_id => @b.id}
       assert_response :success
       assert_template :new
     end
 
-    should 'render new template if wrong parameters are given in new form' do # Error here
+    should 'render new template if wrong parameters are given in new form' do 
       post :create, {:batch_id => @b.id}
       assert_template :new
     end
 
-    should 'redirect to index if correct parameters are give in new form' do # Error here
+    should 'redirect to index if correct parameters are give in new form' do 
       post :create, {
         :exam_group => attributes_for(:exam_group),
         :batch_id => @b.id
