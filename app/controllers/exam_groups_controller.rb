@@ -55,7 +55,9 @@ class ExamGroupsController < ApplicationController
     @exam_group.batch_id = @batch.id
     @type = @exam_group.exam_type
     @error=false
-    unless @type=="Grades"
+    unless @type=="Grades" || params.has_key?(:exam_group) ||
+	    params[:exam_group].nil? || 
+	    [:exam_group][:exams_attributes].nil?
       params[:exam_group][:exams_attributes].each do |exam|
         if exam[1][:_delete].to_s=="0" and @error==false
           unless exam[1][:maximum_marks].present?

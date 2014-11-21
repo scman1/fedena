@@ -56,7 +56,7 @@
   C:\Sites\fedena>git checkout config/locales/en.yml
 
 
-10. Ahora empezamos restaurando las rutas de la aplicación, la sintaxis ha cambiado pero sigue siendo soportada en rails 3
+10. Ahora empezamos restaurando las rutas de la aplicación, la sintaxis ha cambiado y no es soportada en rails 3.2.14
   
   C:\Sites\fedena>git checkout config/routes.rb
 
@@ -67,7 +67,6 @@
 13. Ahora debemos agergar las gemas que usa fedena al archivo Gemfile.
 
   gem 'delayed_job_active_record'
-
 
 14. Problemas con delayed_job. initializer, cambiamos job por worker
 
@@ -304,7 +303,19 @@
 
 	11. Error en la prueba funcional "with admin logged in should render new." por el uso de 'form_remote_for', que es obsoleto, 
 	   en new.html.erb
-	
+	   Solución cambiar: 
+	    <% form_remote_for :exam_option, :url => {:controller=>'exam',:action => 'update_exam_form',:batch=>@batch} do |form| %>
+	   Por:
+	    <%= form_for :exam_option, :remote => true, :url => {:controller=>'exam',:action => 'update_exam_form',:batch=>@batch} do |form| %>
+ 
+	12. Error en la prueba funcional "with admin logged in should redirect to show if correct parameters are give in edit form". 
+	   Este error se debe a que el controlador exam_groups_controller no verifica la validez de los parametros [:exam_group] y [:exam_group][:exams_attributes] 
+	   Solución:
+	     En el método create del exam_groups_controller cambiamos la linea
+		 unless @type=="Grades" 
+		 Por
+		 unless @type=="Grades" || params[:exam_group].nil? || [:exam_group][:exams_attributes].nil?
+	   
 20. Error por uso de palabra reservada Configuration como nombre de una clase de fedena
 
     Configuration es una palabra reservada de Rails (ActiveSupport::Configurable::Configuration:Class)
@@ -384,7 +395,7 @@
 	  Este error viene de como se inicializa la clase 'Configuration'
 	  
 
-26. Arreglar rutas y terminar de agregar plugins a Gemfile
+26. Verificar rutas y terminar de agregar plugins a Gemfile
     
 27. Arreglar estilos
 
