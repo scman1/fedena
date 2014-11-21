@@ -314,9 +314,17 @@
 	     En el método create del exam_groups_controller cambiamos la linea
 		 unless @type=="Grades" 
 		 Por
-		 unless @type=="Grades" || params[:exam_group].nil? || [:exam_group][:exams_attributes].nil?
-	   
-20. Error por uso de palabra reservada Configuration como nombre de una clase de fedena
+         unless @type=="Grades" || params.has_key?(:exam_group) ||
+	           params[:exam_group].nil? || 
+	           [:exam_group][:exams_attributes].nil?
+			   
+20. Correccion de fallas en conjunto de pruebas.
+    Hasta aquí eliminamos todos los errores del conjunto de pruebas, sin embargo se siguen reportando 20 fallas en pruebas de unidad y una falla en funcionales.
+
+
+ 
+			   
+21. Error por uso de palabra reservada Configuration como nombre de una clase de fedena
 
     Configuration es una palabra reservada de Rails (ActiveSupport::Configurable::Configuration:Class)
 
