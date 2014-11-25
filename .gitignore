@@ -17,4 +17,5 @@
 # Ignore text files 
 /*.txt
 /.metrics
-/.dot
+/*.dot
+/*.png
