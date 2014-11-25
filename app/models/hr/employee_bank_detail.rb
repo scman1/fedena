@@ -16,7 +16,7 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-class EmployeeBankDetail < ActiveRecord::Base
+class HR::EmployeeBankDetail < ActiveRecord::Base
   belongs_to :employee
   belongs_to :bank_field
 

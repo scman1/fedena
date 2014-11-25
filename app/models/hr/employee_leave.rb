@@ -16,6 +16,6 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-class EmployeeLeave < ActiveRecord::Base
+class HR::EmployeeLeave < ActiveRecord::Base
     belongs_to :employee_leave_type
 end

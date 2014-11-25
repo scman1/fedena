@@ -16,7 +16,7 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-class EmployeeAdditionalDetail < ActiveRecord::Base
+class HR::EmployeeAdditionalDetail < ActiveRecord::Base
   belongs_to :employee
   belongs_to :additional_field
   

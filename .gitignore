@@ -16,3 +16,5 @@
 
 # Ignore text files 
 /*.txt
+/.metrics
+/.dot

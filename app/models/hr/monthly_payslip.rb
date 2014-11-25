@@ -16,7 +16,7 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-class MonthlyPayslip < ActiveRecord::Base
+class HR::MonthlyPayslip < ActiveRecord::Base
 
   validates_presence_of :salary_date
 

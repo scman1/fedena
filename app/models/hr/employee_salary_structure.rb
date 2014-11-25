@@ -16,7 +16,7 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 
-class EmployeeSalaryStructure < ActiveRecord::Base
+class HR::EmployeeSalaryStructure < ActiveRecord::Base
   belongs_to :payroll_category
   belongs_to :employee
 
