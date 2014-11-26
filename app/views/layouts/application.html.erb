@@ -17,8 +17,7 @@
 #specific language governing permissions and limitations
 #under the License. -%>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html dir="<%= (rtl?) ? 'rtl' : 'ltr' %>">
   <head>
     <% @direction = (rtl?) ? 'rtl/' : '' %>
@@ -36,7 +35,7 @@
     <%= javascript_include_tag "fckeditor/fckeditor" %>
     <%= javascript_include_tag 'builder' %>
     <%= javascript_include_tag 'modalbox' %>
-<%#= javascript_include_tag 'popup' %>
+    <%= javascript_include_tag 'popup' %>
 
     <% FedenaPlugin::REGISTERED_HOOKS[:application_layout_header].each do |mod| %>
       <%= render :partial=>mod.camelize.constantize.send("application_layout_header") %>

@@ -27,42 +27,42 @@
 
   <% if @user.admin? %>
     <div class="button-box">
-      <%= link_to "<div class ='button-label'><p>#{t('admission')}</p></div>", {:controller => "student", :action => "admission1"},
+      <%= link_to "<div class ='button-label'><p>#{t('admission')}</p></div>".html_safe, {:controller => "student", :action => "admission1"},
         :class => "option_buttons", :id => "admission_button", :title => "#{t('admission_link_title')}"%>
     </div>
     <div class="button-box">
-      <%= link_to "<div class ='button-label'><p>#{t('student_details')}</p></div>", {:controller => "student", :action => "index"},
+      <%= link_to "<div class ='button-label'><p>#{t('student_details')}</p></div>".html_safe, {:controller => "student", :action => "index"},
         :class => "option_buttons", :id => "student_details_button", :title => "#{t('student_link_title')}"%>
     </div>
     <div class="button-box">
-      <%= link_to "<div class ='button-label'><p> #{t('manage_users')} </p></div>", {:controller => "user", :action => "index"},
+      <%= link_to "<div class ='button-label'><p> #{t('manage_users')} </p></div>".html_safe, {:controller => "user", :action => "index"},
         :class => "option_buttons", :id => "manage_users_button", :title =>t('user_link_title') %>
     </div>
     <div class="button-box">
-      <%= link_to "<div class ='button-label'><p>#{t('manage_news')}</p></div>", {:controller => "news", :action => "index"},
+      <%= link_to "<div class ='button-label'><p>#{t('manage_news')}</p></div>".html_safe, {:controller => "news", :action => "index"},
         :class => "option_buttons", :id => "manage_news_button",:title => t('news_link_title') %>
 
     </div>
     <div class="button-box">
-      <%= link_to "<div class ='button-label'><p>#{t('examinations')}</p></div>", {:controller => "exam", :action => "index"},
+      <%= link_to "<div class ='button-label'><p>#{t('examinations')}</p></div>".html_safe, {:controller => "exam", :action => "index"},
         :class => "option_buttons", :id => "examinations_button",:title => "          #{t('manage_examinations')}" %>
     </div>
     <div class="button-box">
-      <%= link_to "<div class ='button-label'><p>#{t('timetable_text')}</p></div>", {:controller => "timetable", :action => "index"},
+      <%= link_to "<div class ='button-label'><p>#{t('timetable_text')}</p></div>".html_safe, {:controller => "timetable", :action => "index"},
         :class => "option_buttons", :id => "timetable_button",:title => t('timetable_link_title') %>
     </div>
     <div class="button-box">
-      <%= link_to "<div class ='button-label'><p>#{t('attendance')}</p></div>", "student_attendance_index",
+      <%= link_to "<div class ='button-label'><p>#{t('attendance')}</p></div>".html_safe, "student_attendance_index",
         :class => "option_buttons", :id => "student_attendance_button", :title => t('attendance_link_title')  %>
     </div>
     <div class="button-box">
-      <%= link_to "<div class ='button-label'><p>#{t('settings')}</p></div>", {:controller => "custom_settings", :action => "index"},
+      <%= link_to "<div class ='button-label'><p>#{t('settings')}</p></div>".html_safe, {:controller => "custom_settings", :action => "index"},
         :class => "option_buttons", :id => "settings_button", :title => t('setting_link_title') %>
     </div>
 
     <% if @config.include?('HR') %>
       <div class="button-box">
-        <%= link_to "<div class ='button-label'><p>#{t('human_resources')}</p></div>", {:controller => "employee", :action => "hr"},
+        <%= link_to "<div class ='button-label'><p>#{t('human_resources')}</p></div>".html_safe, {:controller => "employee", :action => "hr"},
           :class => "option_buttons", :id => "hr_button", :title => t('hr_link_title')%>
       </div>
 
@@ -70,7 +70,7 @@
 
     <% if @config.include?('Finance') %>
       <div class="button-box">
-        <%= link_to "<div class ='button-label'><p> #{t('finance_text')}</p></div>", {:controller => "finance", :action => "index"},
+        <%= link_to "<div class ='button-label'><p> #{t('finance_text')}</p></div>".html_safe, {:controller => "finance", :action => "index"},
           :class => "option_buttons", :id => "finance_button", :title => t('finance_link_title') %>
       </div>
     <% end %>
