@@ -1,0 +1,234 @@
+//colors
+$color_guardsman_red_approx: #b00;
+$white: #fff;
+$color_suva_gray_approx: #888;
+$color_storm_dust_approx: #666;
+$color_thunder_approx: #312d2a;
+$color_woodsmoke_approx: #0f0e0d;
+$color_mountain_mist_approx: #999;
+$color_drover_approx: #fff1ab;
+
+//fonts
+$font_0: sans-serif;
+
+//@extend-elements
+//original selectors
+//#username_textbox_bg, #password_textbox_bg
+%extend_1 {
+	width: 507px;
+	height: 58px;
+	margin: 0 auto;
+	background: $white image-url("login/text_box.jpg") no-repeat;
+}
+
+//original selectors
+//#username_textbox_bg input, #password_textbox_bg input
+%extend_2 {
+	width: 490px;
+	height: 54px;
+	margin: 2px 5px 0 0;
+	float: right;
+	border: none;
+	background: transparent;
+	font-size: 40px;
+	color: $color_storm_dust_approx;
+}
+
+
+* {
+	margin: 0;
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	font-family: $font_0;
+	margin: 0;
+}
+#top_logo {
+	margin: 0 auto;
+	padding-top: 15px;
+	height: 126px;
+	width: 155px;
+	h1 {
+		text-indent: -9999px;
+	}
+}
+#help_top {
+	margin: 0 auto;
+	width: 614px;
+	height: 1.5em;
+	#help_link {
+		float: left;
+		a {
+			color: $color_guardsman_red_approx;
+			padding-left: 10px;
+		}
+	}
+}
+#login_strip {
+	margin-top: 19px;
+	height: 156px;
+	width: 100%;
+	background: #B00 image-url("application/bg_pattern.png")  repeat;
+}
+#login_area_bg {
+	margin-top: -175px;
+	height: 362px;
+}
+#login_area {
+	height: 362px;
+	width: 614px;
+	background: $white image-url("login/login_box.jpg") no-repeat;
+	margin: 0 auto;
+	label {
+		display: block;
+		width: 200px;
+		margin-right: 50px;
+		padding-top: 30px;
+		font-weight: bold;
+		color: $color_suva_gray_approx;
+		padding-bottom: 5px;
+		font-size: 110%;
+	}
+}
+#username_textbox_bg {
+	@extend %extend_1;
+	input {
+		@extend %extend_2;
+	}
+}
+#password_textbox_bg {
+	@extend %extend_1;
+	input {
+		@extend %extend_2;
+	}
+}
+#checkbox_area {
+	width: 300px;
+	float: right;
+	label {
+		margin: 0;
+		display: inline;
+		padding-right: 5px;
+	}
+	input {
+		margin: 25px 50px 0 5px;
+		padding: 0;
+	}
+}
+#notice {
+	padding: 0;
+	width: 336px;
+	float: right;
+	margin-top: -81px;
+	margin-right: 216px;
+	padding: 2px;
+	border: 1px solid $color_mountain_mist_approx;
+	background-color: $color_drover_approx;
+	text-align: center;
+	font-size: 14px;
+}
+input[type="text"] {
+	outline: none;
+}
+input[type="password"] {
+	outline: none;
+}
+textarea {
+	outline: none;
+}
+select {
+	outline: none;
+}
+#footer {
+	height: 66px;
+	clear: both;
+	background: image-url("foot.png")  repeat-x;
+	width: 100%;
+}
+#footer_logo {
+	height: 66px;
+	position: relative;
+	width: 980px;
+	margin: 0 auto;
+	a.footer-logo {
+		display: block;
+		float: left;
+		height: 66px;
+		margin-top: -55px;
+		width: 210px;
+		background: image-url("footer-logo.png")  no-repeat 0 0 transparent;
+		&:hover {
+			background: image-url("footer-logo.png")  no-repeat -210px 0 transparent;
+		}
+	}
+}
+#powered_by {
+	height: 20px;
+	padding: 35px 0 0;
+	width: 980px;
+	margin: 0 auto;
+	color: $white;
+	font-size: 12px;
+	font-weight: bold;
+	a {
+		color: $white;
+		font-size: 14px;
+		text-decoration: none;
+		&:hover {
+			color: $white;
+			font-size: 14px;
+			text-decoration: underline;
+		}
+	}
+}
+.clearfooter {
+	height: 66px;
+	clear: both;
+}
+#submit_area input {
+	background: $color_thunder_approx;
+	height: 38px;
+	float: left;
+	margin-left: 65px;
+	margin-top: 55px;
+	border: none;
+	color: $white;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 7px 11px;
+	&:hover {
+		background: #0F0E0D;
+	}
+}
+#resetpw_area input {
+	width: 85px;
+	height: 38px;
+	float: left;
+	margin-left: 58px;
+	margin-top: 55px;
+}
+#wrapper #help_forgot_pw {
+	margin: 50px auto;
+	text-align: center;
+	width: 614px;
+	a {
+		text-decoration: none;
+		font-weight: bold;
+		color: $color_guardsman_red_approx;
+		&:hover {
+			text-decoration: underline;
+			font-weight: bold;
+			color: $color_guardsman_red_approx;
+		}
+	}
+}
+#username_texbox_bg input {
+	border: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}

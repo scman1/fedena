@@ -406,7 +406,24 @@
 26. Verificar rutas y terminar de agregar plugins a Gemfile
     
 27. Arreglar estilos
-
+    Convertir de .css a .scss
+	  - application.css
+	  - _layouts/login.css
+	  - _layouts/forgotpw.css
+	  - _layouts/dashboard.css
+	  - _layouts/pdf.css
+	  - _layouts/style.css
+	  - student/index.css
+	  - rtl/application.css
+	  - rtl/_layouts/login.css
+	  - rtl/_layouts/forgotpw.css
+	  - rtl/_layouts/dashboard.css
+	  - rtl/_layouts/pdf.css
+	  - rtl/_layouts/style.css
+	  - rtl/student/index.css
+	  
+	renombrar las llamadas url en llamadas a image-url en todos los archivos convertidos a scss
+	
 28. Arreglar Javascript
 
 

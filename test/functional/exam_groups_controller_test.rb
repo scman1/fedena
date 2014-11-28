@@ -31,15 +31,26 @@ class ExamGroupsControllerTest < ActionController::TestCase
     end
 
     should 'render new template if wrong parameters are given in new form' do 
-      post :create, {:batch_id => @b.id}
+	puts "************************************************"
+	puts "BATCH: " + @b.to_s + " Is it nil? " + @b.nil?().to_s
+    puts "************************************************"
+	  post :create, {:batch_id => @b.id} #undefined method `[]' for nil:NilClass
       assert_template :new
     end
 
     should 'redirect to index if correct parameters are give in new form' do 
-      post :create, {
-        :exam_group => attributes_for(:exam_group),
+    puts "************************************************"
+	puts "BATCH: " + @b.to_s + " Is it nil? " + @b.nil?().to_s
+	puts "EXAM GROUP ATTS: " + attributes_for(:exam_group).to_s + attributes_for(:exam_group).nil?().to_s
+	puts "EXAM GROUP: " + :exam_group.to_s + " Is it nil? " + :exam_group.nil?().to_s
+	puts "EXAM ATTS: " + attributes_for(:exam).to_s + attributes_for(:exam).nil?().to_s	
+	puts "EXAM GROUP ATTS: " + (attributes_for(:exam_group).merge!({:exam => attributes_for(:exam)})).to_s + attributes_for(:exam_group).nil?().to_s
+	
+	puts "************************************************"
+	  post :create, {
+        :exam_group => attributes_for(:exam_group).merge!({:exam => attributes_for(:exam)}),
         :batch_id => @b.id
-      }
+      } # undefined method `each' for nil:NilClass
       assert_redirected_to :action => 'index'
     end
 

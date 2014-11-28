@@ -17,7 +17,7 @@
 #limitations under the License.
 
 class ExamGroup < ActiveRecord::Base
-  attr_accessible :name, :exam_date
+  attr_accessible :name, :exam_date, :exam
   
   validates_presence_of :name
 
