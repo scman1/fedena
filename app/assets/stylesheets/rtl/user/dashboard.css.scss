@@ -1,0 +1,212 @@
+//colors
+$white: #fff;
+$color_mountain_mist_approx: #999;
+$color_guardsman_red_approx: #b00;
+$color_totem_pole_approx: #9d0e00;
+$color_cape_cod_approx: #404040;
+
+//fonts
+$font_0: Verdana;
+$font_1: Helvetica;
+$font_2: Arial;
+$font_3: sans-serif;
+
+#content_header {
+	padding-right: 20px;
+	height: 150px;
+	background: $white image-url("fedena_user/dashboard/content_header_img_rtl.jpg") bottom no-repeat;
+	h1 {
+		margin: 0;
+		padding: 0;
+		padding-top: 65px;
+		color: $color_mountain_mist_approx;
+	}
+	h3 {
+		margin-top: 0;
+		padding: 0;
+		color: $color_guardsman_red_approx;
+	}
+}
+#user_options {
+	padding: 0;
+	margin: 0;
+	height: 400px;
+	.option_buttons {
+		display: block;
+		float: right;
+		height: 175px;
+		width: 175px;
+		margin-top: 20px;
+		outline: none;
+		text-align: center;
+	}
+}
+#admission_button {
+	background: $white image-url("dashboard_buttons/button_admission.png")  0 0 no-repeat;
+	&:hover {
+		background: $white image-url("dashboard_buttons/button_admission.png")  -175px 0 no-repeat;
+	}
+}
+#student_details_button {
+	background: $white image-url("dashboard_buttons/button_student_details.png")  0 0 no-repeat;
+	&:hover {
+		background: $white image-url("dashboard_buttons/button_student_details.png")  -175px 0 no-repeat;
+	}
+}
+#manage_users_button {
+	background: $white image-url("dashboard_buttons/button_manage_users.png")  0 0 no-repeat;
+	&:hover {
+		background: $white image-url("dashboard_buttons/button_manage_users.png")  -175px 0 no-repeat;
+	}
+}
+#manage_news_button {
+	background: $white image-url("dashboard_buttons/button_manage_news.png")  0 0 no-repeat;
+	&:hover {
+		background: $white image-url("dashboard_buttons/button_manage_news.png")  -175px 0 no-repeat;
+	}
+}
+#examinations_button {
+	background: $white image-url("dashboard_buttons/button_examinations.png")  0 0 no-repeat;
+	&:hover {
+		background: $white image-url("dashboard_buttons/button_examinations.png")  -175px 0 no-repeat;
+	}
+}
+#timetable_button {
+	background: $white image-url("dashboard_buttons/button_timetable.png")  0 0 no-repeat;
+	&:hover {
+		background: $white image-url("dashboard_buttons/button_timetable.png")  -175px 0 no-repeat;
+	}
+}
+#student_attendance_button {
+	background: $white image-url("dashboard_buttons/attendance.png")  0 0 no-repeat;
+	&:hover {
+		background: $white image-url("dashboard_buttons/attendance.png")  -175px 0 no-repeat;
+	}
+}
+#settings_button {
+	background: $white image-url("dashboard_buttons/settings.png")  0 0 no-repeat;
+	&:hover {
+		background: $white image-url("dashboard_buttons/settings.png")  -175px 0 no-repeat;
+	}
+}
+#hr_button {
+	background: $white image-url("dashboard_buttons/button_Human.png")  0 0 no-repeat;
+	&:hover {
+		background: $white image-url("dashboard_buttons/button_Human.png")  -175px 0 no-repeat;
+	}
+}
+#finance_button {
+	background: $white image-url("dashboard_buttons/button_finance.png")  0 0 no-repeat;
+	&:hover {
+		background: $white image-url("dashboard_buttons/button_finance.png")  -175px 0 no-repeat;
+	}
+}
+#academic_button {
+	background: $white image-url("dashboard_buttons/button_academics.png")  0 0 no-repeat;
+	&:hover {
+		background: $white image-url("dashboard_buttons/button_academics.png")  -175px 0 no-repeat;
+	}
+}
+#campus_news_button {
+	background: $white image-url("dashboard_buttons/button_campus_news.png")  0 0 no-repeat;
+	&:hover {
+		background: $white image-url("dashboard_buttons/button_campus_news.png")  -175px 0 no-repeat;
+	}
+}
+#my_profile_button {
+	background: $white image-url("dashboard_buttons/button_my_profile.png")  0 0 no-repeat;
+	&:hover {
+		background: $white image-url("dashboard_buttons/button_my_profile.png")  -175px 0 no-repeat;
+	}
+}
+#leaves_button {
+	background: $white image-url("dashboard_buttons/button_leaves.png")  0 0 no-repeat;
+	&:hover {
+		background: $white image-url("dashboard_buttons/button_leaves.png")  -175px 0 no-repeat;
+	}
+}
+#reminders_button {
+	background: $white image-url("dashboard_buttons/button_reminders.png")  0 0 no-repeat;
+	&:hover {
+		background: $white image-url("dashboard_buttons/button_reminders.png")  -175px 0 no-repeat;
+	}
+	&:hover_unread {
+		background: $white image-url("dashboard_buttons/button_reminders_unread.png")  -175px 0 no-repeat;
+	}
+}
+#reminders_button_unread {
+	background: $white image-url("dashboard_buttons/button_reminders_unread.png")  0 0 no-repeat;
+}
+.reminder1 {
+	position: relative;
+	overflow: hidden;
+	float: right;
+	width: 190px;
+}
+.count {
+	position: absolute;
+	top: 66px;
+	right: 66px;
+	background: none repeat scroll 0 0 $color_totem_pole_approx;
+	font-size: 11px;
+	text-align: center;
+	color: $white;
+	height: 15px;
+	width: 15px;
+}
+.button-label {
+	color: $color_cape_cod_approx;
+	font-size: 17px;
+	height: 15px;
+	font-weight: bold;
+	position: absolute;
+	text-align: center;
+	top: 135px;
+	width: 190px;
+	p {
+		text-align: center;
+		margin-right: -1px;
+		text-decoration: none;
+		width: 173px;
+	}
+}
+.button-box {
+	position: relative;
+	overflow: hidden;
+	float: right;
+	width: 175px;
+	margin-right: 26px;
+	&.left-button {
+		margin-right: 0 !important;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+#outer-autosuggest-menu {
+	float: left;
+	margin-top: 26px;
+	width: 329px;
+}
+#autosuggest_menu_input {
+	width: 300px;
+	height: 14px;
+}
+div.nicetitle {
+	position: absolute;
+	padding: 4px;
+	top: 0;
+	color: $white;
+	font-size: 13px;
+	font-family: $font_0, $font_1, $font_2, $font_3;
+	width: 30em;
+	font-weight: bold;
+	text-align: center;
+	background: image-url("ntbg.png") ;
+	margin-top: 140px;
+	margin-right: -80px;
+	p {
+		margin: 0;
+		padding: 0 3px;
+	}
+}
