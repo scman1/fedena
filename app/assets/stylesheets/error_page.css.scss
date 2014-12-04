@@ -1,0 +1,61 @@
+//colors
+$white: #ffffff;
+$color_guardsman_red_approx: #c80000;
+$black: #000000;
+$color_storm_dust_approx: #666666;
+
+//fonts
+$font_0: Arial;
+
+body {
+	width: 100%;
+	height: 100%;
+	background: $white;
+}
+#wrapper {
+	width: 582px;
+	height: 104px;
+	margin: 100px auto;
+	background: url("application/error_page_bg.png") no-repeat;
+	overflow: hidden;
+	.top {
+		color: $color_guardsman_red_approx;
+		font-family: $font_0;
+		font-size: 20px;
+		font-weight: bold;
+		padding: 20px 20px 7px 20px;
+		width: 542px;
+	}
+	.bottom {
+		font-family: $font_0;
+		margin: 0 20px;
+		font-size: 15px;
+		overflow: hidden;
+		.error-details {
+			float: left;
+			font-size: 15px;
+			color: $black;
+			.error-code {
+				font-weight: bold;
+				font-size: 18px;
+			}
+		}
+		.go-back {
+			padding-right: 15px;
+			float: right;
+			border-right: 1px $color_storm_dust_approx solid;
+		}
+		.fedena-home {
+			float: right;
+			padding-left: 15px;
+		}
+		div a {
+			float: right;
+			color: $color_storm_dust_approx;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
