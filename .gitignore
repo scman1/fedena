@@ -16,6 +16,11 @@
 
 # Ignore text files 
 /*.txt
+/app/*.txt
 /.metrics
 /*.dot
 /*.png
+
+ignore compressed files
+/*.zip
+/doc/*.zip

@@ -196,6 +196,7 @@ Fedena::Application.routes.draw do
 		get  :dashboard
 		get  :profile
 		get  :logout
+		get  :login
 	  end
 	end
     

@@ -17,6 +17,7 @@
 #limitations under the License.
 
 class NewsController < ApplicationController
+  layout 'application'
   before_filter :login_required
   filter_access_to :all
 
@@ -43,6 +44,7 @@ class NewsController < ApplicationController
 
   def all
     @news = News.paginate :page => params[:page]
+	render layout: 'application'
   end
 
   def delete
@@ -69,6 +71,10 @@ class NewsController < ApplicationController
     @news = []
     if request.get?
       @news = News.title_like_all params[:query].split unless params[:query].nil?
+    end
+    respond_to do |format|
+      format.html  # index.html.erb
+      format.json { render json: @users }
     end
   end
 
