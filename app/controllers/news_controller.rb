@@ -73,7 +73,7 @@ class NewsController < ApplicationController
       @news = News.title_like_all params[:query].split unless params[:query].nil?
     end
     respond_to do |format|
-      format.html  # index.html.erb
+      format.html{render layout: 'application'} # index.html.erb
       format.json { render json: @users }
     end
   end

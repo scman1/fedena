@@ -242,6 +242,7 @@ class UserController < ApplicationController
       successful_user_login(authenticated_user) and return
     elsif authenticated_user.blank? and request.post?
       flash[:notice] = "#{I18n.t('login_error_message')}"
+	  render :layout => choose_layout()
     end
 	render :layout => choose_layout()
   end

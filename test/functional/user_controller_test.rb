@@ -15,7 +15,7 @@ class UserControllerTest < ActionController::TestCase
 
   should "go to login" do
     get :login
-    assert_response 302
+    assert_response 200
     assert_template :login
   end
 

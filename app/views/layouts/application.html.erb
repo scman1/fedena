@@ -28,8 +28,7 @@
     <link rel="shortcut icon" href="<%=current_school_detail.logo.url%>" type="<%=current_school_detail.logo.content_type%>" />
     <% end %>
 
-    <%= stylesheet_link_tag  "application", media: "all"  -%>
-
+    <%= stylesheet_link_tag(*get_stylesheets) -%>
     <%= javascript_include_tag 'application' %>
 
     <% FedenaPlugin::REGISTERED_HOOKS[:application_layout_header].each do |mod| %>
