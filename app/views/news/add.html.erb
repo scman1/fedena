@@ -30,9 +30,11 @@
 
   <% unless flash[:notice].nil? %> <p class="flash-msg"> <%= flash[:notice] %> </p> <% end %>
 
-  <% form_for :news do |f| %>
+  <%= form_for @news do |f| %>
 
-    <%= error_messages_for :news %>
+    <% @news.errors.full_messages.each do |msg| %>
+      <p><%= msg %></p>
+    <% end %>
 
     <div id="add_news_form">
       <div class="news_label_field">
