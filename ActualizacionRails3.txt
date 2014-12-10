@@ -441,5 +441,9 @@
 	
 	
 
-
+30. Modelos
+	Noticias News.
+	Arreglar para que la vista de index cargue correctamente
+	Pared: fckeditor necesita ser reemplazado para permitir añadir y editar noticias
+	
 
